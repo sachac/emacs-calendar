@@ -1,0 +1,418 @@
+#!/usr/bin/ruby -U
+# -*- ruby -*-
+# https://tero.hasu.is/blog/org-icalendar-import/
+# 2021-01-02: Updated as_zone to handle arrays
+
+require 'date'
+require 'icalendar'
+require 'optparse'
+require 'tzinfo'
+
+def qp_decode_to_utf8(x)
+  return nil if x.nil?
+  if x.respond_to?(:to_ary)
+    x = x.to_ary.join("")
+  end
+  x.unpack('M')[0].force_encoding('utf-8')
+end
+
+OP = {:decode => lambda {|s| s},
+      :float_tz => nil,
+      :sort => false,
+      :stdin => false,
+      :tr_00_59 => false}
+optparse = OptionParser.new do |opts|
+  opts.banner = "USAGE: ics-to-org <ics_file>..."
+  opts.on('-0', '--00-59', 'interpret 00:00-23:59 as full day') do
+    OP[:tr_00_59] = true
+  end
+  opts.on('-f', '--floating TIMEZONE', 'interpret UTC in TIMEZONE') do |tz|
+    OP[:float_tz] = TZInfo::Timezone.get(tz)
+  end
+  opts.on('-i', '--stdin', 'read input from STDIN') do
+    OP[:stdin] = true
+  end
+  opts.on('-q', '--decode-qp', 'decode UTF-8 QP strings') do
+    OP[:decode] = method(:qp_decode_to_utf8)
+  end
+  opts.on('-s', '--sort', 'sort entries by time') do
+    OP[:sort] = true
+  end
+  opts.separator(%q{
+
+To regard UTC times as floating times, use "-f" to specify a time zone
+for interpreting the times, which in practice should be the zone in
+which the "floating" times were originally specified. To interpret
+00:00-23:59 time ranges as full days, use "-0".
+
+}.strip)
+end
+optparse.parse!
+
+UTC_TZ = TZInfo::Timezone.get("UTC")
+LOCAL_TZ = TZInfo::Timezone.get(Time.now.zone)
+
+# Reinterpret Time t as being in UTC.
+def reinterpret_as_utc t
+  Time.utc(t.year, t.month, t.day, t.hour, t.min, t.sec)
+end
+
+# Compute UTC offset for local Time t in the specified time zone.
+def time_utc_offset t, zone
+  arg_t = zone.local_to_utc(t) # this time in UTC
+  utc_t = reinterpret_as_utc(t) # same numbers in UTC
+  Rational(utc_t.to_i - arg_t.to_i, 24 * 60 * 60)
+end
+
+def zero_time?(t)
+  t.hour == 0 && t.min == 0 && t.sec == 0
+end
+
+def last_time?(t)
+  t.hour == 23 && t.min == 59 && t.sec == 59
+end
+
+# Assumes same timezone for both arguments.
+def same_day?(t1, t2)
+  t1.year == t2.year && t1.month == t2.month && t1.day == t2.day
+end
+
+def as_zone z
+  if z.kind_of?(TZInfo::Timezone)
+    z
+  elsif z.kind_of?(Array)
+    TZInfo::Timezone.get(z[0].to_str)
+  elsif z.respond_to?(:to_str)
+    TZInfo::Timezone.get(z.to_str)
+  elsif z.nil?
+    z
+  else
+    raise "unsupported time zone: #{z.inspect}"
+  end
+end
+
+def zone_equal? z1, z2
+  return true if z1.nil? and z2.nil?
+  return z1.name == z2.name
+end
+
+class Moment
+  attr_reader :year, :month, :day
+  attr_reader :hour, :min, :sec # nil if not a date-time
+  attr_reader :zone # nil for floating, otherwise TZInfo::Timezone
+
+  def initialize y, mo, d, h = nil, mi = nil, s = nil, z = nil
+    @year = y; @month = mo; @day = d
+    @hour = h; @min = mi; @sec = s
+    @zone = as_zone(z)
+  end
+
+  def Moment.from_time(t, zone = nil)
+    Moment.new(t.year, t.month, t.day,
+               t.hour, t.min, t.sec, zone)
+  end
+
+  def floating?
+    @zone.nil?
+  end
+
+  def has_time?
+    @hour && @min && @sec
+  end
+
+  def clear_time
+    self.class.new(@year, @month, @day, nil, nil, nil, @zone)
+  end
+
+  # `Time` in UTC.
+  def to_utc_time
+    if @zone
+      @zone.local_to_utc(to_time)
+    else
+      Time.utc(@year, @month, @day, @hour, @min, @sec)
+    end
+  end
+
+  # Change zone as specified, without changing time.
+  def set_zone zone
+    self.class.from_time(self, zone)
+  end
+
+  def zone_name
+    @zone && @zone.name
+  end
+
+  def set_floating
+    set_zone(nil)
+  end
+
+  def utc?
+    @zone && (@zone.name == "UTC")
+  end
+
+  # This time in UTC, with a floating time fixed as UTC.
+  def utc
+    self.class.from_time(@zone ? to_utc_time : self, UTC_TZ)
+  end
+
+  # This time as local time in the specified zone.
+  def local local_zone
+    local_zone = as_zone(local_zone)
+    return self if zone_equal?(@zone, local_zone)
+    return set_zone(local_zone) unless @zone
+    return utc if local_zone.name == "UTC"
+    t = to_utc_time
+    t = local_zone.utc_to_local(t)
+    self.class.from_time(t, local_zone)
+  end
+
+  # Seconds since epoch.
+  def to_i
+    to_utc_time.to_i
+  end
+
+  # UTC offset for time, as a `Rational` number.
+  def utc_offset
+    return Rational(0) unless @zone
+    time_utc_offset(to_time, @zone)
+  end
+
+  # This time as a `DateTime`.
+  def to_datetime
+    DateTime.new(@year, @month, @day,
+                 @hour || 0, @min || 0, @sec || 0,
+                 utc_offset)
+  end
+
+  # `Date` component of this time.
+  def to_date
+    to_datetime.to_date
+  end
+
+  def strftime(fmt)
+    to_datetime.strftime(fmt)
+  end
+
+  # Add the specified number of days, as a Rational number.
+  def +(days)
+    t = to_datetime + days
+    self.class.from_time(t, @zone)
+  end
+
+  def -(days)
+    self + (-days)
+  end
+
+  def ==(other)
+    (@year == other.year) &&
+      (@month == other.month) &&
+      (@day == other.day) &&
+      (@hour == other.hour) &&
+      (@min == other.min) &&
+      (@sec == other.sec) &&
+      zone_equal?(@zone, other.zone)
+  end
+
+  protected
+  # This time in some local time, whose time zone should be ignored.
+  def to_time
+    Time.new(@year, @month, @day, @hour, @min, @sec)
+  end
+end
+
+def zone_cmp z1, z2
+  return 0 if z1.nil? and z2.nil?
+  return -1 if z1.nil?
+  return 1 if z2.nil?
+  return z1.name <=> z2.name
+end
+
+def num_cmp z1, z2
+  return 0 if z1.nil? and z2.nil?
+  return -1 if z1.nil?
+  return 1 if z2.nil?
+  return z1 <=> z2
+end
+
+def Moment_cmp(t1, t2)
+  r = (t1.year <=> t2.year)
+  return r unless r == 0
+  r = (t1.month <=> t2.month)
+  return r unless r == 0
+  r = (t1.day <=> t2.day)
+  return r unless r == 0
+  r = num_cmp(t1.hour, t2.hour)
+  return r unless r == 0
+  r = num_cmp(t1.min, t2.min)
+  return r unless r == 0
+  return num_cmp(t1.sec, t2.sec)
+end
+
+def date_as_org(t) # Date/Time -> String
+  t.strftime("<%Y-%m-%d %a>")
+end
+
+def time_as_org(t) # Date/Time -> String
+  t.strftime("<%Y-%m-%d %a %H:%M>")
+end
+
+def time_range_as_org(st, et) # Date/Time -> String
+  st.strftime("<%Y-%m-%d %a %H:%M") + "-" + et.strftime("%H:%M") + ">"
+end
+
+def datetime_range_as_org(st, et)
+  if zero_time?(st) and zero_time?(et)
+    et = et - 1 unless st == et
+    if same_day?(st, et)
+      date_as_org(st)
+    else
+      date_as_org(st) + "--" + date_as_org(et)
+    end
+  elsif same_day?(st, et)
+    if st == et
+      time_as_org(st)
+    elsif OP[:tr_00_59] && zero_time?(st) && last_time?(et)
+      date_as_org(st.clear_time)
+    else
+      time_range_as_org(st, et)
+    end
+  else
+    if OP[:tr_00_59] && zero_time?(st) && last_time?(et)
+      date_as_org(st.clear_time) + "--" + date_as_org(et.clear_time)
+    else
+      time_as_org(st) + "--" + time_as_org(et)
+    end
+  end
+end
+
+def icaltime_to_moment(dt) # Icalendar::Values::DateTime -> Moment
+  tzid = dt.ical_params["tzid"]
+  t = Moment.from_time(dt, tzid)
+  local_zone = OP[:float_tz]
+  if local_zone and (tzid == "UTC")
+    # Reinterpret a UTC time as a floating time.
+    t = t.local(local_zone).set_floating
+  end
+  return t
+end
+
+def print_event_as_org(event)
+  decode = OP[:decode]
+
+  summary = decode.call(event.summary)
+  location = decode.call(event.location)
+  description = decode.call(event.description)
+  dtstart = icaltime_to_moment(event.dtstart)
+  dtend = icaltime_to_moment(event.dtend)
+
+  puts("* " + summary)
+  puts(":PROPERTIES:")
+  puts(":SUMMARY: " + summary)
+  puts(":LOCATION: " + location) if location
+  if description and (description != summary)
+    puts(":DESCRIPTION: " + description)
+  end
+  if dtstart.zone && zone_equal?(dtstart.zone, dtend.zone)
+    puts(":TIMEZONE: " + dtstart.zone.name)
+  end
+  puts(":END:")
+  puts(datetime_range_as_org(dtstart, dtend))
+  puts("")
+end
+
+class TranslationError < StandardError
+  attr_reader :event, :tr_error, :file
+
+  def initialize(tr_error, event, file)
+    @tr_error = tr_error
+    @event = event
+    @file = file
+  end
+
+  def to_s
+    "error #{tr_error} translating #{event.inspect} of #{file}"
+  end
+end
+
+class ParseError < StandardError
+  attr_reader :tr_error, :file
+
+  def initialize(tr_error, file)
+    @tr_error = tr_error
+    @file = file
+  end
+
+  def to_s
+    "error #{tr_error} parsing #{file}"
+  end
+end
+
+def parse_input(input, ics_file)
+  begin
+    Icalendar::Calendar.parse(input)
+  rescue StandardError => e
+    raise ParseError.new(e, ics_file)
+  end
+end
+
+def run
+  cals = []
+  if OP[:stdin]
+    cals = parse_input(STDIN, "<STDIN>")
+  else
+    ARGV.each do |ics_file|
+      File.open(ics_file, "r") do |input|
+        cals.concat(parse_input(input, ics_file))
+      end
+    end
+  end
+
+  cal_events = []
+  cals.each do |cal|
+    cal.events.each do |event|
+      cal_events << event
+    end
+  end
+
+  if OP[:sort]
+    cal_events.sort! do |x, y|
+      x_t = icaltime_to_moment(x.dtstart)
+      y_t = icaltime_to_moment(y.dtstart)
+      Moment_cmp(x_t, y_t)
+    end
+  end
+
+  cal_events.each do |event|
+    begin
+      print_event_as_org(event)
+    rescue StandardError => e
+      raise TranslationError.new(e, event, ics_file)
+    end
+  end
+end
+
+run
+
+#
+# Copyright 2018-2019 Tero Hasu <tero@hasu.is>. All rights reserved.
+#
+# Permission is hereby granted, free of charge, to any person
+# obtaining a copy of this software and associated documentation files
+# (the "Software"), to deal in the Software without restriction,
+# including without limitation the rights to use, copy, modify, merge,
+# publish, distribute, sublicense, and/or sell copies of the Software,
+# and to permit persons to whom the Software is furnished to do so,
+# subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be
+# included in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+# BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+# ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+# CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#

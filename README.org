@@ -1,0 +1,22 @@
+* Install gems needed for the script
+
+  #+begin_src sh :eval no
+	gem install --user-install tzinfo icalendar
+  #+end_src
+
+* Fetch the ical
+
+#+NAME: make_org
+#+begin_src sh :var timezone="Etc/GMT" :var filename="emacs-calendar-gmt.org"  :exports code
+echo ./ics-to-org --sort -f $timezone emacs-calendar.ics \> $filename
+#+end_src
+
+#+begin_src sh :results none :noweb yes :tangle "emacs-calendar.sh" :exports results
+  wget -q -N https://calendar.google.com/calendar/ical/c_rkq3fc6u8k1nem23qegqc90l6c%40group.calendar.google.com/public/basic.ics -O emacs-calendar.ics
+  <<make_org("Etc/GMT", "emacs-calendar-gmt.org")>>
+  <<make_org("America/Toronto", "emacs-calendar-toronto.org")>>
+  <<make_org("America/Vancouver", "emacs-calendar-vancouver.org")>>
+  <<make_org("Asia/Kolkata", "emacs-calendar-kolkata.org")>>
+  <<make_org("Asia/Singapore", "emacs-calendar-singapore.org")>>
+  <<make_org("Europe/Berlin", "emacs-calendar-berlin.org")>>
+#+end_src
