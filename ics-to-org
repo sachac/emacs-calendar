@@ -289,10 +289,10 @@ def icaltime_to_moment(dt) # Icalendar::Values::DateTime -> Moment
   tzid = dt.ical_params["tzid"]
   t = Moment.from_time(dt, tzid)
   local_zone = OP[:float_tz]
-  if local_zone and (tzid == "UTC")
+  #if local_zone and (tzid == "UTC")
     # Reinterpret a UTC time as a floating time.
-    t = t.local(local_zone).set_floating
-  end
+  t = t.local(local_zone).set_floating
+  #end
   return t
 end
 

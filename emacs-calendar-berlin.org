@@ -75,28 +75,15 @@ Sign up at https://www.meetup.com/EmacsATX/events/xgmxzrybcqbdb/ to get the link
 * EmacsNYC: How Do We Improve Emacs? (virtual)
 :PROPERTIES:
 :SUMMARY: EmacsNYC: How Do We Improve Emacs? (virtual)
-:LOCATION: 
-:DESCRIPTION: https://emacsnyc.org/2020/12/28/online-meetup-discussionhow-do-we-improve-emacs.html
-
-Join us online: meet.jit.si/EmacsNYC
-Please join us using your favorite IRC client at #emacsnyc or use webchat.freenode.net to join us online.
-
-We're excited to have you join us for EmacsNYC a group of dedicated lambda enthusiasts that come together once a month to share our mutual joy of a piece of software that's over 40 years old.
-
-Whether you are first time user, long time contributor, software developer, writer, or just curious what this is all about, you will find an open and welcome community that is eager for you to be a part.
-
-To create an environment that is welcoming, harrassment-free, and enjoyable to everyone, we have a code-of-conduct that we following for every get together.
-
-Emacs, relative to most software is old and has seen many iterations. Recently there was a survey that was conducted that helps us understand the current state of the world for Emacs.
-
-Let’s talk about how we can take what we know from the past and what we know now to help develop Emacs to a brighter future. This conversation can go in any number of directions and we will see where the conversation runs its course.
+:LOCATION: https://emacsnyc.org/2020/12/28/online-meetup-discussionhow-do-we-improve-emacs.html
+:DESCRIPTION: <a href="https://emacsnyc.org/2020/12/28/online-meetup-discussionhow-do-we-improve-emacs.html">https://emacsnyc.org/2020/12/28/online-meetup-discussionhow-do-we-improve-emacs.html</a><br><br>Join us online: <a href="http://meet.jit.si/EmacsNYC">meet.jit.si/EmacsNYC</a><br>Please join us using your favorite IRC client at #emacsnyc or use <a href="http://webchat.freenode.net">webchat.freenode.net</a> to join us online.<br><br>We're excited to have you join us for EmacsNYC a group of dedicated lambda enthusiasts that come together once a month to share our mutual joy of a piece of software that's over 40 years old.<br><br>Whether you are first time user, long time contributor, software developer, writer, or just curious what this is all about, you will find an open and welcome community that is eager for you to be a part.<br><br>To create an environment that is welcoming, harrassment-free, and enjoyable to everyone, we have a code-of-conduct that we following for every get together.<br><br>Emacs, relative to most software is old and has seen many iterations. Recently there was a survey that was conducted that helps us understand the current state of the world for Emacs.<br><br>Let’s talk about how we can take what we know from the past and what we know now to help develop Emacs to a brighter future. This conversation can go in any number of directions and we will see where the conversation runs its course.
 :END:
 <2021-01-05 Tue 01:00-03:00>
 
 * Emacs Paris (virtual)
 :PROPERTIES:
 :SUMMARY: Emacs Paris (virtual)
-:LOCATION: 
+:LOCATION: https://www.emacs-doctor.com/emacs-paris-user-group/ 
 :DESCRIPTION: <a href="https://www.emacs-doctor.com/emacs-paris-user-group/">https://www.emacs-doctor.com/emacs-paris-user-group/</a>&nbsp;<br><br><p>Nous sommes quelques utilisateurs de&nbsp;<a href="https://www.gnu.org/software/emacs/">GNU Emacs</a>&nbsp;à nous réunir à&nbsp;<strong>Paris</strong>&nbsp;et à&nbsp;<strong>Montpellier</strong>&nbsp;pour apprendre les uns des autres&nbsp;: c’est ouvert aux non-emacsiens, aux débutants, aux utilisateurs avancés et aux vimistes&nbsp;!</p><h2>Liste de discussion et forum</h2><p>Vous pouvez vous inscrire sur&nbsp;<a href="https://emacs-doctor.com/lists/listinfo/ateliers-paris">la liste de discussion</a>.</p><p>Nous avons aussi un&nbsp;<a href="https://emacs-doctor.com/forum/">forum</a>, n’hésitez pas à échanger.</p><h2>Prochaines rencontres</h2><ul><li>Paris : mardi 8 décembre 2020 de 17h30 à 19h en visio</li><li>Paris : jeudi 7 janvier 2021 de 17h30 à 19h en visio</li><li>Paris : mardi 2 février 2021 de 17h30 à 19h en visio</li><li>Paris : jeudi 4 mars 2021 de 17h30 à 19h en visio</li><li>Paris : mardi 6 avril 2021 de 17h30 à 19h en visio</li><li>Paris : jeudi 6 mai 2021 de 17h30 à 19h en visio</li><li>Paris : mardi 1 juin 2021 de 17h30 à 19h en visio</li><li>Montpellier : à définir</li></ul><br><u></u><h2>Comment je m’inscris à un atelier ?</h2><h3>Pour Paris</h3><p>Nous faisons des rencontres en ligne. Il y a parfois des rencontres physiques chez&nbsp;<a href="http://inno3.fr/">inno3.fr</a>&nbsp;au 137 Boulevard de Magenta 75010 Paris (<a href="http://www.openstreetmap.org/#map=16/48.8818/2.3514">plan</a>) de 19h à 22h.</p><p>Si vous venez pour la première fois à un atelier IRL, envoyez un mot à&nbsp;<code><a href="mailto:bzg@bzg.fr">bzg@bzg.fr</a></code>. Pour la visio, vous pouvez simplement débarquer.</p><h3>Pour Montpellier</h3><p>Envoyez un petit mot à&nbsp;<code><a href="mailto:emacsem-owner@movoscope.org">emacsem-owner@movoscope.org</a></code>&nbsp;et vous serez inscrit.</p><h2>Rencontres passées</h2><p>Nous gardons parfois des notes des soirées passées sur&nbsp;<a href="https://gitlab.com/bzg2/emacsparis/blob/master/README.org">ce dépôt</a>.</p><u></u><u></u><br><u></u>
 :END:
 <2021-01-07 Thu 17:30-19:00>
@@ -104,92 +91,48 @@ Let’s talk about how we can take what we know from the past and what we know n
 * Livestream: Keeping organized with Emacs and Orgmode, by Henrique Castro
 :PROPERTIES:
 :SUMMARY: Livestream: Keeping organized with Emacs and Orgmode, by Henrique Castro
-:LOCATION: 
-:DESCRIPTION: Watch live: https://www.youtube.com/watch?v=RvTuHsMPVLo
+:LOCATION: https://www.youtube.com/watch?v=RvTuHsMPVLo
+:DESCRIPTION: Watch live: <a href="https://www.youtube.com/watch?v=RvTuHsMPVLo" id="ow1005" __is_owner="true">https://www.youtube.com/watch?v=RvTuHsMPVLo</a>
 :END:
 <2021-01-14 Thu 16:30-17:30>
 
 * EmacsFFM: Creating our own major mode (virtual)
 :PROPERTIES:
 :SUMMARY: EmacsFFM: Creating our own major mode (virtual)
-:LOCATION: 
-:DESCRIPTION: https://www.meetup.com/emacs-ffm/events/275226261/<br><br>In this meeting, we shall continue with the creation of our own major mode. We will be using this repository to create our mode:<br><a href="https://github.com/UndeadKernel/refman-mode">https://github.com/UndeadKernel/refman-mode</a><br>Feel free to clone the repository to start working on it.<br><br>Let me know if this works for you and feel free to share any ideas how to make the virtual version of this user group work :)<br><br>------<br><br>Right now, we go with jitsi as our video conference platform, but we might give discord a try as well. Stay tuned!<br><br>------<br><br>About<br><br>This is a meetup for all people working with and interested in Emacs.<br><br>We want to meet up in a friendly atmosphere to talk about the famous text editor.
+:LOCATION: https://www.meetup.com/emacs-ffm/events/275226261/
+:DESCRIPTION: <a href="https://www.meetup.com/emacs-ffm/events/275226261/">https://www.meetup.com/emacs-ffm/events/275226261/</a><br><br>In this meeting, we shall continue with the creation of our own major mode. We will be using this repository to create our mode:<br><a href="https://github.com/UndeadKernel/refman-mode">https://github.com/UndeadKernel/refman-mode</a><br>Feel free to clone the repository to start working on it.<br><br>Let me know if this works for you and feel free to share any ideas how to make the virtual version of this user group work :)<br><br>------<br><br>Right now, we go with jitsi as our video conference platform, but we might give discord a try as well. Stay tuned!<br><br>------<br><br>About<br><br>This is a meetup for all people working with and interested in Emacs.<br><br>We want to meet up in a friendly atmosphere to talk about the famous text editor.
 :END:
 <2021-01-20 Wed 20:00-22:00>
 
 * EmacsAPAC (virtual, in English)
 :PROPERTIES:
 :SUMMARY: EmacsAPAC (virtual, in English)
-:LOCATION: 
-:DESCRIPTION: https://emacs-apac.gitlab.io/
-
-================
-== Emacs APAC ==
-================Welcome to Emacs Asia-Pacific
-Start. Upcoming events.
-About Emacs APAC
-We are Emacs enthusiasts who live in the Asia-Pacific (APAC) time-zone. We meet every fourth Saturday of the month (<%%(diary-float t 6 4)> in Org mode).
-
-Where
-The event is scheduled virtually using Jitsi Meet at 1400 Indian Standard Time (IST). The meeting URL is posted on Freenode IRC channels #emacs, #ilugc and #emacsconf, 30 minutes prior to the meeting, and also on the ILUGC mailing list on the day of the meetup. If you are not subscribed, you can also check the archive.
-
-Checkout the upcoming meetings here.
-
-Talks
-We usually have free flowing discussions around new Emacs packages / features discovered, issues faced, experiences, usage tips, resources for further learning etc. These are related to GNU Emacs and its variants. Sometimes people also share their screens and give demos of their Emacs setup and use.
-
-If you would like to give a talk (20 minutes maximum), please send an email to TODO with the details.
-
-Frequently Asked Questions
-I’m new to Emacs, can / should I join?
-Yes! You are always welcome. We have participants from different walks of life with varied experiences in Emacs. You can ask your questions and the attendees will be able to help, at least point you in the right direction.
-
-Which language is used for communication?
-English.
-
-I’m not from APAC, can I join?
-Definitely! If the timing is suitable for you, please join.
+:LOCATION: https://emacs-apac.gitlab.io/
+:DESCRIPTION: <a href="https://emacs-apac.gitlab.io/">https://emacs-apac.gitlab.io/</a><br><br>================<br>== Emacs APAC ==<br>================Welcome to Emacs Asia-Pacific<br>Start. Upcoming events.<br>About Emacs APAC<br>We are Emacs enthusiasts who live in the Asia-Pacific (APAC) time-zone. We meet every fourth Saturday of the month (&lt;%%(diary-float t 6 4)&gt; in Org mode).<br><br>Where<br>The event is scheduled virtually using Jitsi Meet at 1400 Indian Standard Time (IST). The meeting URL is posted on Freenode IRC channels #emacs, #ilugc and #emacsconf, 30 minutes prior to the meeting, and also on the ILUGC mailing list on the day of the meetup. If you are not subscribed, you can also check the archive.<br><br>Checkout the upcoming meetings here.<br><br>Talks<br>We usually have free flowing discussions around new Emacs packages / features discovered, issues faced, experiences, usage tips, resources for further learning etc. These are related to GNU Emacs and its variants. Sometimes people also share their screens and give demos of their Emacs setup and use.<br><br>If you would like to give a talk (20 minutes maximum), please send an email to TODO with the details.<br><br>Frequently Asked Questions<br>I’m new to Emacs, can / should I join?<br>Yes! You are always welcome. We have participants from different walks of life with varied experiences in Emacs. You can ask your questions and the attendees will be able to help, at least point you in the right direction.<br><br>Which language is used for communication?<br>English.<br><br>I’m not from APAC, can I join?<br>Definitely! If the timing is suitable for you, please join.
 :END:
 <2021-01-23 Sat 09:30-11:30>
 
 * EmacsSG: Emacs and Never Code Alone
 :PROPERTIES:
 :SUMMARY: EmacsSG: Emacs and Never Code Alone
-:LOCATION: 
-:DESCRIPTION: <a href="https://www.meetup.com/Emacs-SG/events/268260076/" id="ow2419" __is_owner="true">https://www.meetup.com/Emacs-SG/events/268260076/</a><br><br>There hasn't been much activity here for quite a while but hopefully we can bring some Nix along to the Never Code Alone SG event when Covid allows is to meet up in person.<br><br>The event:&nbsp;<a href="https://www.meetup.com/Never-Code-Alone-SG/events/268135071/" id="ow2437" __is_owner="true">https://www.meetup.com/Never-Code-Alone-SG/events/268135071/</a>
+:LOCATION: https://www.meetup.com/Emacs-SG/events/268260076/
+:DESCRIPTION: <a href="https://www.meetup.com/Emacs-SG/events/268260076/">https://www.meetup.com/Emacs-SG/events/268260076/</a><br><br>There hasn't been much activity here for quite a while but hopefully we can bring some Nix along to the Never Code Alone SG event when Covid allows is to meet up in person.<br><br>The event:&nbsp;<a href="https://www.meetup.com/Never-Code-Alone-SG/events/268135071/">https://www.meetup.com/Never-Code-Alone-SG/events/268135071/</a>
 :END:
 <2021-01-27 Wed 12:00-15:00>
 
 * Emacs Berlin (virtual, in English)
 :PROPERTIES:
 :SUMMARY: Emacs Berlin (virtual, in English)
-:LOCATION: 
-:DESCRIPTION: https://emacs-berlin.org/ (https://emacs-berlin.org/)
-
-New to Emacs? Longtime elisp expert? Just want to know what this is all about? Come join us!
-
-Location
-
-Room open from 18:30 CET, if there are talks they’ll start at 19:00 CET. The video link will be posted on the day of the meetup to the mailing list. Check the archive (https://mailb.org/pipermail/emacs-berlin/2021/thread.html) if you are not subscribed.
-
-About Emacs Berlin
-We are Emacs enthusiasts in Berlin, meeting every last Wednesday of the month (<%%(diary-float t 3 -1)> in org-mode).
-The best way to stay posted is through our mailing list. Sign up (https://mailb.org/mailman/listinfo/emacs-berlin) and meet your fellow Emacsers, or have a look at the mailing list archives (https://mailb.org/pipermail/emacs-berlin/) (gmane).
-Feel free to send an email introducing yourself after subscribing!
-You can also chat with us on irc: #emacs-berlin (connection instructions (https://mailb.org/pipermail/emacs-berlin/2020/000583.html))
-Or on Twitter: @emacsberlin (https://twitter.com/emacsberlin)
-And there’s a YouTube Channel (https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw)  
-And on meetup.com/Emacs-Berlin-Meetup (https://www.meetup.com/Emacs-Berlin-Meetup/)
-Non-public contact via email: organizers email (mailto:emacs-berlin-owner@emacs-berlin.org)
-:TIMEZONE: Europe/Berlin
+:LOCATION: https://emacs-berlin.org/
+:DESCRIPTION: <a href="https://emacs-berlin.org/">https://emacs-berlin.org/</a>&nbsp;<br><br>New to Emacs? Longtime elisp expert? Just want to know what this is all about? Come join us!<br><br>Location<br><br>Room open from 18:30 CET, if there are talks they’ll start at 19:00 CET. The video link will be posted on the day of the meetup to the mailing list. Check the&nbsp;archive (<a href="https://mailb.org/pipermail/emacs-berlin/2021/thread.html">https://mailb.org/pipermail/emacs-berlin/2021/thread.html</a>)&nbsp;if you are not subscribed.<br><br>About Emacs Berlin<br>We are Emacs enthusiasts in Berlin, meeting every last Wednesday of the month (&lt;%%(diary-float t 3 -1)&gt;&nbsp;in org-mode).<br>The best way to stay posted is through our mailing list.&nbsp;Sign up (<a href="https://mailb.org/mailman/listinfo/emacs-berlin">https://mailb.org/mailman/listinfo/emacs-berlin</a>)&nbsp;and meet your fellow Emacsers, or have a look at the&nbsp;mailing list archives (<a href="https://mailb.org/pipermail/emacs-berlin/">https://mailb.org/pipermail/emacs-berlin/</a>)&nbsp;(gmane).<br>Feel free to send an email introducing yourself after subscribing!<br>You can also chat with us on irc:&nbsp;#emacs-berlin&nbsp;(connection instructions (<a href="https://mailb.org/pipermail/emacs-berlin/2020/000583.html">https://mailb.org/pipermail/emacs-berlin/2020/000583.html</a>))<br>Or on Twitter:&nbsp;@emacsberlin (<a href="https://twitter.com/emacsberlin">https://twitter.com/emacsberlin</a>)<br>And there’s a&nbsp;YouTube Channel (<a href="https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw">https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw</a>)&nbsp;&nbsp;<br>And on&nbsp;<a href="http://meetup.com/Emacs-Berlin-Meetup">meetup.com/Emacs-Berlin-Meetup</a> (<a href="https://www.meetup.com/Emacs-Berlin-Meetup/">https://www.meetup.com/Emacs-Berlin-Meetup/</a>)<br>Non-public contact via email:&nbsp;organizers email (mailto:<a href="mailto:emacs-berlin-owner@emacs-berlin.org">emacs-berlin-owner@emacs-berlin.org</a>)
 :END:
 <2021-01-27 Wed 18:30-20:30>
 
 * Emacs Paris (virtual)
 :PROPERTIES:
 :SUMMARY: Emacs Paris (virtual)
-:LOCATION: 
-:DESCRIPTION: <a href="https://www.emacs-doctor.com/emacs-paris-user-group/" target="_blank">https://www.emacs-doctor.com/emacs-paris-user-group/</a> <br><br><p>Nous sommes quelques utilisateurs de <a href="https://www.gnu.org/software/emacs/" target="_blank">GNU Emacs</a> à nous réunir à <strong>Paris</strong> et à <strong>Montpellier</strong> pour apprendre les uns des autres : c’est ouvert aux non-emacsiens, aux débutants, aux utilisateurs avancés et aux vimistes !</p><h2>Liste de discussion et forum</h2><p>Vous pouvez vous inscrire sur <a href="https://emacs-doctor.com/lists/listinfo/ateliers-paris" target="_blank">la liste de discussion</a>.</p><p>Nous avons aussi un <a href="https://emacs-doctor.com/forum/" target="_blank">forum</a>, n’hésitez pas à échanger.</p><h2>Prochaines rencontres</h2><ul><li>Paris : mardi 8 décembre 2020 de 17h30 à 19h en visio</li><li>Paris : jeudi 7 janvier 2021 de 17h30 à 19h en visio</li><li>Paris : mardi 2 février 2021 de 17h30 à 19h en visio</li><li>Paris : jeudi 4 mars 2021 de 17h30 à 19h en visio</li><li>Paris : mardi 6 avril 2021 de 17h30 à 19h en visio</li><li>Paris : jeudi 6 mai 2021 de 17h30 à 19h en visio</li><li>Paris : mardi 1 juin 2021 de 17h30 à 19h en visio</li><li>Montpellier : à définir</li></ul><br><u></u><h2>Comment je m’inscris à un atelier ?</h2><h3>Pour Paris</h3><p>Nous faisons des rencontres en ligne. Il y a parfois des rencontres physiques chez <a href="http://inno3.fr/" target="_blank">inno3.fr</a> au 137 Boulevard de Magenta 75010 Paris (<a href="http://www.openstreetmap.org/#map=16/48.8818/2.3514" target="_blank">plan</a>) de 19h à 22h.</p><p>Si vous venez pour la première fois à un atelier IRL, envoyez un mot à <code><a href="mailto:bzg@bzg.fr" target="_blank">bzg@bzg.fr</a></code>. Pour la visio, vous pouvez simplement débarquer.</p><h3>Pour Montpellier</h3><p>Envoyez un petit mot à <code><a href="mailto:emacsem-owner@movoscope.org" target="_blank">emacsem-owner@movoscope.org</a></code> et vous serez inscrit.</p><h2>Rencontres passées</h2><p>Nous gardons parfois des notes des soirées passées sur <a href="https://gitlab.com/bzg2/emacsparis/blob/master/README.org" target="_blank">ce dépôt</a>.</p><u></u><u></u><br><u></u>
+:LOCATION: https://www.emacs-doctor.com/emacs-paris-user-group/
+:DESCRIPTION: <a href="https://www.emacs-doctor.com/emacs-paris-user-group/">https://www.emacs-doctor.com/emacs-paris-user-group/</a>&nbsp;<br><br><p>Nous sommes quelques utilisateurs de&nbsp;<a href="https://www.gnu.org/software/emacs/">GNU Emacs</a>&nbsp;à nous réunir à&nbsp;<strong>Paris</strong>&nbsp;et à&nbsp;<strong>Montpellier</strong>&nbsp;pour apprendre les uns des autres&nbsp;: c’est ouvert aux non-emacsiens, aux débutants, aux utilisateurs avancés et aux vimistes&nbsp;!</p><h2>Liste de discussion et forum</h2><p>Vous pouvez vous inscrire sur&nbsp;<a href="https://emacs-doctor.com/lists/listinfo/ateliers-paris">la liste de discussion</a>.</p><p>Nous avons aussi un&nbsp;<a href="https://emacs-doctor.com/forum/">forum</a>, n’hésitez pas à échanger.</p><h2>Prochaines rencontres</h2><ul><li>Paris : mardi 8 décembre 2020 de 17h30 à 19h en visio</li><li>Paris : jeudi 7 janvier 2021 de 17h30 à 19h en visio</li><li>Paris : mardi 2 février 2021 de 17h30 à 19h en visio</li><li>Paris : jeudi 4 mars 2021 de 17h30 à 19h en visio</li><li>Paris : mardi 6 avril 2021 de 17h30 à 19h en visio</li><li>Paris : jeudi 6 mai 2021 de 17h30 à 19h en visio</li><li>Paris : mardi 1 juin 2021 de 17h30 à 19h en visio</li><li>Montpellier : à définir</li></ul><br><u></u><h2>Comment je m’inscris à un atelier ?</h2><h3>Pour Paris</h3><p>Nous faisons des rencontres en ligne. Il y a parfois des rencontres physiques chez&nbsp;<a href="http://inno3.fr/">inno3.fr</a>&nbsp;au 137 Boulevard de Magenta 75010 Paris (<a href="http://www.openstreetmap.org/#map=16/48.8818/2.3514">plan</a>) de 19h à 22h.</p><p>Si vous venez pour la première fois à un atelier IRL, envoyez un mot à&nbsp;<code><a href="mailto:bzg@bzg.fr">bzg@bzg.fr</a></code>. Pour la visio, vous pouvez simplement débarquer.</p><h3>Pour Montpellier</h3><p>Envoyez un petit mot à&nbsp;<code><a href="mailto:emacsem-owner@movoscope.org">emacsem-owner@movoscope.org</a></code>&nbsp;et vous serez inscrit.</p><h2>Rencontres passées</h2><p>Nous gardons parfois des notes des soirées passées sur&nbsp;<a href="https://gitlab.com/bzg2/emacsparis/blob/master/README.org">ce dépôt</a>.</p><u></u><u></u><br><u></u>
 :END:
 <2021-02-02 Tue 17:30-19:00>
 

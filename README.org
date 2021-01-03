@@ -1,22 +1,98 @@
-* Install gems needed for the script
+#+TITLE: Emacs calendar
+
+This calendar is maintained by [[mailto:sacha@sachachua.com][sacha@sachachua.com]]. You can find it at https://emacslife.com/calendar/
+
+You can find a list of upcoming events and other meet-ups at
+https://www.emacswiki.org/emacs/Usergroups.
+
+Or you can add this iCal to your calendar program:
+
+https://calendar.google.com/calendar/ical/c_rkq3fc6u8k1nem23qegqc90l6c%40group.calendar.google.com/public/basic.ics
+
+Or you view the following HTML calendars:
+
+#+begin_src emacs-lisp :exports results :var timezones=timezones :results list
+  (mapcar (lambda (o) (org-link-make-string (format "file:emacs-calendar-%s.html" (downcase (replace-regexp-in-string "^.*?/" "" (car o)))) (car o))) timezones)
+#+end_src
+
+#+RESULTS:
+- [[file:emacs-calendar-gmt.html][Etc/GMT]]
+- [[file:emacs-calendar-toronto.html][America/Toronto]]
+- [[file:emacs-calendar-vancouver.html][America/Vancouver]]
+- [[file:emacs-calendar-kolkata.html][Asia/Kolkata]]
+- [[file:emacs-calendar-singapore.html][Asia/Singapore]]
+- [[file:emacs-calendar-berlin.html][Europe/Berlin]]
+
+(Let me know if you want me to add yours! - [[mailto:sacha@sachachua.com]])
+
+Or you periodically download and include one of these files in your Org agenda files:
+
+#+begin_src emacs-lisp :exports results :var timezones=timezones :wrap export html
+(concat "<ul>"
+   (mapconcat (lambda (o) (let ((file (concat "emacs-calendar-" (downcase (replace-regexp-in-string "^.*?/" "" (car o))) ".org")))
+                         (format "<li><a href=\"%s\">%s</a></li>" file file)))
+           timezones "\n")
+"</ul>")
+#+end_src
+
+#+RESULTS:
+#+begin_export html
+<ul><li><a href="emacs-calendar-gmt.org">emacs-calendar-gmt.org</a></li>
+<li><a href="emacs-calendar-toronto.org">emacs-calendar-toronto.org</a></li>
+<li><a href="emacs-calendar-vancouver.org">emacs-calendar-vancouver.org</a></li>
+<li><a href="emacs-calendar-kolkata.org">emacs-calendar-kolkata.org</a></li>
+<li><a href="emacs-calendar-singapore.org">emacs-calendar-singapore.org</a></li>
+<li><a href="emacs-calendar-berlin.org">emacs-calendar-berlin.org</a></li></ul>
+#+end_export
+
+Enjoy!
+
+* Code I use to run it
+** Timezones
+
+#+NAME: timezones
+- Etc/GMT
+- America/Toronto
+- America/Vancouver
+- Asia/Kolkata
+- Asia/Singapore
+- Europe/Berlin
+** Install gems needed for the script
 
   #+begin_src sh :eval no
 	gem install --user-install tzinfo icalendar
   #+end_src
 
-* Fetch the ical
+** Fetch the ical
 
-#+NAME: make_org
-#+begin_src sh :var timezone="Etc/GMT" :var filename="emacs-calendar-gmt.org"  :exports code
-echo ./ics-to-org --sort -f $timezone emacs-calendar.ics \> $filename
-#+end_src
-
-#+begin_src sh :results none :noweb yes :tangle "emacs-calendar.sh" :exports results
+#+begin_src sh :var timezones=timezones :tangle emacs-calendar.sh
   wget -q -N https://calendar.google.com/calendar/ical/c_rkq3fc6u8k1nem23qegqc90l6c%40group.calendar.google.com/public/basic.ics -O emacs-calendar.ics
-  <<make_org("Etc/GMT", "emacs-calendar-gmt.org")>>
-  <<make_org("America/Toronto", "emacs-calendar-toronto.org")>>
-  <<make_org("America/Vancouver", "emacs-calendar-vancouver.org")>>
-  <<make_org("Asia/Kolkata", "emacs-calendar-kolkata.org")>>
-  <<make_org("Asia/Singapore", "emacs-calendar-singapore.org")>>
-  <<make_org("Europe/Berlin", "emacs-calendar-berlin.org")>>
+  DATE=$(date +"%Y%m01")
+  for ZONE in $timezones; do
+    STUB=$(echo $ZONE | sed s/^.*\\/// | tr A-Z a-z)
+    ./ics-to-org --sort -f $ZONE emacs-calendar.ics > emacs-calendar-$STUB.org
+    ical2html -l -f "Times are in $ZONE" -z $ZONE $DATE P8W emacs-calendar.ics | perl -e 'undef $/; $_ = <>; $_ =~ s/<span class=summary>([^<]+)<\/span>\n<pre><b class=location>([^<]+)<\/b><\/pre>/<span class="summary"><a href="$2">$1<\/a><\/span>/g; print $_' > emacs-calendar-$STUB.html
+  done
 #+end_src
+
+#+RESULTS:
+
+** Sync
+
+#+begin_src sh :results none
+rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
+#+end_src
+
+** Testing agenda files :noexport:
+
+#+begin_src emacs-lisp :exports results :var timezones=timezones :results list
+  (mapcar (lambda (o) (org-link-make-string (format "elisp:(let ((org-agenda-files (list (expand-file-name \"emacs-calendar-%s.org\")))) (org-agenda-list nil nil 31))" (downcase (replace-regexp-in-string "^.*?/" "" (car o)))) (format "View %s agenda" (car o)))) timezones)
+#+end_src
+
+#+RESULTS:
+- [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-gmt.org")))) (org-agenda-list nil nil 31))][View Etc/GMT agenda]]
+- [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-toronto.org")))) (org-agenda-list nil nil 31))][View America/Toronto agenda]]
+- [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-vancouver.org")))) (org-agenda-list nil nil 31))][View America/Vancouver agenda]]
+- [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-kolkata.org")))) (org-agenda-list nil nil 31))][View Asia/Kolkata agenda]]
+- [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-singapore.org")))) (org-agenda-list nil nil 31))][View Asia/Singapore agenda]]
+- [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-berlin.org")))) (org-agenda-list nil nil 31))][View Europe/Berlin agenda]]
