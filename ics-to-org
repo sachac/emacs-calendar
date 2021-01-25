@@ -1,7 +1,7 @@
 #!/usr/bin/ruby -U
 # -*- ruby -*-
 # https://tero.hasu.is/blog/org-icalendar-import/
-# 2021-01-02: Updated as_zone to handle arrays
+# sachac 2021-01-02: Updated as_zone to handle arrays, always convert timezones, don't include timezone property
 
 require 'date'
 require 'icalendar'
@@ -312,9 +312,9 @@ def print_event_as_org(event)
   if description and (description != summary)
     puts(":DESCRIPTION: " + description)
   end
-  if dtstart.zone && zone_equal?(dtstart.zone, dtend.zone)
-    puts(":TIMEZONE: " + dtstart.zone.name)
-  end
+  #if dtstart.zone && zone_equal?(dtstart.zone, dtend.zone)
+  #  puts(":TIMEZONE: " + dtstart.zone.name)
+  #end
   puts(":END:")
   puts(datetime_range_as_org(dtstart, dtend))
   puts("")

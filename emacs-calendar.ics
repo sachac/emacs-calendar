@@ -6,6 +6,24 @@ METHOD:PUBLISH
 X-WR-CALNAME:Emacs calendar
 X-WR-TIMEZONE:America/Toronto
 BEGIN:VTIMEZONE
+TZID:America/Toronto
+X-LIC-LOCATION:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VTIMEZONE
 TZID:Europe/Berlin
 X-LIC-LOCATION:Europe/Berlin
 BEGIN:DAYLIGHT
@@ -24,9 +42,133 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+DTSTART:20210128T023000Z
+DTEND:20210128T043000Z
+DTSTAMP:20210125T055314Z
+UID:7lofjcidv0q0auv59kqnmp9va5@google.com
+CREATED:20210125T055204Z
+DESCRIPTION:<a href="https://www.meetup.com/Emacs-SF/events/275889079/">htt
+ ps://www.meetup.com/Emacs-SF/events/275889079/</a><br><br>Let's get togethe
+ r virtually to discuss emacs\, org-mode\, org-roam\, etc. If you have somet
+ hing to demo related to any of the above\, please let me know. Hopefully pe
+ ople who cannot attend weekend meetups can attend this weekday evening meet
+ up.<br><br>Join the meetup via&nbsp\;<a href="https://www.meetup.com/Emacs-
+ SF/events/275889079/" id="ow3527" __is_owner="true">https://www.meetup.com/
+ Emacs-SF/events/275889079/</a>&nbsp\;in order to get the link to the online
+  meeting.
+LAST-MODIFIED:20210125T055224Z
+LOCATION:https://www.meetup.com/Emacs-SF/events/275889079/
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:EmacsSF: discussion of emacs\, org-mode\, org-roam and similar pack
+ ages
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210202T000000Z
+DTEND:20210202T020000Z
+DTSTAMP:20210125T055314Z
+UID:7q1k9g0f97gl4dce3he0o8prrk@google.com
+CREATED:20210125T053526Z
+DESCRIPTION:https://emacsnyc.org/2021/01/23/monthly-online-meetup-lightning
+ -talks.html<br><br><h3>Monthly Online Meetup—Lightning Talks</h3><p>Monday\
+ , Feb 1\, 2021<br>7:00 PM</p><p>Join us online:&nbsp\;<a href="https://meet
+ .jit.si/EmacsNYC">meet.jit.si/EmacsNYC</a><br>Please join us using your fav
+ orite IRC client at #emacsnyc or use&nbsp\;<a href="https://webchat.freenod
+ e.net/">webchat.freenode.net</a>&nbsp\;to join us online.</p><p>This month 
+ we are doing lightning talks!</p><p>We look forward to any talk you want to
+  give that is Emacs or Emacs adjacent.</p><p>We do want to hear everything 
+ you have to say\, but we will be limiting each talk to 5 minutes and we wil
+ l be strict about this. If you have more to say please consider talking to 
+ us about doing a longer talk next month.</p><p>Please sign up&nbsp\;<a href
+ ="https://etherpad.wikimedia.org/p/Emacs_NYC_February_2021_Lightning_Talks"
+ >here</a>.</p><p>If there is additional room and you are interested in spea
+ king we will try to accommodate you as best as possible.</p><p>If you would
+  like to speak then or on any other occasion\, take a look at this&nbsp\;<a
+  href="https://emacsnyc.org/giving-a-talk.html">guide</a>.</p>
+LAST-MODIFIED:20210125T053526Z
+LOCATION:https://emacsnyc.org/2021/01/23/monthly-online-meetup-lightning-ta
+ lks.html
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:EmacsNYC: Lightning Talks
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210127T110000Z
+DTEND:20210127T140000Z
+DTSTAMP:20210125T055314Z
+UID:7jgjmo33k372usethv76c139pd@google.com
+CREATED:20201205T213653Z
+DESCRIPTION:<a href="https://www.meetup.com/Emacs-SG/events/268260076/">htt
+ ps://www.meetup.com/Emacs-SG/events/268260076/</a><br><br>There hasn't been
+  much activity here for quite a while but hopefully we can bring some Nix a
+ long to the Never Code Alone SG event when Covid allows is to meet up in pe
+ rson.<br><br>The event:&nbsp\;<a href="https://www.meetup.com/Never-Code-Al
+ one-SG/events/268135071/">https://www.meetup.com/Never-Code-Alone-SG/events
+ /268135071/</a>
+LAST-MODIFIED:20210124T064404Z
+LOCATION:https://www.meetup.com/Emacs-SG/events/268260076/
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:EmacsSG: Emacs and Never Code Alone (tentative?)
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Toronto:20210109T100000
+DTEND;TZID=America/Toronto:20210109T110000
+RRULE:FREQ=WEEKLY;BYDAY=SA
+DTSTAMP:20210125T055314Z
+UID:7oh6lfpn1k38cat9m7qa1v3tmq@google.com
+CREATED:20210108T004945Z
+DESCRIPTION:
+LAST-MODIFIED:20210108T004945Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:EmacsConf meeting
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210123T083000Z
+DTEND:20210123T103000Z
+DTSTAMP:20210125T055314Z
+UID:6spjce1k6cq3abb36gsjib9kc5ij4b9pcdhj4b9p6gomap32cos64dhl68@google.com
+CREATED:20210102T153936Z
+DESCRIPTION:<a href="https://emacs-apac.gitlab.io/">https://emacs-apac.gitl
+ ab.io/</a><br><br>================<br>== Emacs APAC ==<br>================W
+ elcome to Emacs Asia-Pacific<br>Start. Upcoming events.<br>About Emacs APAC
+ <br>We are Emacs enthusiasts who live in the Asia-Pacific (APAC) time-zone.
+  We meet every fourth Saturday of the month (&lt\;%%(diary-float t 6 4)&gt\
+ ; in Org mode).<br><br>Where<br>The event is scheduled virtually using Jits
+ i Meet at 1400 Indian Standard Time (IST). The meeting URL is posted on Fre
+ enode IRC channels #emacs\, #ilugc and #emacsconf\, 30 minutes prior to the
+  meeting\, and also on the ILUGC mailing list on the day of the meetup. If 
+ you are not subscribed\, you can also check the archive.<br><br>Checkout th
+ e upcoming meetings here.<br><br>Talks<br>We usually have free flowing disc
+ ussions around new Emacs packages / features discovered\, issues faced\, ex
+ periences\, usage tips\, resources for further learning etc. These are rela
+ ted to GNU Emacs and its variants. Sometimes people also share their screen
+ s and give demos of their Emacs setup and use.<br><br>If you would like to 
+ give a talk (20 minutes maximum)\, please send an email to TODO with the de
+ tails.<br><br>Frequently Asked Questions<br>I’m new to Emacs\, can / should
+  I join?<br>Yes! You are always welcome. We have participants from differen
+ t walks of life with varied experiences in Emacs. You can ask your question
+ s and the attendees will be able to help\, at least point you in the right 
+ direction.<br><br>Which language is used for communication?<br>English.<br>
+ <br>I’m not from APAC\, can I join?<br>Definitely! If the timing is suitabl
+ e for you\, please join.
+LAST-MODIFIED:20210103T133711Z
+LOCATION:https://emacs-apac.gitlab.io/
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Emacs APAC (virtual\, in English)
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 DTSTART:20210202T163000Z
 DTEND:20210202T180000Z
-DTSTAMP:20210103T070659Z
+DTSTAMP:20210125T055314Z
 UID:0toe1npqb53ab5bmoos5bqi9et@google.com
 CREATED:20201205T214929Z
 DESCRIPTION:<a href="https://www.emacs-doctor.com/emacs-paris-user-group/">
@@ -70,7 +212,7 @@ BEGIN:VEVENT
 DTSTART;TZID=Europe/Berlin:20210127T183000
 DTEND;TZID=Europe/Berlin:20210127T203000
 RRULE:FREQ=MONTHLY;WKST=SU;INTERVAL=1;BYDAY=-1WE
-DTSTAMP:20210103T070659Z
+DTSTAMP:20210125T055314Z
 UID:61i3aeb4clhm4b9mcgqjeb9k6dijibb16tim4bb2cgo30chjccoj4dj3c8@google.com
 CREATED:20210102T153140Z
 DESCRIPTION:<a href="https://emacs-berlin.org/">https://emacs-berlin.org/</
@@ -109,68 +251,9 @@ SUMMARY:Emacs Berlin (virtual\, in English)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART:20210127T110000Z
-DTEND:20210127T140000Z
-DTSTAMP:20210103T070659Z
-UID:7jgjmo33k372usethv76c139pd@google.com
-ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Emacs 
- calendar;X-NUM-GUESTS=0:mailto:c_rkq3fc6u8k1nem23qegqc90l6c@group.calendar.
- google.com
-CREATED:20201205T213653Z
-DESCRIPTION:<a href="https://www.meetup.com/Emacs-SG/events/268260076/">htt
- ps://www.meetup.com/Emacs-SG/events/268260076/</a><br><br>There hasn't been
-  much activity here for quite a while but hopefully we can bring some Nix a
- long to the Never Code Alone SG event when Covid allows is to meet up in pe
- rson.<br><br>The event:&nbsp\;<a href="https://www.meetup.com/Never-Code-Al
- one-SG/events/268135071/">https://www.meetup.com/Never-Code-Alone-SG/events
- /268135071/</a>
-LAST-MODIFIED:20210103T063225Z
-LOCATION:https://www.meetup.com/Emacs-SG/events/268260076/
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:EmacsSG: Emacs and Never Code Alone
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART:20210123T083000Z
-DTEND:20210123T103000Z
-DTSTAMP:20210103T070659Z
-UID:6spjce1k6cq3abb36gsjib9kc5ij4b9pcdhj4b9p6gomap32cos64dhl68@google.com
-CREATED:20210102T153936Z
-DESCRIPTION:<a href="https://emacs-apac.gitlab.io/">https://emacs-apac.gitl
- ab.io/</a><br><br>================<br>== Emacs APAC ==<br>================W
- elcome to Emacs Asia-Pacific<br>Start. Upcoming events.<br>About Emacs APAC
- <br>We are Emacs enthusiasts who live in the Asia-Pacific (APAC) time-zone.
-  We meet every fourth Saturday of the month (&lt\;%%(diary-float t 6 4)&gt\
- ; in Org mode).<br><br>Where<br>The event is scheduled virtually using Jits
- i Meet at 1400 Indian Standard Time (IST). The meeting URL is posted on Fre
- enode IRC channels #emacs\, #ilugc and #emacsconf\, 30 minutes prior to the
-  meeting\, and also on the ILUGC mailing list on the day of the meetup. If 
- you are not subscribed\, you can also check the archive.<br><br>Checkout th
- e upcoming meetings here.<br><br>Talks<br>We usually have free flowing disc
- ussions around new Emacs packages / features discovered\, issues faced\, ex
- periences\, usage tips\, resources for further learning etc. These are rela
- ted to GNU Emacs and its variants. Sometimes people also share their screen
- s and give demos of their Emacs setup and use.<br><br>If you would like to 
- give a talk (20 minutes maximum)\, please send an email to TODO with the de
- tails.<br><br>Frequently Asked Questions<br>I’m new to Emacs\, can / should
-  I join?<br>Yes! You are always welcome. We have participants from differen
- t walks of life with varied experiences in Emacs. You can ask your question
- s and the attendees will be able to help\, at least point you in the right 
- direction.<br><br>Which language is used for communication?<br>English.<br>
- <br>I’m not from APAC\, can I join?<br>Definitely! If the timing is suitabl
- e for you\, please join.
-LAST-MODIFIED:20210103T063042Z
-LOCATION:https://emacs-apac.gitlab.io/
-SEQUENCE:1
-STATUS:CONFIRMED
-SUMMARY:EmacsAPAC (virtual\, in English)
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20210120T190000Z
 DTEND:20210120T210000Z
-DTSTAMP:20210103T070659Z
+DTSTAMP:20210125T055314Z
 UID:6eafmcuut04jcfsii9elrgr1jc@google.com
 CREATED:20201219T153708Z
 DESCRIPTION:<a href="https://www.meetup.com/emacs-ffm/events/275226261/">ht
@@ -195,7 +278,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20210114T153000Z
 DTEND:20210114T163000Z
-DTSTAMP:20210103T070659Z
+DTSTAMP:20210125T055314Z
 UID:4vofj3i6bcltrhint3gh1tdckc@google.com
 CREATED:20201221T062728Z
 DESCRIPTION:Watch live: <a href="https://www.youtube.com/watch?v=RvTuHsMPVL
@@ -212,7 +295,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20210107T163000Z
 DTEND:20210107T180000Z
-DTSTAMP:20210103T070659Z
+DTSTAMP:20210125T055314Z
 UID:2olvnahj3ut322mpej3lp2jkg2@google.com
 CREATED:20201205T214723Z
 DESCRIPTION:<a href="https://www.emacs-doctor.com/emacs-paris-user-group/">
@@ -255,7 +338,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20210105T000000Z
 DTEND:20210105T020000Z
-DTSTAMP:20210103T070659Z
+DTSTAMP:20210125T055314Z
 UID:6kq6ap1lc5j36bb670r6ab9kcgs64b9p75h6cb9pc9gm2e9h61gm8pj270@google.com
 CREATED:20210102T153409Z
 DESCRIPTION:<a href="https://emacsnyc.org/2020/12/28/online-meetup-discussi
@@ -289,7 +372,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20201226T083000Z
 DTEND:20201226T103000Z
-DTSTAMP:20210103T070659Z
+DTSTAMP:20210125T055314Z
 UID:2fu8nnf8eas6nh5k1fdsf6rspr@google.com
 CREATED:20201224T042625Z
 DESCRIPTION:<p><a href="https://emacs-apac.gitlab.io/announcements/december
@@ -319,7 +402,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20210601T153000Z
 DTEND:20210601T170000Z
-DTSTAMP:20210103T070659Z
+DTSTAMP:20210125T055314Z
 UID:3g2a8u16651g7a9knf28tnjhhg@google.com
 CREATED:20201205T215221Z
 DESCRIPTION:<a href="https://www.emacs-doctor.com/emacs-paris-user-group/" 
@@ -362,7 +445,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20210506T153000Z
 DTEND:20210506T170000Z
-DTSTAMP:20210103T070659Z
+DTSTAMP:20210125T055314Z
 UID:3pi8vlr86n5binh71kplks26hr@google.com
 CREATED:20201205T215202Z
 DESCRIPTION:<a href="https://www.emacs-doctor.com/emacs-paris-user-group/" 
@@ -405,7 +488,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20210406T153000Z
 DTEND:20210406T170000Z
-DTSTAMP:20210103T070659Z
+DTSTAMP:20210125T055314Z
 UID:0sr3elhttmu6ne4s3e8ei0p3u2@google.com
 CREATED:20201205T215144Z
 DESCRIPTION:<a href="https://www.emacs-doctor.com/emacs-paris-user-group/" 
@@ -448,11 +531,8 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20201208T163000Z
 DTEND:20201208T180000Z
-DTSTAMP:20210103T070659Z
+DTSTAMP:20210125T055314Z
 UID:6m5e1nio8jukuuu69eneaaqqi6@google.com
-ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Emacs 
- calendar;X-NUM-GUESTS=0:mailto:c_rkq3fc6u8k1nem23qegqc90l6c@group.calendar.
- google.com
 CREATED:20201205T214546Z
 DESCRIPTION:https://www.emacs-doctor.com/emacs-paris-user-group/&nbsp\;<br>
  <br><p>Nous sommes quelques utilisateurs de&nbsp\;<a href="https://www.gnu.
@@ -485,7 +565,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20210304T163000Z
 DTEND:20210304T180000Z
-DTSTAMP:20210103T070659Z
+DTSTAMP:20210125T055314Z
 UID:2fsda262g86i3ahc2cdfjf6nv4@google.com
 CREATED:20201205T215015Z
 DESCRIPTION:<a href="https://www.emacs-doctor.com/emacs-paris-user-group/" 
@@ -528,7 +608,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20201230T173000Z
 DTEND:20201230T193000Z
-DTSTAMP:20210103T070659Z
+DTSTAMP:20210125T055314Z
 UID:6ci2it6qvlsmqu26qmd05on7o6@google.com
 CREATED:20201202T183231Z
 DESCRIPTION:<p><a href="https://emacs-berlin.org/" id="ow417" __is_owner="t
@@ -567,11 +647,8 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20201216T190000Z
 DTEND:20201216T210000Z
-DTSTAMP:20210103T070659Z
+DTSTAMP:20210125T055314Z
 UID:4bq2kb9qdmrldl5263di86g80q@google.com
-ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Emacs 
- calendar;X-NUM-GUESTS=0:mailto:c_rkq3fc6u8k1nem23qegqc90l6c@group.calendar.
- google.com
 CREATED:20201205T213349Z
 DESCRIPTION:<a href="https://www.meetup.com/emacs-ffm/events/274819591/" id
  ="ow940" __is_owner="true">https://www.meetup.com/emacs-ffm/events/27481959
@@ -596,11 +673,8 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20201208T000000Z
 DTEND:20201208T020000Z
-DTSTAMP:20210103T070659Z
+DTSTAMP:20210125T055314Z
 UID:632379356090cvkmnnfhi9injf@google.com
-ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Emacs 
- calendar;X-NUM-GUESTS=0:mailto:c_rkq3fc6u8k1nem23qegqc90l6c@group.calendar.
- google.com
 CREATED:20201201T173817Z
 DESCRIPTION:<a href="https://www.meetup.com/New-York-Emacs-Meetup/events/27
  4356205/" id="ow3688" __is_owner="true">https://www.meetup.com/New-York-Ema
@@ -630,11 +704,8 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20201212T150000Z
 DTEND:20201212T163000Z
-DTSTAMP:20210103T070659Z
+DTSTAMP:20210125T055314Z
 UID:6qlup44nvrqi4tlb4voq51oheo@google.com
-ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Emacs 
- calendar;X-NUM-GUESTS=0:mailto:c_rkq3fc6u8k1nem23qegqc90l6c@group.calendar.
- google.com
 CREATED:20201205T203454Z
 DESCRIPTION:
 LAST-MODIFIED:20201205T204208Z
@@ -647,11 +718,8 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20201203T003000Z
 DTEND:20201203T023000Z
-DTSTAMP:20210103T070659Z
+DTSTAMP:20210125T055314Z
 UID:4plfjrnugmaorl4pjghrtgnk74@google.com
-ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Emacs 
- calendar;X-NUM-GUESTS=0:mailto:c_rkq3fc6u8k1nem23qegqc90l6c@group.calendar.
- google.com
 CREATED:20201201T173622Z
 DESCRIPTION:https://www.meetup.com/EmacsATX/events/xgmxzrybcqbdb/\n\nAbout\
  n\nEmacs ATX is a meetup devoted to exploring the vast and ever expanding u

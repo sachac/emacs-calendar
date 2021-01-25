@@ -20,6 +20,7 @@ Or you view the following HTML calendars:
 - [[file:emacs-calendar-toronto.html][America/Toronto]]
 - [[file:emacs-calendar-vancouver.html][America/Vancouver]]
 - [[file:emacs-calendar-kolkata.html][Asia/Kolkata]]
+- [[file:emacs-calendar-shanghai.html][Asia/Shanghai]]
 - [[file:emacs-calendar-singapore.html][Asia/Singapore]]
 - [[file:emacs-calendar-berlin.html][Europe/Berlin]]
 
@@ -41,6 +42,7 @@ Or you periodically download and include one of these files in your Org agenda f
 <li><a href="emacs-calendar-toronto.org">emacs-calendar-toronto.org</a></li>
 <li><a href="emacs-calendar-vancouver.org">emacs-calendar-vancouver.org</a></li>
 <li><a href="emacs-calendar-kolkata.org">emacs-calendar-kolkata.org</a></li>
+<li><a href="emacs-calendar-shanghai.org">emacs-calendar-shanghai.org</a></li>
 <li><a href="emacs-calendar-singapore.org">emacs-calendar-singapore.org</a></li>
 <li><a href="emacs-calendar-berlin.org">emacs-calendar-berlin.org</a></li></ul>
 #+end_export
@@ -55,6 +57,7 @@ Enjoy!
 - America/Toronto
 - America/Vancouver
 - Asia/Kolkata
+- Asia/Shanghai
 - Asia/Singapore
 - Europe/Berlin
 ** Install gems needed for the script
@@ -83,6 +86,50 @@ Enjoy!
 rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
 #+end_src
 
+** Convert timezones
+
+   #+begin_src emacs-lisp
+(defvar my/timezones nil "Timezones")
+     (setq my/timezones '("America/Toronto" "America/Vancouver" "UTC" "Europe/Berlin" "Asia/Kolkata" "Asia/Singapore"))
+     (defun my/summarize-times (time timezones)
+       (let (prev-day)
+         (mapconcat
+          (lambda (tz)
+            (let ((cur-day (format-time-string "%a %b %-e" time tz))
+                  (cur-time (format-time-string "%H%MH %Z" time tz)))
+              (if (equal prev-day cur-day)
+                  cur-time
+                (setq prev-day cur-day)
+                (concat cur-day " " cur-time))))
+          (sort timezones (lambda (a b) (< (car (current-time-zone nil a)) (car (current-time-zone nil b)))))
+          " / ")))
+     (defun my/org-summarize-event-in-timezones ()
+       (interactive)
+       (save-window-excursion
+         (save-excursion
+           (when (derived-mode-p 'org-agenda-mode) (org-agenda-goto))
+           (when (re-search-forward org-element--timestamp-regexp nil (save-excursion (org-end-of-subtree) (point)))
+             (goto-char (match-beginning 0))
+             (let* ((times (org-element-timestamp-parser))
+                    (start-time (org-timestamp-to-time (org-timestamp-split-range times)))
+                    (msg (format "%s - %s - %s"
+                                (org-get-heading t t t t)
+                                (my/summarize-times start-time my/timezones)
+                                ;; (cond
+                                ;;  ((time-less-p (org-timestamp-to-time (org-timestamp-split-range times t)) (current-time))
+                                ;;   "(past)")
+                                ;;  ((time-less-p (current-time) start-time)
+                                ;;   (concat "in " (format-seconds "%D %H %M%Z" (time-subtract start-time (current-time)))))
+                                ;;  (t "(ongoing)"))
+                                (org-entry-get (point) "LOCATION"))))
+               (message "%s" msg)
+               (kill-new msg))))))
+#+end_src
+
+#+RESULTS:
+: my/org-summarize-event-in-timezones
+
+
 ** Testing agenda files :noexport:
 
 #+begin_src emacs-lisp :exports results :var timezones=timezones :results list
@@ -94,5 +141,6 @@ rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
 - [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-toronto.org")))) (org-agenda-list nil nil 31))][View America/Toronto agenda]]
 - [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-vancouver.org")))) (org-agenda-list nil nil 31))][View America/Vancouver agenda]]
 - [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-kolkata.org")))) (org-agenda-list nil nil 31))][View Asia/Kolkata agenda]]
+- [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-shanghai.org")))) (org-agenda-list nil nil 31))][View Asia/Shanghai agenda]]
 - [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-singapore.org")))) (org-agenda-list nil nil 31))][View Asia/Singapore agenda]]
 - [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-berlin.org")))) (org-agenda-list nil nil 31))][View Europe/Berlin agenda]]

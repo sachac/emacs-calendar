@@ -101,6 +101,7 @@ https://www.meetup.com/emacs-ffm/events/275226261/<br><br>In this meeting, we sh
   :ETag:     "3217064096770000"
   :calendar-id: c_rkq3fc6u8k1nem23qegqc90l6c@group.calendar.google.com
   :ID:       4vofj3i6bcltrhint3gh1tdckc/c_rkq3fc6u8k1nem23qegqc90l6c@group.calendar.google.com
+  :LOCATION:  https://www.youtube.com/watch?v=RvTuHsMPVLo
   :END:
 :org-gcal:
 <2021-01-14 Thu 10:30-11:30>

@@ -88,6 +88,14 @@ Sign up at https://www.meetup.com/EmacsATX/events/xgmxzrybcqbdb/ to get the link
 :END:
 <2021-01-08 Fri 00:30-02:00>
 
+* EmacsConf meeting
+:PROPERTIES:
+:SUMMARY: EmacsConf meeting
+:LOCATION: 
+:DESCRIPTION: 
+:END:
+<2021-01-09 Sat 23:00>--<2021-01-10 Sun 00:00>
+
 * Livestream: Keeping organized with Emacs and Orgmode, by Henrique Castro
 :PROPERTIES:
 :SUMMARY: Livestream: Keeping organized with Emacs and Orgmode, by Henrique Castro
@@ -104,17 +112,17 @@ Sign up at https://www.meetup.com/EmacsATX/events/xgmxzrybcqbdb/ to get the link
 :END:
 <2021-01-21 Thu 03:00-05:00>
 
-* EmacsAPAC (virtual, in English)
+* Emacs APAC (virtual, in English)
 :PROPERTIES:
-:SUMMARY: EmacsAPAC (virtual, in English)
+:SUMMARY: Emacs APAC (virtual, in English)
 :LOCATION: https://emacs-apac.gitlab.io/
 :DESCRIPTION: <a href="https://emacs-apac.gitlab.io/">https://emacs-apac.gitlab.io/</a><br><br>================<br>== Emacs APAC ==<br>================Welcome to Emacs Asia-Pacific<br>Start. Upcoming events.<br>About Emacs APAC<br>We are Emacs enthusiasts who live in the Asia-Pacific (APAC) time-zone. We meet every fourth Saturday of the month (&lt;%%(diary-float t 6 4)&gt; in Org mode).<br><br>Where<br>The event is scheduled virtually using Jitsi Meet at 1400 Indian Standard Time (IST). The meeting URL is posted on Freenode IRC channels #emacs, #ilugc and #emacsconf, 30 minutes prior to the meeting, and also on the ILUGC mailing list on the day of the meetup. If you are not subscribed, you can also check the archive.<br><br>Checkout the upcoming meetings here.<br><br>Talks<br>We usually have free flowing discussions around new Emacs packages / features discovered, issues faced, experiences, usage tips, resources for further learning etc. These are related to GNU Emacs and its variants. Sometimes people also share their screens and give demos of their Emacs setup and use.<br><br>If you would like to give a talk (20 minutes maximum), please send an email to TODO with the details.<br><br>Frequently Asked Questions<br>I’m new to Emacs, can / should I join?<br>Yes! You are always welcome. We have participants from different walks of life with varied experiences in Emacs. You can ask your questions and the attendees will be able to help, at least point you in the right direction.<br><br>Which language is used for communication?<br>English.<br><br>I’m not from APAC, can I join?<br>Definitely! If the timing is suitable for you, please join.
 :END:
 <2021-01-23 Sat 16:30-18:30>
 
-* EmacsSG: Emacs and Never Code Alone
+* EmacsSG: Emacs and Never Code Alone (tentative?)
 :PROPERTIES:
-:SUMMARY: EmacsSG: Emacs and Never Code Alone
+:SUMMARY: EmacsSG: Emacs and Never Code Alone (tentative?)
 :LOCATION: https://www.meetup.com/Emacs-SG/events/268260076/
 :DESCRIPTION: <a href="https://www.meetup.com/Emacs-SG/events/268260076/">https://www.meetup.com/Emacs-SG/events/268260076/</a><br><br>There hasn't been much activity here for quite a while but hopefully we can bring some Nix along to the Never Code Alone SG event when Covid allows is to meet up in person.<br><br>The event:&nbsp;<a href="https://www.meetup.com/Never-Code-Alone-SG/events/268135071/">https://www.meetup.com/Never-Code-Alone-SG/events/268135071/</a>
 :END:
@@ -127,6 +135,22 @@ Sign up at https://www.meetup.com/EmacsATX/events/xgmxzrybcqbdb/ to get the link
 :DESCRIPTION: <a href="https://emacs-berlin.org/">https://emacs-berlin.org/</a>&nbsp;<br><br>New to Emacs? Longtime elisp expert? Just want to know what this is all about? Come join us!<br><br>Location<br><br>Room open from 18:30 CET, if there are talks they’ll start at 19:00 CET. The video link will be posted on the day of the meetup to the mailing list. Check the&nbsp;archive (<a href="https://mailb.org/pipermail/emacs-berlin/2021/thread.html">https://mailb.org/pipermail/emacs-berlin/2021/thread.html</a>)&nbsp;if you are not subscribed.<br><br>About Emacs Berlin<br>We are Emacs enthusiasts in Berlin, meeting every last Wednesday of the month (&lt;%%(diary-float t 3 -1)&gt;&nbsp;in org-mode).<br>The best way to stay posted is through our mailing list.&nbsp;Sign up (<a href="https://mailb.org/mailman/listinfo/emacs-berlin">https://mailb.org/mailman/listinfo/emacs-berlin</a>)&nbsp;and meet your fellow Emacsers, or have a look at the&nbsp;mailing list archives (<a href="https://mailb.org/pipermail/emacs-berlin/">https://mailb.org/pipermail/emacs-berlin/</a>)&nbsp;(gmane).<br>Feel free to send an email introducing yourself after subscribing!<br>You can also chat with us on irc:&nbsp;#emacs-berlin&nbsp;(connection instructions (<a href="https://mailb.org/pipermail/emacs-berlin/2020/000583.html">https://mailb.org/pipermail/emacs-berlin/2020/000583.html</a>))<br>Or on Twitter:&nbsp;@emacsberlin (<a href="https://twitter.com/emacsberlin">https://twitter.com/emacsberlin</a>)<br>And there’s a&nbsp;YouTube Channel (<a href="https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw">https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw</a>)&nbsp;&nbsp;<br>And on&nbsp;<a href="http://meetup.com/Emacs-Berlin-Meetup">meetup.com/Emacs-Berlin-Meetup</a> (<a href="https://www.meetup.com/Emacs-Berlin-Meetup/">https://www.meetup.com/Emacs-Berlin-Meetup/</a>)<br>Non-public contact via email:&nbsp;organizers email (mailto:<a href="mailto:emacs-berlin-owner@emacs-berlin.org">emacs-berlin-owner@emacs-berlin.org</a>)
 :END:
 <2021-01-28 Thu 01:30-03:30>
+
+* EmacsSF: discussion of emacs, org-mode, org-roam and similar packages
+:PROPERTIES:
+:SUMMARY: EmacsSF: discussion of emacs, org-mode, org-roam and similar packages
+:LOCATION: https://www.meetup.com/Emacs-SF/events/275889079/
+:DESCRIPTION: <a href="https://www.meetup.com/Emacs-SF/events/275889079/">https://www.meetup.com/Emacs-SF/events/275889079/</a><br><br>Let's get together virtually to discuss emacs, org-mode, org-roam, etc. If you have something to demo related to any of the above, please let me know. Hopefully people who cannot attend weekend meetups can attend this weekday evening meetup.<br><br>Join the meetup via&nbsp;<a href="https://www.meetup.com/Emacs-SF/events/275889079/" id="ow3527" __is_owner="true">https://www.meetup.com/Emacs-SF/events/275889079/</a>&nbsp;in order to get the link to the online meeting.
+:END:
+<2021-01-28 Thu 10:30-12:30>
+
+* EmacsNYC: Lightning Talks
+:PROPERTIES:
+:SUMMARY: EmacsNYC: Lightning Talks
+:LOCATION: https://emacsnyc.org/2021/01/23/monthly-online-meetup-lightning-talks.html
+:DESCRIPTION: https://emacsnyc.org/2021/01/23/monthly-online-meetup-lightning-talks.html<br><br><h3>Monthly Online Meetup—Lightning Talks</h3><p>Monday, Feb 1, 2021<br>7:00 PM</p><p>Join us online:&nbsp;<a href="https://meet.jit.si/EmacsNYC">meet.jit.si/EmacsNYC</a><br>Please join us using your favorite IRC client at #emacsnyc or use&nbsp;<a href="https://webchat.freenode.net/">webchat.freenode.net</a>&nbsp;to join us online.</p><p>This month we are doing lightning talks!</p><p>We look forward to any talk you want to give that is Emacs or Emacs adjacent.</p><p>We do want to hear everything you have to say, but we will be limiting each talk to 5 minutes and we will be strict about this. If you have more to say please consider talking to us about doing a longer talk next month.</p><p>Please sign up&nbsp;<a href="https://etherpad.wikimedia.org/p/Emacs_NYC_February_2021_Lightning_Talks">here</a>.</p><p>If there is additional room and you are interested in speaking we will try to accommodate you as best as possible.</p><p>If you would like to speak then or on any other occasion, take a look at this&nbsp;<a href="https://emacsnyc.org/giving-a-talk.html">guide</a>.</p>
+:END:
+<2021-02-02 Tue 08:00-10:00>
 
 * Emacs Paris (virtual)
 :PROPERTIES:
