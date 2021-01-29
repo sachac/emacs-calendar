@@ -128,14 +128,6 @@ Sign up at https://www.meetup.com/EmacsATX/events/xgmxzrybcqbdb/ to get the link
 :END:
 <2021-01-27 Wed 03:00-06:00>
 
-* Emacs Berlin (virtual, in English)
-:PROPERTIES:
-:SUMMARY: Emacs Berlin (virtual, in English)
-:LOCATION: https://emacs-berlin.org/
-:DESCRIPTION: <a href="https://emacs-berlin.org/">https://emacs-berlin.org/</a>&nbsp;<br><br>New to Emacs? Longtime elisp expert? Just want to know what this is all about? Come join us!<br><br>Location<br><br>Room open from 18:30 CET, if there are talks they’ll start at 19:00 CET. The video link will be posted on the day of the meetup to the mailing list. Check the&nbsp;archive (<a href="https://mailb.org/pipermail/emacs-berlin/2021/thread.html">https://mailb.org/pipermail/emacs-berlin/2021/thread.html</a>)&nbsp;if you are not subscribed.<br><br>About Emacs Berlin<br>We are Emacs enthusiasts in Berlin, meeting every last Wednesday of the month (&lt;%%(diary-float t 3 -1)&gt;&nbsp;in org-mode).<br>The best way to stay posted is through our mailing list.&nbsp;Sign up (<a href="https://mailb.org/mailman/listinfo/emacs-berlin">https://mailb.org/mailman/listinfo/emacs-berlin</a>)&nbsp;and meet your fellow Emacsers, or have a look at the&nbsp;mailing list archives (<a href="https://mailb.org/pipermail/emacs-berlin/">https://mailb.org/pipermail/emacs-berlin/</a>)&nbsp;(gmane).<br>Feel free to send an email introducing yourself after subscribing!<br>You can also chat with us on irc:&nbsp;#emacs-berlin&nbsp;(connection instructions (<a href="https://mailb.org/pipermail/emacs-berlin/2020/000583.html">https://mailb.org/pipermail/emacs-berlin/2020/000583.html</a>))<br>Or on Twitter:&nbsp;@emacsberlin (<a href="https://twitter.com/emacsberlin">https://twitter.com/emacsberlin</a>)<br>And there’s a&nbsp;YouTube Channel (<a href="https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw">https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw</a>)&nbsp;&nbsp;<br>And on&nbsp;<a href="http://meetup.com/Emacs-Berlin-Meetup">meetup.com/Emacs-Berlin-Meetup</a> (<a href="https://www.meetup.com/Emacs-Berlin-Meetup/">https://www.meetup.com/Emacs-Berlin-Meetup/</a>)<br>Non-public contact via email:&nbsp;organizers email (mailto:<a href="mailto:emacs-berlin-owner@emacs-berlin.org">emacs-berlin-owner@emacs-berlin.org</a>)
-:END:
-<2021-01-27 Wed 09:30-11:30>
-
 * EmacsSF: discussion of emacs, org-mode, org-roam and similar packages
 :PROPERTIES:
 :SUMMARY: EmacsSF: discussion of emacs, org-mode, org-roam and similar packages
@@ -167,6 +159,14 @@ Sign up at https://www.meetup.com/EmacsATX/events/xgmxzrybcqbdb/ to get the link
 :DESCRIPTION: https://www.meetup.com/emacs-ffm/events/275881281/<br><br><section><br><br><p>This time, we will try out Discord as our video conference platform. Stay tuned!<br><br>You can join the Discord chat **right now** and say hi! No need to wait until the next meetup :)<br><br>------<br><br>About<br><br>This is a meetup for all people working with and interested in Emacs.<br><br>We want to meet up in a friendly atmosphere to talk about the famous text editor.</p></section><section><br><br></section>
 :END:
 <2021-02-17 Wed 11:00-13:00>
+
+* Emacs Berlin (virtual, in English)
+:PROPERTIES:
+:SUMMARY: Emacs Berlin (virtual, in English)
+:LOCATION: https://emacs-berlin.org/
+:DESCRIPTION: <a href="https://emacs-berlin.org/">https://emacs-berlin.org/</a>&nbsp;<br><br>New to Emacs? Longtime elisp expert? Just want to know what this is all about? Come join us!<br><br>Location<br><br>Room open from 18:30 CET, if there are talks they’ll start at 19:00 CET. The video link will be posted on the day of the meetup to the mailing list. Check the&nbsp;archive (<a href="https://mailb.org/pipermail/emacs-berlin/2021/thread.html">https://mailb.org/pipermail/emacs-berlin/2021/thread.html</a>)&nbsp;if you are not subscribed.<br><br>About Emacs Berlin<br>We are Emacs enthusiasts in Berlin, meeting every last Wednesday of the month (&lt;%%(diary-float t 3 -1)&gt;&nbsp;in org-mode).<br>The best way to stay posted is through our mailing list.&nbsp;Sign up (<a href="https://mailb.org/mailman/listinfo/emacs-berlin">https://mailb.org/mailman/listinfo/emacs-berlin</a>)&nbsp;and meet your fellow Emacsers, or have a look at the&nbsp;mailing list archives (<a href="https://mailb.org/pipermail/emacs-berlin/">https://mailb.org/pipermail/emacs-berlin/</a>)&nbsp;(gmane).<br>Feel free to send an email introducing yourself after subscribing!<br>You can also chat with us on irc:&nbsp;#emacs-berlin&nbsp;(connection instructions (<a href="https://mailb.org/pipermail/emacs-berlin/2020/000583.html">https://mailb.org/pipermail/emacs-berlin/2020/000583.html</a>))<br>Or on Twitter:&nbsp;@emacsberlin (<a href="https://twitter.com/emacsberlin">https://twitter.com/emacsberlin</a>)<br>And there’s a&nbsp;YouTube Channel (<a href="https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw">https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw</a>)&nbsp;&nbsp;<br>And on&nbsp;<a href="http://meetup.com/Emacs-Berlin-Meetup">meetup.com/Emacs-Berlin-Meetup</a> (<a href="https://www.meetup.com/Emacs-Berlin-Meetup/">https://www.meetup.com/Emacs-Berlin-Meetup/</a>)<br>Non-public contact via email:&nbsp;organizers email (mailto:<a href="mailto:emacs-berlin-owner@emacs-berlin.org">emacs-berlin-owner@emacs-berlin.org</a>)
+:END:
+<2021-02-24 Wed 09:30-11:30>
 
 * Emacs Paris (virtual)
 :PROPERTIES:
