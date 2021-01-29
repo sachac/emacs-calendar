@@ -90,45 +90,71 @@ rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
 
    #+begin_src emacs-lisp
 (defvar my/timezones nil "Timezones")
-     (setq my/timezones '("America/Toronto" "America/Vancouver" "UTC" "Europe/Berlin" "Asia/Kolkata" "Asia/Singapore"))
-     (defun my/summarize-times (time timezones)
-       (let (prev-day)
-         (mapconcat
-          (lambda (tz)
-            (let ((cur-day (format-time-string "%a %b %-e" time tz))
-                  (cur-time (format-time-string "%H%MH %Z" time tz)))
-              (if (equal prev-day cur-day)
-                  cur-time
-                (setq prev-day cur-day)
-                (concat cur-day " " cur-time))))
-          (sort timezones (lambda (a b) (< (car (current-time-zone nil a)) (car (current-time-zone nil b)))))
-          " / ")))
-     (defun my/org-summarize-event-in-timezones ()
-       (interactive)
-       (save-window-excursion
-         (save-excursion
-           (when (derived-mode-p 'org-agenda-mode) (org-agenda-goto))
-           (when (re-search-forward org-element--timestamp-regexp nil (save-excursion (org-end-of-subtree) (point)))
-             (goto-char (match-beginning 0))
-             (let* ((times (org-element-timestamp-parser))
-                    (start-time (org-timestamp-to-time (org-timestamp-split-range times)))
-                    (msg (format "%s - %s - %s"
-                                (org-get-heading t t t t)
-                                (my/summarize-times start-time my/timezones)
-                                ;; (cond
-                                ;;  ((time-less-p (org-timestamp-to-time (org-timestamp-split-range times t)) (current-time))
-                                ;;   "(past)")
-                                ;;  ((time-less-p (current-time) start-time)
-                                ;;   (concat "in " (format-seconds "%D %H %M%Z" (time-subtract start-time (current-time)))))
-                                ;;  (t "(ongoing)"))
-                                (org-entry-get (point) "LOCATION"))))
-               (message "%s" msg)
-               (kill-new msg))))))
+(setq my/timezones '("America/Toronto" "America/Vancouver" "UTC" "Europe/Berlin" "Asia/Kolkata" "Asia/Singapore"))
+(defun my/summarize-times (time timezones)
+  (let (prev-day)
+    (mapconcat
+     (lambda (tz)
+       (let ((cur-day (format-time-string "%a %b %-e" time tz))
+             (cur-time (format-time-string "%H%MH %Z" time tz)))
+         (if (equal prev-day cur-day)
+             cur-time
+           (setq prev-day cur-day)
+           (concat cur-day " " cur-time))))
+     (sort timezones (lambda (a b) (< (car (current-time-zone nil a)) (car (current-time-zone nil b)))))
+     " / ")))
+
+(defun my/org-summarize-event-in-timezones ()
+  (interactive)
+  (save-window-excursion
+    (save-excursion
+      (when (derived-mode-p 'org-agenda-mode) (org-agenda-goto))
+      (when (re-search-forward org-element--timestamp-regexp nil (save-excursion (org-end-of-subtree) (point)))
+        (goto-char (match-beginning 0))
+        (let* ((times (org-element-timestamp-parser))
+               (start-time (org-timestamp-to-time (org-timestamp-split-range times)))
+               (msg (format "%s - %s - %s"
+                            (org-get-heading t t t t)
+                            (my/summarize-times start-time my/timezones)
+                            ;; (cond
+                            ;;  ((time-less-p (org-timestamp-to-time (org-timestamp-split-range times t)) (current-time))
+                            ;;   "(past)")
+                            ;;  ((time-less-p (current-time) start-time)
+                            ;;   (concat "in " (format-seconds "%D %H %M%Z" (time-subtract start-time (current-time)))))
+                            ;;  (t "(ongoing)"))
+                            (org-entry-get (point) "LOCATION"))))
+          (if (interactive-p)
+              (progn
+                (message "%s" msg)
+                (kill-new msg))
+            msg))))))
 #+end_src
 
 #+RESULTS:
 : my/org-summarize-event-in-timezones
 
+** Summarize upcoming ones
+
+   #+begin_src emacs-lisp
+(defun my/summarize-upcoming-events (limit)
+  (interactive (list (org-read-date nil t)))
+  (let (result)
+    (with-current-buffer (find-file-noselect "~/code/emacs-calendar/emacs-calendar-toronto.org")
+      (goto-char (point-min))
+      (org-map-entries
+       (lambda ()
+         (save-excursion
+           (when (re-search-forward org-element--timestamp-regexp nil (save-excursion (org-end-of-subtree) (point)))
+             (goto-char (match-beginning 0))
+             (let ((time (org-timestamp-to-time (org-timestamp-split-range (org-element-timestamp-parser)))))
+               (when (and (time-less-p (current-time) time)
+                          (time-less-p time limit))
+                 (setq result (cons (my/org-summarize-event-in-timezones) result)))))))))
+    (insert (mapconcat (lambda (o) (format "- %s" o)) (reverse result) "\n"))))
+#+end_src
+
+#+RESULTS:
+: my/summarize-upcoming-events
 
 ** Testing agenda files :noexport:
 

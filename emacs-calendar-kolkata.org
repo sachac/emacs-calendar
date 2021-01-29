@@ -160,6 +160,14 @@ Sign up at https://www.meetup.com/EmacsATX/events/xgmxzrybcqbdb/ to get the link
 :END:
 <2021-02-02 Tue 22:00-23:30>
 
+* EmacsFFM: Creating our own major mode (virtual)
+:PROPERTIES:
+:SUMMARY: EmacsFFM: Creating our own major mode (virtual)
+:LOCATION: https://www.meetup.com/emacs-ffm/events/275881281/
+:DESCRIPTION: https://www.meetup.com/emacs-ffm/events/275881281/<br><br><section><br><br><p>This time, we will try out Discord as our video conference platform. Stay tuned!<br><br>You can join the Discord chat **right now** and say hi! No need to wait until the next meetup :)<br><br>------<br><br>About<br><br>This is a meetup for all people working with and interested in Emacs.<br><br>We want to meet up in a friendly atmosphere to talk about the famous text editor.</p></section><section><br><br></section>
+:END:
+<2021-02-18 Thu 00:30-02:30>
+
 * Emacs Paris (virtual)
 :PROPERTIES:
 :SUMMARY: Emacs Paris (virtual)
