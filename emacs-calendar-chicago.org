@@ -2,7 +2,7 @@
 :PROPERTIES:
 :LOCATION: https://www.meetup.com/EmacsATX/events/276034038/
 :END:
-<2021-02-04 Thu 00:30>--<2021-02-04 Thu 02:30>
+<2021-02-03 Wed 18:30>--<2021-02-03 Wed 20:30>
 
 https://www.meetup.com/EmacsATX/events/276034038/ About Emacs ATX is a
 meetup devoted to exploring the vast and ever expanding universe of the
@@ -19,7 +19,7 @@ a space for our meeting.
 :PROPERTIES:
 :LOCATION: https://emacs-berlin.org/
 :END:
-<2021-02-24 Wed 17:30>--<2021-02-24 Wed 19:30>
+<2021-02-24 Wed 11:30>--<2021-02-24 Wed 13:30>
 
 [[https://emacs-berlin.org/]] \\
 \\
@@ -58,7 +58,7 @@ Non-public contact via email: organizers email
 :PROPERTIES:
 :LOCATION: https://www.meetup.com/emacs-ffm/events/275881281/
 :END:
-<2021-02-17 Wed 19:00>--<2021-02-17 Wed 21:00>
+<2021-02-17 Wed 13:00>--<2021-02-17 Wed 15:00>
 
 https://www.meetup.com/emacs-ffm/events/275881281/\\
 \\
@@ -89,7 +89,7 @@ text editor.
 :PROPERTIES:
 :LOCATION: https://www.meetup.com/Emacs-SF/events/275889079/
 :END:
-<2021-01-28 Thu 02:30>--<2021-01-28 Thu 04:30>
+<2021-01-27 Wed 20:30>--<2021-01-27 Wed 22:30>
 
 [[https://www.meetup.com/Emacs-SF/events/275889079/]]\\
 \\
@@ -107,7 +107,7 @@ get the link to the online meeting.
 :PROPERTIES:
 :LOCATION: https://emacsnyc.org/2021/01/23/monthly-online-meetup-lightning-talks.html
 :END:
-<2021-02-02 Tue 00:00>--<2021-02-02 Tue 02:00>
+<2021-02-01 Mon 18:00>--<2021-02-01 Mon 20:00>
 
 https://emacsnyc.org/2021/01/23/monthly-online-meetup-lightning-talks.html\\
 \\
@@ -149,7 +149,7 @@ this [[https://emacsnyc.org/giving-a-talk.html][guide]].
 :PROPERTIES:
 :LOCATION: https://www.meetup.com/Emacs-SG/events/268260076/
 :END:
-<2021-01-27 Wed 11:00>--<2021-01-27 Wed 14:00>
+<2021-01-27 Wed 05:00>--<2021-01-27 Wed 08:00>
 
 [[https://www.meetup.com/Emacs-SG/events/268260076/]]\\
 \\
@@ -165,7 +165,7 @@ event: [[https://www.meetup.com/Never-Code-Alone-SG/events/268135071/]]
 :PROPERTIES:
 :LOCATION: https://emacs-apac.gitlab.io/
 :END:
-<2021-01-23 Sat 08:30>--<2021-01-23 Sat 10:30>
+<2021-01-23 Sat 02:30>--<2021-01-23 Sat 04:30>
 
 [[https://emacs-apac.gitlab.io/]]\\
 \\
@@ -215,7 +215,7 @@ Definitely! If the timing is suitable for you, please join.
 :PROPERTIES:
 :LOCATION: https://www.emacs-doctor.com/emacs-paris-user-group/
 :END:
-<2021-02-02 Tue 16:30>--<2021-02-02 Tue 18:00>
+<2021-02-02 Tue 10:30>--<2021-02-02 Tue 12:00>
 
 [[https://www.emacs-doctor.com/emacs-paris-user-group/]] \\
 \\
@@ -297,7 +297,7 @@ dépôt]].
 :PROPERTIES:
 :LOCATION: https://www.meetup.com/emacs-ffm/events/275226261/
 :END:
-<2021-01-20 Wed 19:00>--<2021-01-20 Wed 21:00>
+<2021-01-20 Wed 13:00>--<2021-01-20 Wed 15:00>
 
 [[https://www.meetup.com/emacs-ffm/events/275226261/]]\\
 \\
@@ -328,7 +328,7 @@ text editor.
 :PROPERTIES:
 :LOCATION: https://www.youtube.com/watch?v=RvTuHsMPVLo
 :END:
-<2021-01-14 Thu 15:30>--<2021-01-14 Thu 16:30>
+<2021-01-14 Thu 09:30>--<2021-01-14 Thu 10:30>
 
 Watch live: [[https://www.youtube.com/watch?v=RvTuHsMPVLo]]
 
@@ -337,7 +337,7 @@ Watch live: [[https://www.youtube.com/watch?v=RvTuHsMPVLo]]
 :PROPERTIES:
 :LOCATION: https://www.emacs-doctor.com/emacs-paris-user-group/ 
 :END:
-<2021-01-07 Thu 16:30>--<2021-01-07 Thu 18:00>
+<2021-01-07 Thu 10:30>--<2021-01-07 Thu 12:00>
 
 [[https://www.emacs-doctor.com/emacs-paris-user-group/]] \\
 \\
@@ -419,7 +419,7 @@ dépôt]].
 :PROPERTIES:
 :LOCATION: https://emacsnyc.org/2020/12/28/online-meetup-discussionhow-do-we-improve-emacs.html
 :END:
-<2021-01-05 Tue 00:00>--<2021-01-05 Tue 02:00>
+<2021-01-04 Mon 18:00>--<2021-01-04 Mon 20:00>
 
 [[https://emacsnyc.org/2020/12/28/online-meetup-discussionhow-do-we-improve-emacs.html]]\\
 \\
@@ -454,7 +454,7 @@ conversation runs its course.
 :PROPERTIES:
 :LOCATION: 
 :END:
-<2021-06-01 Tue 15:30>--<2021-06-01 Tue 17:00>
+<2021-06-01 Tue 10:30>--<2021-06-01 Tue 12:00>
 
 [[https://www.emacs-doctor.com/emacs-paris-user-group/]] \\
 \\
@@ -536,7 +536,7 @@ dépôt]].
 :PROPERTIES:
 :LOCATION: 
 :END:
-<2021-05-06 Thu 15:30>--<2021-05-06 Thu 17:00>
+<2021-05-06 Thu 10:30>--<2021-05-06 Thu 12:00>
 
 [[https://www.emacs-doctor.com/emacs-paris-user-group/]] \\
 \\
@@ -618,7 +618,7 @@ dépôt]].
 :PROPERTIES:
 :LOCATION: 
 :END:
-<2021-04-06 Tue 15:30>--<2021-04-06 Tue 17:00>
+<2021-04-06 Tue 10:30>--<2021-04-06 Tue 12:00>
 
 [[https://www.emacs-doctor.com/emacs-paris-user-group/]] \\
 \\
@@ -700,7 +700,7 @@ dépôt]].
 :PROPERTIES:
 :LOCATION: 
 :END:
-<2021-03-04 Thu 16:30>--<2021-03-04 Thu 18:00>
+<2021-03-04 Thu 10:30>--<2021-03-04 Thu 12:00>
 
 [[https://www.emacs-doctor.com/emacs-paris-user-group/]] \\
 \\

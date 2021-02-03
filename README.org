@@ -17,8 +17,9 @@ Or you view the following HTML calendars:
 
 #+RESULTS:
 - [[file:emacs-calendar-gmt.html][Etc/GMT]]
-- [[file:emacs-calendar-toronto.html][America/Toronto]]
 - [[file:emacs-calendar-vancouver.html][America/Vancouver]]
+- [[file:emacs-calendar-chicago.html][America/Chicago]]
+- [[file:emacs-calendar-toronto.html][America/Toronto]]
 - [[file:emacs-calendar-kolkata.html][Asia/Kolkata]]
 - [[file:emacs-calendar-shanghai.html][Asia/Shanghai]]
 - [[file:emacs-calendar-singapore.html][Asia/Singapore]]
@@ -39,8 +40,9 @@ Or you periodically download and include one of these files in your Org agenda f
 #+RESULTS:
 #+begin_export html
 <ul><li><a href="emacs-calendar-gmt.org">emacs-calendar-gmt.org</a></li>
-<li><a href="emacs-calendar-toronto.org">emacs-calendar-toronto.org</a></li>
 <li><a href="emacs-calendar-vancouver.org">emacs-calendar-vancouver.org</a></li>
+<li><a href="emacs-calendar-chicago.org">emacs-calendar-chicago.org</a></li>
+<li><a href="emacs-calendar-toronto.org">emacs-calendar-toronto.org</a></li>
 <li><a href="emacs-calendar-kolkata.org">emacs-calendar-kolkata.org</a></li>
 <li><a href="emacs-calendar-shanghai.org">emacs-calendar-shanghai.org</a></li>
 <li><a href="emacs-calendar-singapore.org">emacs-calendar-singapore.org</a></li>
@@ -54,31 +56,13 @@ Enjoy!
 
 #+NAME: timezones
 - Etc/GMT
-- America/Toronto
 - America/Vancouver
+- America/Chicago
+- America/Toronto
 - Asia/Kolkata
 - Asia/Shanghai
 - Asia/Singapore
 - Europe/Berlin
-** Install gems needed for the script
-
-  #+begin_src sh :eval no
-	gem install --user-install tzinfo icalendar
-  #+end_src
-
-** Fetch the ical
-
-#+begin_src sh :var timezones=timezones :tangle emacs-calendar.sh
-  wget -q -N https://calendar.google.com/calendar/ical/c_rkq3fc6u8k1nem23qegqc90l6c%40group.calendar.google.com/public/basic.ics -O emacs-calendar.ics
-  DATE=$(date +"%Y%m01")
-  for ZONE in $timezones; do
-    STUB=$(echo $ZONE | sed s/^.*\\/// | tr A-Z a-z)
-    ./ics-to-org --sort -f $ZONE emacs-calendar.ics > emacs-calendar-$STUB.org
-    ical2html -l -f "Times are in $ZONE" -z $ZONE $DATE P8W emacs-calendar.ics | perl -e 'undef $/; $_ = <>; $_ =~ s/<span class=summary>([^<]+)<\/span>\n<pre><b class=location>([^<]+)<\/b><\/pre>/<span class="summary"><a href="$2">$1<\/a><\/span>/g; print $_' > emacs-calendar-$STUB.html
-  done
-#+end_src
-
-#+RESULTS:
 
 ** Sync
 
@@ -86,11 +70,52 @@ Enjoy!
 rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
 #+end_src
 
-** Convert timezones
+** Download and parse the iCal file with Python
 
-   #+begin_src emacs-lisp
+#+begin_src sh :results silent
+pip3 install icalevents recurring_ical_events pypandoc
+#+end_src
+
+#+begin_src python :session "cal" :results output drawer :var timezones=timezones :tangle yes
+from urllib.request import urlopen
+from icalendar import Calendar
+from datetime import date
+import recurring_ical_events
+import pytz
+import re
+import pypandoc
+link = "https://calendar.google.com/calendar/ical/c_rkq3fc6u8k1nem23qegqc90l6c%40group.calendar.google.com/public/basic.ics"
+f = urlopen(link)
+cal = Calendar.from_ical(f.read())
+start_date = date(date.today().year, 1, 1)
+events = recurring_ical_events.of(cal).between(start_date, date(date.today().year + 2, 1, 1))
+for t in timezones:
+  filename = "emacs-calendar-" + re.sub('^.*?/', '', t[0]).lower() + '.org'
+  zone = pytz.timezone(t[0])
+  with open(filename, "w") as f:
+    for e in events:
+      start = e['DTSTART'].dt.astimezone(zone)
+      org_date = "%Y-%m-%d %a %H:%M" # 2006-11-01 Wed 19:15
+      end = e['DTEND'].dt.astimezone(zone)
+      f.write("""* %s
+:PROPERTIES:
+:LOCATION: %s
+:END:
+<%s>--<%s>
+
+%s
+
+""" % (e['SUMMARY'], e['LOCATION'], start.strftime(org_date), end.strftime(org_date), pypandoc.convert_text(e['DESCRIPTION'], 'org', format='html')))
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+** Convert timezones
+ 
+   #+begin_src emacs-lisp :tangle yes :var timezones=timezones
 (defvar my/timezones nil "Timezones")
-(setq my/timezones '("America/Toronto" "America/Vancouver" "UTC" "Europe/Berlin" "Asia/Kolkata" "Asia/Singapore"))
+(setq my/timezones (mapcar 'car timezones))
 (defun my/summarize-times (time timezones)
   (let (prev-day)
     (mapconcat
@@ -135,7 +160,7 @@ rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
 
 ** Summarize upcoming ones
 
-   #+begin_src emacs-lisp
+   #+begin_src emacs-lisp :tangle yes
 (defun my/summarize-upcoming-events (limit)
   (interactive (list (org-read-date nil t)))
   (let (result)
@@ -164,9 +189,12 @@ rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
 
 #+RESULTS:
 - [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-gmt.org")))) (org-agenda-list nil nil 31))][View Etc/GMT agenda]]
-- [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-toronto.org")))) (org-agenda-list nil nil 31))][View America/Toronto agenda]]
 - [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-vancouver.org")))) (org-agenda-list nil nil 31))][View America/Vancouver agenda]]
+- [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-chicago.org")))) (org-agenda-list nil nil 31))][View America/Chicago agenda]]
+- [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-toronto.org")))) (org-agenda-list nil nil 31))][View America/Toronto agenda]]
 - [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-kolkata.org")))) (org-agenda-list nil nil 31))][View Asia/Kolkata agenda]]
 - [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-shanghai.org")))) (org-agenda-list nil nil 31))][View Asia/Shanghai agenda]]
 - [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-singapore.org")))) (org-agenda-list nil nil 31))][View Asia/Singapore agenda]]
 - [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-berlin.org")))) (org-agenda-list nil nil 31))][View Europe/Berlin agenda]]
+
+
