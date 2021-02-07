@@ -1,5 +1,12 @@
 #+TITLE: Emacs calendar
 
+* Actions  :noexport:
+
+#+CALL: update() :results none :eval never-export
+#+CALL: sync() :results none :eval never-export
+
+* Introduction
+  
 This calendar is maintained by [[mailto:sacha@sachachua.com][sacha@sachachua.com]]. You can find it at https://emacslife.com/calendar/
 
 You can find a list of upcoming events and other meet-ups at
@@ -70,7 +77,8 @@ Enjoy!
 pip3 install icalevents recurring_ical_events pypandoc
 #+end_src
 
-#+begin_src python :session "cal" :results output drawer :var timezones=timezones :tangle yes
+#+NAME: update
+#+begin_src python :session "cal" :results output drawer :var timezones=timezones :tangle yes :eval never-export
 from urllib.request import urlopen
 from icalendar import Calendar
 from datetime import date, datetime
@@ -128,7 +136,8 @@ for e in events:
 
 ** Sync
 
-#+begin_src sh :results none
+#+NAME: sync
+#+begin_src sh :exports code :eval never-export
 rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
 #+end_src
 

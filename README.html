@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-03 Sun 02:06 -->
+<!-- 2021-02-06 Sat 22:18 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Emacs calendar</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="Sacha Chua" />
+<meta name="generator" content="Org Mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -194,10 +194,10 @@
   /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css"
-href="//sachachua.com/blog/wp-content/themes/sacha-v3/foundation/css/foundation.min.css"></link>
-<link rel="stylesheet" type="text/css" href="//sachachua.com/org-export.css"></link>
-<link rel="stylesheet" type="text/css" href="//sachachua.com/blog/wp-content/themes/sacha-v3/style.css"></link>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+       href="//sachachua.com/blog/wp-content/themes/sacha-v3/foundation/css/foundation.min.css"></link>
+       <link rel="stylesheet" type="text/css" href="//sachachua.com/org-export.css"></link>
+       <link rel="stylesheet" type="text/css" href="//sachachua.com/blog/wp-content/themes/sacha-v3/style.css"></link>
+       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript">
 // @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
@@ -227,6 +227,10 @@ href="//sachachua.com/blog/wp-content/themes/sacha-v3/foundation/css/foundation.
 </div>
 <div id="content">
 <h1 class="title">Emacs calendar</h1>
+
+<div id="outline-container-org3782f62" class="outline-2">
+<h2 id="org3782f62">Introduction</h2>
+<div class="outline-text-2" id="text-org3782f62">
 <p>
 This calendar is maintained by <a href="mailto:sacha@sachachua.com">sacha@sachachua.com</a>. You can find it at <a href="https://emacslife.com/calendar/">https://emacslife.com/calendar/</a>
 </p>
@@ -250,9 +254,11 @@ Or you view the following HTML calendars:
 
 <ul class="org-ul">
 <li><a href="emacs-calendar-gmt.html">Etc/GMT</a></li>
-<li><a href="emacs-calendar-toronto.html">America/Toronto</a></li>
 <li><a href="emacs-calendar-vancouver.html">America/Vancouver</a></li>
+<li><a href="emacs-calendar-chicago.html">America/Chicago</a></li>
+<li><a href="emacs-calendar-toronto.html">America/Toronto</a></li>
 <li><a href="emacs-calendar-kolkata.html">Asia/Kolkata</a></li>
+<li><a href="emacs-calendar-shanghai.html">Asia/Shanghai</a></li>
 <li><a href="emacs-calendar-singapore.html">Asia/Singapore</a></li>
 <li><a href="emacs-calendar-berlin.html">Europe/Berlin</a></li>
 </ul>
@@ -266,105 +272,250 @@ Or you periodically download and include one of these files in your Org agenda f
 </p>
 
 <ul><li><a href="emacs-calendar-gmt.org">emacs-calendar-gmt.org</a></li>
-<li><a href="emacs-calendar-toronto.org">emacs-calendar-toronto.org</a></li>
 <li><a href="emacs-calendar-vancouver.org">emacs-calendar-vancouver.org</a></li>
+<li><a href="emacs-calendar-chicago.org">emacs-calendar-chicago.org</a></li>
+<li><a href="emacs-calendar-toronto.org">emacs-calendar-toronto.org</a></li>
 <li><a href="emacs-calendar-kolkata.org">emacs-calendar-kolkata.org</a></li>
+<li><a href="emacs-calendar-shanghai.org">emacs-calendar-shanghai.org</a></li>
 <li><a href="emacs-calendar-singapore.org">emacs-calendar-singapore.org</a></li>
 <li><a href="emacs-calendar-berlin.org">emacs-calendar-berlin.org</a></li></ul>
 
 <p>
 Enjoy!
 </p>
-
-<div id="outline-container-org9d5042f" class="outline-2">
-<h2 id="org9d5042f">Code I use to run it</h2>
-<div class="outline-text-2" id="text-org9d5042f">
 </div>
-<div id="outline-container-orga88978b" class="outline-3">
-<h3 id="orga88978b">Timezones</h3>
-<div class="outline-text-3" id="text-orga88978b">
+</div>
+
+<div id="outline-container-org75c4f69" class="outline-2">
+<h2 id="org75c4f69">Code I use to run it</h2>
+<div class="outline-text-2" id="text-org75c4f69">
+</div>
+<div id="outline-container-org30eb65e" class="outline-3">
+<h3 id="org30eb65e">Timezones</h3>
+<div class="outline-text-3" id="text-org30eb65e">
 <ul class="org-ul">
 <li>Etc/GMT</li>
-<li>America/Toronto</li>
 <li>America/Vancouver</li>
+<li>America/Chicago</li>
+<li>America/Toronto</li>
 <li>Asia/Kolkata</li>
+<li>Asia/Shanghai</li>
 <li>Asia/Singapore</li>
 <li>Europe/Berlin</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org4fd3051" class="outline-3">
-<h3 id="org4fd3051">Install gems needed for the script</h3>
-<div class="outline-text-3" id="text-org4fd3051">
+
+<div id="outline-container-orga6c10d7" class="outline-3">
+<h3 id="orga6c10d7">Download and parse the iCal file with Python</h3>
+<div class="outline-text-3" id="text-orga6c10d7">
 <div class="org-src-container">
-<pre class="src src-sh">gem install --user-install tzinfo icalendar
+<pre class="src src-sh">pip3 install icalevents recurring_ical_events pypandoc
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org6b4beb4"><span class="org-keyword">from</span> urllib.request <span class="org-keyword">import</span> urlopen
+<span class="org-keyword">from</span> icalendar <span class="org-keyword">import</span> Calendar
+<span class="org-keyword">from</span> datetime <span class="org-keyword">import</span> date, datetime
+<span class="org-keyword">from</span> dateutil.relativedelta <span class="org-keyword">import</span> *
+<span class="org-keyword">import</span> recurring_ical_events
+<span class="org-keyword">import</span> pytz
+<span class="org-keyword">import</span> re
+<span class="org-keyword">import</span> pypandoc
+<span class="org-variable-name">link</span> = <span class="org-string">"https://calendar.google.com/calendar/ical/c_rkq3fc6u8k1nem23qegqc90l6c%40group.calendar.google.com/public/basic.ics"</span>
+<span class="org-variable-name">f</span> = urlopen(link)
+<span class="org-variable-name">cal</span> = Calendar.from_ical(f.read())
+<span class="org-variable-name">start_date</span> = date(date.today().year, date.today().month, 1)
+<span class="org-variable-name">end_date</span> = date(date.today().year + 1, date.today().month + 1, 1)
+<span class="org-variable-name">events</span> = recurring_ical_events.of(cal).between(start_date, end_date)
+<span class="org-keyword">for</span> t <span class="org-keyword">in</span> <span class="org-variable-name">timezones</span>:
+  filename = <span class="org-string">"emacs-calendar-"</span> + re.sub(<span class="org-string">'^.*?/'</span>, <span class="org-string">''</span>, t[0]).lower() + <span class="org-string">'.org'</span>
+  <span class="org-variable-name">zone</span> = pytz.timezone(t[0])
+  <span class="org-keyword">with</span> <span class="org-builtin">open</span>(filename, <span class="org-string">"w"</span>) <span class="org-keyword">as</span> <span class="org-variable-name">f</span>:
+    <span class="org-keyword">for</span> e <span class="org-keyword">in</span> events:
+      start = e[<span class="org-string">'DTSTART'</span>].dt.astimezone(zone)
+      <span class="org-variable-name">org_date</span> = <span class="org-string">"%Y-%m-%d %a %H:%M"</span> <span class="org-comment-delimiter"># </span><span class="org-comment">2006-11-01 Wed 19:15</span>
+      <span class="org-variable-name">end</span> = e[<span class="org-string">'DTEND'</span>].dt.astimezone(zone)
+      f.write(<span class="org-string">"""* %s</span>
+<span class="org-string">:PROPERTIES:</span>
+<span class="org-string">:LOCATION: %s</span>
+<span class="org-string">:END:</span>
+<span class="org-string">&lt;%s&gt;--&lt;%s&gt;</span>
+
+<span class="org-string">%s</span>
+
+<span class="org-string">"""</span> % (e[<span class="org-string">'SUMMARY'</span>], e[<span class="org-string">'LOCATION'</span>], start.strftime(org_date), end.strftime(org_date), pypandoc.convert_text(e[<span class="org-string">'DESCRIPTION'</span>], <span class="org-string">'org'</span>, <span class="org-builtin">format</span>=<span class="org-string">'html'</span>).replace(<span class="org-string">'\\\\'</span>, <span class="org-string">''</span>)))
+<span class="org-comment-delimiter"># </span><span class="org-comment">Prepare string for copying</span>
+highlight_start = datetime.utcnow()
+highlight_end = datetime.utcnow() + relativedelta(months=+1)
+<span class="org-keyword">for</span> e <span class="org-keyword">in</span> events:
+  utc = datetime.utcfromtimestamp(e[<span class="org-string">'DTSTART'</span>].dt)
+  <span class="org-keyword">if</span> utc &lt; highlight_start <span class="org-keyword">or</span> utc &gt; highlight_end:
+    <span class="org-keyword">continue</span>
+  times = [[e[<span class="org-string">'DTSTART'</span>].dt.astimezone(pytz.timezone(t[0])), t[0], e[<span class="org-string">'DTSTART'</span>].dt.astimezone(pytz.timezone(t[0])).utcoffset()] <span class="org-keyword">for</span> t <span class="org-keyword">in</span> timezones]
+  times.sort(key=<span class="org-keyword">lambda</span> x: x[2])
+  s = <span class="org-string">""</span>
+  <span class="org-keyword">for</span> i, t <span class="org-keyword">in</span> <span class="org-builtin">enumerate</span>(times):
+    <span class="org-keyword">if</span> i == 0 <span class="org-keyword">or</span> t[0].day == times[i - 1][0].day:
+       <span class="org-keyword">if</span> i &gt; 0:
+         s += <span class="org-string">" // "</span>
+       s += t[0].strftime(<span class="org-string">'%a %b %-d %H%M'</span>) + <span class="org-string">" "</span> + t[1]
+    <span class="org-keyword">else</span>:
+       s += <span class="org-string">" / "</span> + t[0].strftime(<span class="org-string">'%H%M'</span>) + <span class="org-string">" "</span> + t[1]
+  <span class="org-keyword">print</span>(<span class="org-string">"- %s %s %s"</span> % (e[<span class="org-string">'SUMMARY'</span>], e[<span class="org-string">'LOCATION'</span>], s))
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgcdd205b" class="outline-3">
-<h3 id="orgcdd205b">Fetch the ical</h3>
-<div class="outline-text-3" id="text-orgcdd205b">
+<div id="outline-container-org1bd6e3e" class="outline-3">
+<h3 id="org1bd6e3e">Sync</h3>
+<div class="outline-text-3" id="text-org1bd6e3e">
 <div class="org-src-container">
-<pre class="src src-sh">wget -q -N https://calendar.google.com/calendar/ical/c_rkq3fc6u8k1nem23qegqc90l6c%40group.calendar.google.com/public/basic.ics -O emacs-calendar.ics
-<span class="org-variable-name">DATE</span>=$(date +<span class="org-string">"%Y%m01"</span>)
-<span class="org-keyword">for</span> ZONE<span class="org-keyword"> in</span> $<span class="org-variable-name">timezones</span>; <span class="org-keyword">do</span>
-  <span class="org-variable-name">STUB</span>=$(<span class="org-builtin">echo</span> $<span class="org-variable-name">ZONE</span> | sed s/^.*<span class="org-string">\\</span>/// | tr A-Z a-z)
-  ./ics-to-org --sort -f $<span class="org-variable-name">ZONE</span> emacs-calendar.ics &gt; emacs-calendar-$<span class="org-variable-name">STUB</span>.org
-  ical2html -l -f <span class="org-string">"Times are in $ZONE"</span> -z $<span class="org-variable-name">ZONE</span> $<span class="org-variable-name">DATE</span> P8W emacs-calendar.ics | perl -e <span class="org-string">'undef $/; $_ = &lt;&gt;; $_ =~ s/&lt;span class=summary&gt;([^&lt;]+)&lt;\/span&gt;\n&lt;pre&gt;&lt;b class=location&gt;([^&lt;]+)&lt;\/b&gt;&lt;\/pre&gt;/&lt;span class="summary"&gt;&lt;a href="$2"&gt;$1&lt;\/a&gt;&lt;\/span&gt;/g; print $_'</span> &gt; emacs-calendar-$<span class="org-variable-name">STUB</span>.html
-<span class="org-keyword">done</span>
+<pre class="src src-sh" id="org24fc6cd">rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orga215027" class="outline-3">
-<h3 id="orga215027">Sync</h3>
-<div class="outline-text-3" id="text-orga215027">
+<div id="outline-container-orgbb5c5c3" class="outline-3">
+<h3 id="orgbb5c5c3">Convert timezones</h3>
+<div class="outline-text-3" id="text-orgbb5c5c3">
 <div class="org-src-container">
-<pre class="src src-sh">rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
+<pre class="src src-emacs-lisp">(<span class="org-keyword">defvar</span> <span class="org-variable-name">my/timezones</span> nil <span class="org-doc">"Timezones"</span>)
+(<span class="org-keyword">setq</span> my/timezones (mapcar 'car timezones))
+(<span class="org-keyword">defun</span> <span class="org-function-name">my/summarize-times</span> (time timezones)
+  (<span class="org-keyword">let</span> (prev-day)
+    (mapconcat
+     (<span class="org-keyword">lambda</span> (tz)
+       (<span class="org-keyword">let</span> ((cur-day (format-time-string <span class="org-string">"%a %b %-e"</span> time tz))
+             (cur-time (format-time-string <span class="org-string">"%H%MH %Z"</span> time tz)))
+         (<span class="org-keyword">if</span> (equal prev-day cur-day)
+             cur-time
+           (<span class="org-keyword">setq</span> prev-day cur-day)
+           (concat cur-day <span class="org-string">" "</span> cur-time))))
+     (sort timezones (<span class="org-keyword">lambda</span> (a b) (&lt; (car (current-time-zone nil a)) (car (current-time-zone nil b)))))
+     <span class="org-string">" / "</span>)))
+
+(<span class="org-keyword">defun</span> <span class="org-function-name">my/org-summarize-event-in-timezones</span> ()
+  (<span class="org-keyword">interactive</span>)
+  (<span class="org-keyword">save-window-excursion</span>
+    (<span class="org-keyword">save-excursion</span>
+      (<span class="org-keyword">when</span> (derived-mode-p 'org-agenda-mode) (org-agenda-goto))
+      (<span class="org-keyword">when</span> (re-search-forward org-element--timestamp-regexp nil (<span class="org-keyword">save-excursion</span> (org-end-of-subtree) (point)))
+        (goto-char (match-beginning 0))
+        (<span class="org-keyword">let*</span> ((times (org-element-timestamp-parser))
+               (start-time (org-timestamp-to-time (org-timestamp-split-range times)))
+               (msg (format <span class="org-string">"%s - %s - %s"</span>
+                            (org-get-heading t t t t)
+                            (my/summarize-times start-time my/timezones)
+                            <span class="org-comment-delimiter">;; </span><span class="org-comment">(cond</span>
+                            <span class="org-comment-delimiter">;;  </span><span class="org-comment">((time-less-p (org-timestamp-to-time (org-timestamp-split-range times t)) (current-time))</span>
+                            <span class="org-comment-delimiter">;;   </span><span class="org-comment">"(past)")</span>
+                            <span class="org-comment-delimiter">;;  </span><span class="org-comment">((time-less-p (current-time) start-time)</span>
+                            <span class="org-comment-delimiter">;;   </span><span class="org-comment">(concat "in " (format-seconds "%D %H %M%Z" (time-subtract start-time (current-time)))))</span>
+                            <span class="org-comment-delimiter">;;  </span><span class="org-comment">(t "(ongoing)"))</span>
+                            (org-entry-get (point) <span class="org-string">"LOCATION"</span>))))
+          (<span class="org-keyword">if</span> (interactive-p)
+              (<span class="org-keyword">progn</span>
+                (message <span class="org-string">"%s"</span> msg)
+                (kill-new msg))
+            msg))))))
 </pre>
 </div>
+</div>
+</div>
+
+<div id="outline-container-orge52e38a" class="outline-3">
+<h3 id="orge52e38a">Summarize upcoming ones</h3>
+<div class="outline-text-3" id="text-orge52e38a">
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(<span class="org-keyword">defun</span> <span class="org-function-name">my/summarize-upcoming-events</span> (limit)
+  (<span class="org-keyword">interactive</span> (list (org-read-date nil t)))
+  (<span class="org-keyword">let</span> (result)
+    (<span class="org-keyword">with-current-buffer</span> (find-file-noselect <span class="org-string">"~/code/emacs-calendar/emacs-calendar-toronto.org"</span>)
+      (goto-char (point-min))
+      (org-map-entries
+       (<span class="org-keyword">lambda</span> ()
+         (<span class="org-keyword">save-excursion</span>
+           (<span class="org-keyword">when</span> (re-search-forward org-element--timestamp-regexp nil (<span class="org-keyword">save-excursion</span> (org-end-of-subtree) (point)))
+             (goto-char (match-beginning 0))
+             (<span class="org-keyword">let</span> ((time (org-timestamp-to-time (org-timestamp-split-range (org-element-timestamp-parser)))))
+               (<span class="org-keyword">when</span> (<span class="org-keyword">and</span> (time-less-p (current-time) time)
+                          (time-less-p time limit))
+                 (<span class="org-keyword">setq</span> result (cons (my/org-summarize-event-in-timezones) result)))))))))
+    (insert (mapconcat (<span class="org-keyword">lambda</span> (o) (format <span class="org-string">"- %s"</span> o)) (reverse result) <span class="org-string">"\n"</span>))))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org466b147" class="outline-3">
+<h3 id="org466b147">Update EmacsWiki</h3>
+<div class="outline-text-3" id="text-org466b147">
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(<span class="org-keyword">use-package</span> <span class="org-constant">oddmuse</span>
+<span class="org-builtin">:load-path</span> <span class="org-string">"~/vendor/oddmuse-el"</span>
+<span class="org-builtin">:ensure</span> nil
+<span class="org-builtin">:config</span> (oddmuse-mode-initialize)
+<span class="org-builtin">:hook</span> (oddmuse-mode-hook .
+          (<span class="org-keyword">lambda</span> ()
+            (<span class="org-keyword">unless</span> (string-match <span class="org-string">"question"</span> oddmuse-post)
+              (<span class="org-keyword">when</span> (string-match <span class="org-string">"EmacsWiki"</span> oddmuse-wiki)
+                (<span class="org-keyword">setq</span> oddmuse-post (concat <span class="org-string">"uihnscuskc=1;"</span> oddmuse-post)))
+              (<span class="org-keyword">when</span> (string-match <span class="org-string">"OddmuseWiki"</span> oddmuse-wiki)
+                (<span class="org-keyword">setq</span> oddmuse-post (concat <span class="org-string">"ham=1;"</span> oddmuse-post)))))))
+</pre>
+</div>
+
+
+<p>
+<a href="(oddmuse-edit "EmacsWiki" "Usergroups")">(oddmuse-edit "EmacsWiki" "Usergroups")</a>
+</p>
+
+<p>
+#+end_src
+</p>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 
-<style type="text/css">
-.back-to-top {
-    position: fixed;
-    bottom: 2em;
-    right: 0px;
-    text-decoration: none;
-    color: #000000;
-    background-color: rgba(235, 235, 235, 0.80);
-    font-size: 12px;
-    padding: 1em;
-    display: none;
-}
+       <style type="text/css">
+       .back-to-top {
+           position: fixed;
+           bottom: 2em;
+           right: 0px;
+           text-decoration: none;
+           color: #000000;
+           background-color: rgba(235, 235, 235, 0.80);
+           font-size: 12px;
+           padding: 1em;
+           display: none;
+       }
 
-.back-to-top:hover {
-    background-color: rgba(135, 135, 135, 0.50);
-}
-</style>
+       .back-to-top:hover {
+           background-color: rgba(135, 135, 135, 0.50);
+       }
+       </style>
 
-<div class="back-to-top">
-<a href="#top">Back to top</a> | <a href="mailto:sacha@sachachua.com">E-mail me</a>
-</div>
+       <div class="back-to-top">
+       <a href="#top">Back to top</a> | <a href="mailto:sacha@sachachua.com">E-mail me</a>
+       </div>
 
-<script type="text/javascript">
-    var offset = 220;
-    var duration = 500;
-    jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > offset) {
-            jQuery('.back-to-top').fadeIn(duration);
-        } else {
-            jQuery('.back-to-top').fadeOut(duration);
-        }
-    });
-</script>
+       <script type="text/javascript">
+           var offset = 220;
+           var duration = 500;
+           jQuery(window).scroll(function() {
+               if (jQuery(this).scrollTop() > offset) {
+                   jQuery('.back-to-top').fadeIn(duration);
+               } else {
+                   jQuery('.back-to-top').fadeOut(duration);
+               }
+           });
+       </script>
 </div>
 </body>
 </html>
