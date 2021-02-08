@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-02-06 Sat 22:18 -->
+<!-- 2021-02-07 Sun 11:09 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Emacs calendar</title>
@@ -228,9 +228,38 @@
 <div id="content">
 <h1 class="title">Emacs calendar</h1>
 
-<div id="outline-container-org3782f62" class="outline-2">
-<h2 id="org3782f62">Introduction</h2>
-<div class="outline-text-2" id="text-org3782f62">
+<div id="outline-container-orgb64c18d" class="outline-2">
+<h2 id="orgb64c18d">Upcoming events</h2>
+<div class="outline-text-2" id="text-orgb64c18d">
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">&lt;&lt;convert-timezones&gt;&gt;
+&lt;&lt;upcoming-events&gt;&gt;
+(my/summarize-upcoming-events (org-read-date nil t <span class="org-string">"+4w"</span>))
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>Emacs APAC (virtual, in English) - Sat Feb 27 0030H PST / 0230H CST / 0330H EST / 0830H GMT / 0930H CET / 1400H IST / 1630H CST / 1630H +08 - <a href="https://emacs-apac.gitlab.io/">https://emacs-apac.gitlab.io/</a></li>
+<li>Emacs Berlin (virtual, in English) - Wed Feb 24 1730H GMT / 1830H CET / 2300H IST / Thu Feb 25 0130H CST / 0130H +08 - <a href="https://emacs-berlin.org/">https://emacs-berlin.org/</a></li>
+<li>Emacs Berlin (virtual, in English) - Wed Feb 24 1730H GMT / 1830H CET / 2300H IST / Thu Feb 25 0130H CST / 0130H +08 - <a href="https://emacs-berlin.org/">https://emacs-berlin.org/</a></li>
+<li>Emacs Berlin (virtual, in English) - Wed Feb 24 1730H GMT / 1830H CET / 2300H IST / Thu Feb 25 0130H CST / 0130H +08 - <a href="https://emacs-berlin.org/">https://emacs-berlin.org/</a></li>
+<li>Emacs Berlin (virtual, in English) - Wed Feb 24 1730H GMT / 1830H CET / 2300H IST / Thu Feb 25 0130H CST / 0130H +08 - <a href="https://emacs-berlin.org/">https://emacs-berlin.org/</a></li>
+<li>FOSDEM21: A Lisp REPL as my main shell - The shell is dead, long live the REPL! - Sun Feb 7 1620H GMT / 1720H CET / 2150H IST / Mon Feb 8 0020H CST / 0020H +08 - <a href="https://fosdem.org/2021/schedule/event/lisprepl/">https://fosdem.org/2021/schedule/event/lisprepl/</a></li>
+<li>EmacsFFM: Creating our own major mode (virtual) - Wed Feb 17 1900H GMT / 2000H CET / Thu Feb 18 0030H IST / 0300H CST / 0300H +08 - <a href="https://www.meetup.com/emacs-ffm/events/275881281/">https://www.meetup.com/emacs-ffm/events/275881281/</a></li>
+<li>Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 -</li>
+<li>Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 -</li>
+<li>Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 -</li>
+<li>Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 -</li>
+<li>Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 -</li>
+<li>Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 -</li>
+<li>Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 -</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org24fc26d" class="outline-2">
+<h2 id="org24fc26d">Introduction</h2>
+<div class="outline-text-2" id="text-org24fc26d">
 <p>
 This calendar is maintained by <a href="mailto:sacha@sachachua.com">sacha@sachachua.com</a>. You can find it at <a href="https://emacslife.com/calendar/">https://emacslife.com/calendar/</a>
 </p>
@@ -286,13 +315,13 @@ Enjoy!
 </div>
 </div>
 
-<div id="outline-container-org75c4f69" class="outline-2">
-<h2 id="org75c4f69">Code I use to run it</h2>
-<div class="outline-text-2" id="text-org75c4f69">
+<div id="outline-container-org9e1e4fa" class="outline-2">
+<h2 id="org9e1e4fa">Code I use to run it</h2>
+<div class="outline-text-2" id="text-org9e1e4fa">
 </div>
-<div id="outline-container-org30eb65e" class="outline-3">
-<h3 id="org30eb65e">Timezones</h3>
-<div class="outline-text-3" id="text-org30eb65e">
+<div id="outline-container-org71603da" class="outline-3">
+<h3 id="org71603da">Timezones</h3>
+<div class="outline-text-3" id="text-org71603da">
 <ul class="org-ul">
 <li>Etc/GMT</li>
 <li>America/Vancouver</li>
@@ -306,16 +335,16 @@ Enjoy!
 </div>
 </div>
 
-<div id="outline-container-orga6c10d7" class="outline-3">
-<h3 id="orga6c10d7">Download and parse the iCal file with Python</h3>
-<div class="outline-text-3" id="text-orga6c10d7">
+<div id="outline-container-org0331863" class="outline-3">
+<h3 id="org0331863">Download and parse the iCal file with Python</h3>
+<div class="outline-text-3" id="text-org0331863">
 <div class="org-src-container">
 <pre class="src src-sh">pip3 install icalevents recurring_ical_events pypandoc
 </pre>
 </div>
 
 <div class="org-src-container">
-<pre class="src src-python" id="org6b4beb4"><span class="org-keyword">from</span> urllib.request <span class="org-keyword">import</span> urlopen
+<pre class="src src-python" id="orga2db923"><span class="org-keyword">from</span> urllib.request <span class="org-keyword">import</span> urlopen
 <span class="org-keyword">from</span> icalendar <span class="org-keyword">import</span> Calendar
 <span class="org-keyword">from</span> datetime <span class="org-keyword">import</span> date, datetime
 <span class="org-keyword">from</span> dateutil.relativedelta <span class="org-keyword">import</span> *
@@ -369,21 +398,21 @@ highlight_end = datetime.utcnow() + relativedelta(months=+1)
 </div>
 </div>
 
-<div id="outline-container-org1bd6e3e" class="outline-3">
-<h3 id="org1bd6e3e">Sync</h3>
-<div class="outline-text-3" id="text-org1bd6e3e">
+<div id="outline-container-org588dbd6" class="outline-3">
+<h3 id="org588dbd6">Sync</h3>
+<div class="outline-text-3" id="text-org588dbd6">
 <div class="org-src-container">
-<pre class="src src-sh" id="org24fc6cd">rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
+<pre class="src src-sh" id="org75fc2e0">rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgbb5c5c3" class="outline-3">
-<h3 id="orgbb5c5c3">Convert timezones</h3>
-<div class="outline-text-3" id="text-orgbb5c5c3">
+<div id="outline-container-org9247391" class="outline-3">
+<h3 id="org9247391">Convert timezones</h3>
+<div class="outline-text-3" id="text-org9247391">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp">(<span class="org-keyword">defvar</span> <span class="org-variable-name">my/timezones</span> nil <span class="org-doc">"Timezones"</span>)
+<pre class="src src-emacs-lisp" id="org4a778dc">(<span class="org-keyword">defvar</span> <span class="org-variable-name">my/timezones</span> nil <span class="org-doc">"Timezones"</span>)
 (<span class="org-keyword">setq</span> my/timezones (mapcar 'car timezones))
 (<span class="org-keyword">defun</span> <span class="org-function-name">my/summarize-times</span> (time timezones)
   (<span class="org-keyword">let</span> (prev-day)
@@ -424,14 +453,18 @@ highlight_end = datetime.utcnow() + relativedelta(months=+1)
             msg))))))
 </pre>
 </div>
+
+<pre class="example">
+my/org-summarize-event-in-timezones
+</pre>
 </div>
 </div>
 
-<div id="outline-container-orge52e38a" class="outline-3">
-<h3 id="orge52e38a">Summarize upcoming ones</h3>
-<div class="outline-text-3" id="text-orge52e38a">
+<div id="outline-container-org81efd06" class="outline-3">
+<h3 id="org81efd06">Summarize upcoming ones</h3>
+<div class="outline-text-3" id="text-org81efd06">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp">(<span class="org-keyword">defun</span> <span class="org-function-name">my/summarize-upcoming-events</span> (limit)
+<pre class="src src-emacs-lisp" id="orgfc9be2d">(<span class="org-keyword">defun</span> <span class="org-function-name">my/summarize-upcoming-events</span> (limit)
   (<span class="org-keyword">interactive</span> (list (org-read-date nil t)))
   (<span class="org-keyword">let</span> (result)
     (<span class="org-keyword">with-current-buffer</span> (find-file-noselect <span class="org-string">"~/code/emacs-calendar/emacs-calendar-toronto.org"</span>)
@@ -445,15 +478,22 @@ highlight_end = datetime.utcnow() + relativedelta(months=+1)
                (<span class="org-keyword">when</span> (<span class="org-keyword">and</span> (time-less-p (current-time) time)
                           (time-less-p time limit))
                  (<span class="org-keyword">setq</span> result (cons (my/org-summarize-event-in-timezones) result)))))))))
-    (insert (mapconcat (<span class="org-keyword">lambda</span> (o) (format <span class="org-string">"- %s"</span> o)) (reverse result) <span class="org-string">"\n"</span>))))
+    (<span class="org-keyword">setq</span> result (mapconcat (<span class="org-keyword">lambda</span> (o) (format <span class="org-string">"- %s"</span> o)) (reverse result) <span class="org-string">"\n"</span>))
+    (<span class="org-keyword">if</span> (interactive-p)
+        (insert result)
+      result)))
+</pre>
+</div>
+
+<pre class="example">
+my/summarize-upcoming-events
 </pre>
 </div>
 </div>
-</div>
 
-<div id="outline-container-org466b147" class="outline-3">
-<h3 id="org466b147">Update EmacsWiki</h3>
-<div class="outline-text-3" id="text-org466b147">
+<div id="outline-container-org11f054c" class="outline-3">
+<h3 id="org11f054c">Update EmacsWiki</h3>
+<div class="outline-text-3" id="text-org11f054c">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(<span class="org-keyword">use-package</span> <span class="org-constant">oddmuse</span>
 <span class="org-builtin">:load-path</span> <span class="org-string">"~/vendor/oddmuse-el"</span>
