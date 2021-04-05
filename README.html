@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-02-07 Sun 11:09 -->
+<!-- 2021-04-05 Mon 09:54 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Emacs calendar</title>
@@ -194,10 +194,11 @@
   /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css"
-       href="//sachachua.com/blog/wp-content/themes/sacha-v3/foundation/css/foundation.min.css"></link>
-       <link rel="stylesheet" type="text/css" href="//sachachua.com/org-export.css"></link>
-       <link rel="stylesheet" type="text/css" href="//sachachua.com/blog/wp-content/themes/sacha-v3/style.css"></link>
-       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+       href="https://sachachua.com/blog/wp-content/themes/sacha-v3/foundation/css/foundation.min.css"></link>
+       <link rel="stylesheet" type="text/css" href="https://sachachua.com/org-export.css"></link>
+       <link rel="stylesheet" type="text/css" href="https://sachachua.com/blog/wp-content/themes/sacha-v3/style.css"></link>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+       <script src="https://sachachua.com/blog/wp-content/themes/sacha-v3/misc.js"></script>
 <script type="text/javascript">
 // @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
@@ -228,38 +229,31 @@
 <div id="content">
 <h1 class="title">Emacs calendar</h1>
 
-<div id="outline-container-orgb64c18d" class="outline-2">
-<h2 id="orgb64c18d">Upcoming events</h2>
-<div class="outline-text-2" id="text-orgb64c18d">
-<div class="org-src-container">
-<pre class="src src-emacs-lisp">&lt;&lt;convert-timezones&gt;&gt;
-&lt;&lt;upcoming-events&gt;&gt;
-(my/summarize-upcoming-events (org-read-date nil t <span class="org-string">"+4w"</span>))
-</pre>
-</div>
+<div id="outline-container-orge24e9c0" class="outline-2">
+<h2 id="orge24e9c0">Upcoming events</h2>
+<div class="outline-text-2" id="text-orge24e9c0">
+<p>
+
+</p>
 
 <ul class="org-ul">
-<li>Emacs APAC (virtual, in English) - Sat Feb 27 0030H PST / 0230H CST / 0330H EST / 0830H GMT / 0930H CET / 1400H IST / 1630H CST / 1630H +08 - <a href="https://emacs-apac.gitlab.io/">https://emacs-apac.gitlab.io/</a></li>
-<li>Emacs Berlin (virtual, in English) - Wed Feb 24 1730H GMT / 1830H CET / 2300H IST / Thu Feb 25 0130H CST / 0130H +08 - <a href="https://emacs-berlin.org/">https://emacs-berlin.org/</a></li>
-<li>Emacs Berlin (virtual, in English) - Wed Feb 24 1730H GMT / 1830H CET / 2300H IST / Thu Feb 25 0130H CST / 0130H +08 - <a href="https://emacs-berlin.org/">https://emacs-berlin.org/</a></li>
-<li>Emacs Berlin (virtual, in English) - Wed Feb 24 1730H GMT / 1830H CET / 2300H IST / Thu Feb 25 0130H CST / 0130H +08 - <a href="https://emacs-berlin.org/">https://emacs-berlin.org/</a></li>
-<li>Emacs Berlin (virtual, in English) - Wed Feb 24 1730H GMT / 1830H CET / 2300H IST / Thu Feb 25 0130H CST / 0130H +08 - <a href="https://emacs-berlin.org/">https://emacs-berlin.org/</a></li>
-<li>FOSDEM21: A Lisp REPL as my main shell - The shell is dead, long live the REPL! - Sun Feb 7 1620H GMT / 1720H CET / 2150H IST / Mon Feb 8 0020H CST / 0020H +08 - <a href="https://fosdem.org/2021/schedule/event/lisprepl/">https://fosdem.org/2021/schedule/event/lisprepl/</a></li>
-<li>EmacsFFM: Creating our own major mode (virtual) - Wed Feb 17 1900H GMT / 2000H CET / Thu Feb 18 0030H IST / 0300H CST / 0300H +08 - <a href="https://www.meetup.com/emacs-ffm/events/275881281/">https://www.meetup.com/emacs-ffm/events/275881281/</a></li>
-<li>Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 -</li>
-<li>Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 -</li>
-<li>Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 -</li>
-<li>Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 -</li>
-<li>Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 -</li>
-<li>Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 -</li>
-<li>Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 -</li>
+<li>EmacsNYC: Monthly Online Meetup - Guided Discussion: Meta Emacs and One Year online <a href="https://www.meetup.com/New-York-Emacs-Meetup/events/277123630/">https://www.meetup.com/New-York-Emacs-Meetup/events/277123630/</a> Mon Apr 5 1600 Vancouver / 1800 Chicago / 1900 Toronto / 2300 GMT &#x2013; Tue Apr 6 0100 Berlin / 0430 Kolkata / 0700 Singapore</li>
+<li>Emacs Paris (virtual) <a href="https://www.emacs-doctor.com/emacs-paris-user-group/">https://www.emacs-doctor.com/emacs-paris-user-group/</a> Tue Apr 6 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore</li>
+<li>EmacsATX: Emacs as a Spreadsheet and Emacs Social <a href="https://www.meetup.com/EmacsATX/events/277079765/">https://www.meetup.com/EmacsATX/events/277079765/</a> Wed Apr 7 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT &#x2013; Thu Apr 8 0130 Berlin / 0500 Kolkata / 0730 Singapore</li>
+<li>M-x Research (virtual, contact them for passcode) <a href="https://m-x-research.github.io/">https://m-x-research.github.io/</a> Thu Apr 15 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore</li>
+<li>EmacsSF: Some early Emacs history, Lightning talks, and General Discussion <a href="https://www.meetup.com/Emacs-SF/events/277309406/">https://www.meetup.com/Emacs-SF/events/277309406/</a> Thu Apr 15 1000 Vancouver / 1200 Chicago / 1300 Toronto / 1700 GMT / 1900 Berlin / 2230 Kolkata &#x2013; Fri Apr 16 0100 Singapore</li>
+<li>Emacs APAC (virtual, in English) <a href="https://emacs-apac.gitlab.io/">https://emacs-apac.gitlab.io/</a> Sat Apr 24 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 1030 Berlin / 1400 Kolkata / 1630 Singapore</li>
+<li>Emacs Berlin (virtual, in English) <a href="https://emacs-berlin.org/">https://emacs-berlin.org/</a> Wed Apr 28 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata &#x2013; Thu Apr 29 0030 Singapore</li>
+<li>EmacsATX: TBD <a href="https://www.meetup.com/EmacsATX/events/hkckgsycchbhb/">https://www.meetup.com/EmacsATX/events/hkckgsycchbhb/</a> Wed May 5 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT &#x2013; Thu May 6 0130 Berlin / 0500 Kolkata / 0730 Singapore</li>
+<li>M-x Research (virtual, contact them for passcode) <a href="https://m-x-research.github.io/">https://m-x-research.github.io/</a> Thu May 6 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore</li>
+<li>Emacs Paris (virtual) <a href="https://www.emacs-doctor.com/emacs-paris-user-group/">https://www.emacs-doctor.com/emacs-paris-user-group/</a> Thu May 6 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org24fc26d" class="outline-2">
-<h2 id="org24fc26d">Introduction</h2>
-<div class="outline-text-2" id="text-org24fc26d">
+<div id="outline-container-org4f50deb" class="outline-2">
+<h2 id="org4f50deb">Introduction</h2>
+<div class="outline-text-2" id="text-org4f50deb">
 <p>
 This calendar is maintained by <a href="mailto:sacha@sachachua.com">sacha@sachachua.com</a>. You can find it at <a href="https://emacslife.com/calendar/">https://emacslife.com/calendar/</a>
 </p>
@@ -274,7 +268,7 @@ Or you can add this iCal to your calendar program:
 </p>
 
 <p>
-<a href="https://calendar.google.com/calendar/ical/c_rkq3fc6u8k1nem23qegqc90l6c%40group.calendar.google.com/public/basic.ics">https://calendar.google.com/calendar/ical/c_rkq3fc6u8k1nem23qegqc90l6c%40group.calendar.google.com/public/basic.ics</a>
+<a href="https://emacslife.com/calendar/emacs-calendar.ics">https://emacslife.com/calendar/emacs-calendar.ics</a>
 </p>
 
 <p>
@@ -315,36 +309,35 @@ Enjoy!
 </div>
 </div>
 
-<div id="outline-container-org9e1e4fa" class="outline-2">
-<h2 id="org9e1e4fa">Code I use to run it</h2>
-<div class="outline-text-2" id="text-org9e1e4fa">
+<div id="outline-container-org906b67c" class="outline-2">
+<h2 id="org906b67c">Code I use to run it</h2>
+<div class="outline-text-2" id="text-org906b67c">
 </div>
-<div id="outline-container-org71603da" class="outline-3">
-<h3 id="org71603da">Timezones</h3>
-<div class="outline-text-3" id="text-org71603da">
+<div id="outline-container-org7b8eb8a" class="outline-3">
+<h3 id="org7b8eb8a">Timezones</h3>
+<div class="outline-text-3" id="text-org7b8eb8a">
 <ul class="org-ul">
-<li>Etc/GMT</li>
 <li>America/Vancouver</li>
 <li>America/Chicago</li>
 <li>America/Toronto</li>
-<li>Asia/Kolkata</li>
-<li>Asia/Shanghai</li>
-<li>Asia/Singapore</li>
+<li>Etc/GMT</li>
 <li>Europe/Berlin</li>
+<li>Asia/Kolkata</li>
+<li>Asia/Singapore</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org0331863" class="outline-3">
-<h3 id="org0331863">Download and parse the iCal file with Python</h3>
-<div class="outline-text-3" id="text-org0331863">
+<div id="outline-container-orga95c7df" class="outline-3">
+<h3 id="orga95c7df">Download and parse the iCal file with Python</h3>
+<div class="outline-text-3" id="text-orga95c7df">
 <div class="org-src-container">
 <pre class="src src-sh">pip3 install icalevents recurring_ical_events pypandoc
 </pre>
 </div>
 
 <div class="org-src-container">
-<pre class="src src-python" id="orga2db923"><span class="org-keyword">from</span> urllib.request <span class="org-keyword">import</span> urlopen
+<pre class="src src-python" id="orga44fc42"><span class="org-keyword">from</span> urllib.request <span class="org-keyword">import</span> urlopen
 <span class="org-keyword">from</span> icalendar <span class="org-keyword">import</span> Calendar
 <span class="org-keyword">from</span> datetime <span class="org-keyword">import</span> date, datetime
 <span class="org-keyword">from</span> dateutil.relativedelta <span class="org-keyword">import</span> *
@@ -352,21 +345,117 @@ Enjoy!
 <span class="org-keyword">import</span> pytz
 <span class="org-keyword">import</span> re
 <span class="org-keyword">import</span> pypandoc
-<span class="org-variable-name">link</span> = <span class="org-string">"https://calendar.google.com/calendar/ical/c_rkq3fc6u8k1nem23qegqc90l6c%40group.calendar.google.com/public/basic.ics"</span>
-<span class="org-variable-name">f</span> = urlopen(link)
-<span class="org-variable-name">cal</span> = Calendar.from_ical(f.read())
-<span class="org-variable-name">start_date</span> = date(date.today().year, date.today().month, 1)
-<span class="org-variable-name">end_date</span> = date(date.today().year + 1, date.today().month + 1, 1)
-<span class="org-variable-name">events</span> = recurring_ical_events.of(cal).between(start_date, end_date)
-<span class="org-keyword">for</span> t <span class="org-keyword">in</span> <span class="org-variable-name">timezones</span>:
-  filename = <span class="org-string">"emacs-calendar-"</span> + re.sub(<span class="org-string">'^.*?/'</span>, <span class="org-string">''</span>, t[0]).lower() + <span class="org-string">'.org'</span>
-  <span class="org-variable-name">zone</span> = pytz.timezone(t[0])
-  <span class="org-keyword">with</span> <span class="org-builtin">open</span>(filename, <span class="org-string">"w"</span>) <span class="org-keyword">as</span> <span class="org-variable-name">f</span>:
-    <span class="org-keyword">for</span> e <span class="org-keyword">in</span> events:
-      start = e[<span class="org-string">'DTSTART'</span>].dt.astimezone(zone)
-      <span class="org-variable-name">org_date</span> = <span class="org-string">"%Y-%m-%d %a %H:%M"</span> <span class="org-comment-delimiter"># </span><span class="org-comment">2006-11-01 Wed 19:15</span>
-      <span class="org-variable-name">end</span> = e[<span class="org-string">'DTEND'</span>].dt.astimezone(zone)
-      f.write(<span class="org-string">"""* %s</span>
+<span class="org-keyword">import</span> subprocess
+<span class="org-keyword">import</span> sys
+<span class="org-keyword">import</span> csv
+
+<span class="org-variable-name">other_meetups</span> = {<span class="org-string">'EmacsNYC'</span>: <span class="org-string">'New-York-Emacs-Meetup'</span>, <span class="org-string">'EmacsSF'</span>: <span class="org-string">'Emacs-SF'</span>,
+                 <span class="org-string">'Chicago'</span>: <span class="org-string">'Chicago-Emacs-User-Group'</span>, <span class="org-string">'EmacsATX'</span>: <span class="org-string">'EmacsATX'</span>,
+                 <span class="org-string">'Boulder'</span>: <span class="org-string">'Boulder-Emacs-Meetup'</span>, <span class="org-string">'Princeton'</span>: <span class="org-string">'Princeton-Emacs'</span>,
+                 <span class="org-string">'DC'</span>: <span class="org-string">'NOVA-EMACS'</span>,
+                 <span class="org-string">'Pelotas, Brazil'</span>: <span class="org-string">'Pelotas-Emacs-Meetup'</span>,
+                 <span class="org-string">'Sao Paulo'</span>: <span class="org-string">'Grupo-de-usuarios-de-Emacs-de-Sao-Paulo'</span>,
+                 <span class="org-string">'Frankfurt'</span>: <span class="org-string">'emacs-ffm'</span>,
+                 <span class="org-string">'London Emacs Hacking'</span>: <span class="org-string">'London-Emacs-Hacking'</span>,
+                 <span class="org-string">'London Emacs Lisp'</span>: <span class="org-string">'London-Emacs-Lisp-Meetup'</span>,
+                 <span class="org-string">'Stockholm'</span>: <span class="org-string">'Stockholm-Emacs-Meetup'</span>,
+                 <span class="org-string">'Madrid'</span>: <span class="org-string">'Emacs-Madrid'</span>,
+                 <span class="org-string">'Finland'</span>: <span class="org-string">'Finland-Emacs-User-Group'</span>,
+                 <span class="org-string">'Amsterdam'</span>: <span class="org-string">'Amsterdam-Emacs-Users-Group'</span>,
+                 <span class="org-string">'GenEmacs'</span>: <span class="org-string">'GenEmacs'</span>,
+                 <span class="org-string">'Johannesburg'</span>: <span class="org-string">'Jozi-Emacs-Meetup'</span>,
+                 <span class="org-string">'Singapore'</span>: <span class="org-string">'Emacs-SG'</span>,
+                 <span class="org-string">'Delhi'</span>: <span class="org-string">'Emacs-Delhi'</span>,
+                 <span class="org-string">'Pune'</span>: <span class="org-string">'the-peg'</span>}
+<span class="org-comment-delimiter"># </span><span class="org-comment">https://www.meetup.com/Emacs-SF/events/ical/',</span>
+
+<span class="org-keyword">def</span> <span class="org-function-name">summarized_event</span>(e, timezones):
+  <span class="org-variable-name">times</span> = [[e[<span class="org-string">'DTSTART'</span>].dt.astimezone(pytz.timezone(t[0])), t[0], e[<span class="org-string">'DTSTART'</span>].dt.astimezone(pytz.timezone(t[0])).utcoffset()] <span class="org-keyword">for</span> t <span class="org-keyword">in</span> timezones]
+  times.sort(key=<span class="org-keyword">lambda</span> x: x[2])
+  s = <span class="org-string">""</span>
+  <span class="org-keyword">for</span> i, t <span class="org-keyword">in</span> <span class="org-builtin">enumerate</span>(times):
+    <span class="org-keyword">if</span> i == 0 <span class="org-keyword">or</span> t[0].day != times[i - 1][0].day:
+       <span class="org-keyword">if</span> i &gt; 0:
+         s += <span class="org-string">" -- "</span>
+       s += t[0].strftime(<span class="org-string">'%a %b %-d %H%M'</span>) + <span class="org-string">" "</span> + re.sub(<span class="org-string">'^.*?/'</span>, <span class="org-string">''</span>, t[1])
+    <span class="org-keyword">else</span>:
+       s += <span class="org-string">" / "</span> + t[0].strftime(<span class="org-string">'%H%M'</span>) + <span class="org-string">" "</span> + re.sub(<span class="org-string">'^.*?/'</span>, <span class="org-string">''</span>, t[1])
+  <span class="org-keyword">return</span> <span class="org-string">"- %s %s %s"</span> % (e[<span class="org-string">'SUMMARY'</span>], e[<span class="org-string">'LOCATION'</span>], s)
+                     
+
+link = <span class="org-string">"https://calendar.google.com/calendar/ical/c_rkq3fc6u8k1nem23qegqc90l6c%40group.calendar.google.com/public/basic.ics"</span>
+f = urlopen(link)
+cal = Calendar.from_ical(f.read())
+start_date = date(date.today().year, date.today().month, 1)
+end_date = date(date.today().year + 1, date.today().month + 1, 1)
+
+<span class="org-keyword">for</span> event <span class="org-keyword">in</span> cal.walk():
+  <span class="org-keyword">if</span> event.name == <span class="org-string">'VEVENT'</span>:
+    <span class="org-keyword">if</span> event.get(<span class="org-string">'location'</span>) == <span class="org-string">''</span>:
+      match = re.search(r<span class="org-string">'href="([^"]+)"'</span>, event.get(<span class="org-string">'description'</span>))
+      <span class="org-keyword">if</span> <span class="org-keyword">not</span> match:
+        match = re.search(<span class="org-string">'^(http.*?)(&amp;nbsp;|&lt;br&gt;|\n)'</span>, event.get(<span class="org-string">'description'</span>))
+      <span class="org-keyword">if</span> match:                 
+        event[<span class="org-string">'location'</span>] = match.group(1)
+      <span class="org-keyword">else</span>:
+        <span class="org-keyword">print</span>(event.get(<span class="org-string">'description'</span>))
+                        
+
+<span class="org-keyword">def</span> <span class="org-function-name">merge_meetup_events</span>(cal):
+  <span class="org-keyword">global</span> other_meetups
+  <span class="org-keyword">for</span> name, identifier <span class="org-keyword">in</span> other_meetups.items():
+    url = <span class="org-string">"https://www.meetup.com/%s/events/ical/"</span> % (identifier)
+    meetup_cal = Calendar.from_ical(urlopen(url).read())
+    meetup_events = recurring_ical_events.of(meetup_cal).between(start_date, end_date)
+    <span class="org-keyword">for</span> event <span class="org-keyword">in</span> meetup_events:
+      event[<span class="org-string">'SUMMARY'</span>] = name + <span class="org-string">': '</span> + event[<span class="org-string">'SUMMARY'</span>]
+      event[<span class="org-string">'LOCATION'</span>] = event[<span class="org-string">'URL'</span>]
+      cal.add_component(event)
+     
+merge_meetup_events(cal)
+f = <span class="org-builtin">open</span>(<span class="org-string">'emacs-calendar.ics'</span>, <span class="org-string">'wb'</span>)
+f.write(cal.to_ical())
+f.close()
+
+events = recurring_ical_events.of(cal).between(start_date, end_date)
+events.sort(key=<span class="org-keyword">lambda</span> x: x[<span class="org-string">'DTSTART'</span>].dt)
+files = {}
+org_date = <span class="org-string">"%Y-%m-%d %a %H:%M"</span> <span class="org-comment-delimiter"># </span><span class="org-comment">2006-11-01 Wed 19:15</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">Prepare string for copying</span>
+highlight_start = datetime.utcnow()
+highlight_end = datetime.utcnow() + relativedelta(weeks=+6)
+
+<span class="org-keyword">for</span> t <span class="org-keyword">in</span> timezones:
+  stub = <span class="org-string">"emacs-calendar-"</span> + re.sub(<span class="org-string">'^.*?/'</span>, <span class="org-string">''</span>, t[0]).lower()
+  ical_args = [<span class="org-string">"ical2html"</span>, <span class="org-string">"-l"</span>, <span class="org-string">"-f"</span>, <span class="org-string">"Times are in "</span> + t[0], <span class="org-string">"-z"</span>, t[0], datetime.today().strftime(<span class="org-string">"%Y%m01"</span>), <span class="org-string">"P8W"</span>, <span class="org-string">"emacs-calendar.ics"</span>]
+  output = subprocess.check_output(ical_args).decode(sys.stdout.encoding)
+  changed = re.sub(r<span class="org-string">'&lt;span class=summary&gt;([^&lt;]+)&lt;/span&gt;\n&lt;pre&gt;&lt;b class=location&gt;([^&lt;]+)&lt;/b&gt;&lt;/pre&gt;'</span>,
+                   r<span class="org-string">'&lt;span class="summary"&gt;&lt;a href="\2"&gt;\1&lt;/a&gt;&lt;/span&gt;'</span>, output)
+  f = <span class="org-builtin">open</span>(stub + <span class="org-string">'.html'</span>, <span class="org-string">'wb'</span>)
+  f.write(changed.encode(sys.stdout.encoding))
+  f.close()
+  files[<span class="org-variable-name">t</span>[0]] = <span class="org-builtin">open</span>(stub + <span class="org-string">'.org'</span>, <span class="org-string">"w"</span>)
+
+<span class="org-keyword">with</span> <span class="org-builtin">open</span>(<span class="org-string">'events.csv'</span>, <span class="org-string">'w'</span>, newline=<span class="org-string">''</span>) <span class="org-keyword">as</span> csvfile:
+  fieldnames = [<span class="org-string">'DTSTART'</span>, <span class="org-string">'DTEND'</span>, <span class="org-string">'LOCATION'</span>, <span class="org-string">'SUMMARY'</span>]
+  writer = csv.DictWriter(csvfile, fieldnames=fieldnames, extrasaction=<span class="org-string">'ignore'</span>)
+  writer.writeheader()
+  <span class="org-keyword">for</span> e <span class="org-keyword">in</span> events:
+    writer.writerow({**e,
+                     <span class="org-string">'DTSTART'</span>: e[<span class="org-string">'DTSTART'</span>].dt.isoformat(),
+                     <span class="org-string">'DTEND'</span>: e[<span class="org-string">'DTEND'</span>].dt.isoformat(),
+                     })
+    
+<span class="org-keyword">for</span> e <span class="org-keyword">in</span> events:
+  desc = pypandoc.convert_text(e[<span class="org-string">'DESCRIPTION'</span>], <span class="org-string">'org'</span>, <span class="org-builtin">format</span>=<span class="org-string">'html'</span>).replace(<span class="org-string">'\\\\'</span>, <span class="org-string">''</span>)
+  utc = datetime.utcfromtimestamp(e[<span class="org-string">'DTSTART'</span>].dt.timestamp())
+  <span class="org-keyword">if</span> utc &gt;= highlight_start <span class="org-keyword">and</span> utc &lt;= highlight_end:
+    <span class="org-keyword">print</span>(summarized_event(e, timezones))
+  <span class="org-keyword">for</span> t <span class="org-keyword">in</span> timezones:
+    zone = pytz.timezone(t[0])
+    start = e[<span class="org-string">'DTSTART'</span>].dt.astimezone(zone)
+    end = e[<span class="org-string">'DTEND'</span>].dt.astimezone(zone)
+    files[t[0]].write(<span class="org-string">"""* %s</span>
 <span class="org-string">:PROPERTIES:</span>
 <span class="org-string">:LOCATION: %s</span>
 <span class="org-string">:END:</span>
@@ -374,47 +463,28 @@ Enjoy!
 
 <span class="org-string">%s</span>
 
-<span class="org-string">"""</span> % (e[<span class="org-string">'SUMMARY'</span>], e[<span class="org-string">'LOCATION'</span>], start.strftime(org_date), end.strftime(org_date), pypandoc.convert_text(e[<span class="org-string">'DESCRIPTION'</span>], <span class="org-string">'org'</span>, <span class="org-builtin">format</span>=<span class="org-string">'html'</span>).replace(<span class="org-string">'\\\\'</span>, <span class="org-string">''</span>)))
-<span class="org-comment-delimiter"># </span><span class="org-comment">Prepare string for copying</span>
-highlight_start = datetime.utcnow()
-highlight_end = datetime.utcnow() + relativedelta(months=+1)
-<span class="org-keyword">for</span> e <span class="org-keyword">in</span> events:
-  utc = datetime.utcfromtimestamp(e[<span class="org-string">'DTSTART'</span>].dt)
-  <span class="org-keyword">if</span> utc &lt; highlight_start <span class="org-keyword">or</span> utc &gt; highlight_end:
-    <span class="org-keyword">continue</span>
-  times = [[e[<span class="org-string">'DTSTART'</span>].dt.astimezone(pytz.timezone(t[0])), t[0], e[<span class="org-string">'DTSTART'</span>].dt.astimezone(pytz.timezone(t[0])).utcoffset()] <span class="org-keyword">for</span> t <span class="org-keyword">in</span> timezones]
-  times.sort(key=<span class="org-keyword">lambda</span> x: x[2])
-  s = <span class="org-string">""</span>
-  <span class="org-keyword">for</span> i, t <span class="org-keyword">in</span> <span class="org-builtin">enumerate</span>(times):
-    <span class="org-keyword">if</span> i == 0 <span class="org-keyword">or</span> t[0].day == times[i - 1][0].day:
-       <span class="org-keyword">if</span> i &gt; 0:
-         s += <span class="org-string">" // "</span>
-       s += t[0].strftime(<span class="org-string">'%a %b %-d %H%M'</span>) + <span class="org-string">" "</span> + t[1]
-    <span class="org-keyword">else</span>:
-       s += <span class="org-string">" / "</span> + t[0].strftime(<span class="org-string">'%H%M'</span>) + <span class="org-string">" "</span> + t[1]
-  <span class="org-keyword">print</span>(<span class="org-string">"- %s %s %s"</span> % (e[<span class="org-string">'SUMMARY'</span>], e[<span class="org-string">'LOCATION'</span>], s))
+<span class="org-string">"""</span> % (e[<span class="org-string">'SUMMARY'</span>], e[<span class="org-string">'LOCATION'</span>], start.strftime(org_date), end.strftime(org_date), desc))
+
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org588dbd6" class="outline-3">
-<h3 id="org588dbd6">Sync</h3>
-<div class="outline-text-3" id="text-org588dbd6">
+<div id="outline-container-org444bf41" class="outline-3">
+<h3 id="org444bf41">Sync</h3>
+<div class="outline-text-3" id="text-org444bf41">
 <div class="org-src-container">
-<pre class="src src-sh" id="org75fc2e0">rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
+<pre class="src src-sh" id="orgecc4079">rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org9247391" class="outline-3">
-<h3 id="org9247391">Convert timezones</h3>
-<div class="outline-text-3" id="text-org9247391">
+<div id="outline-container-orga56a73c" class="outline-3">
+<h3 id="orga56a73c">Convert timezones</h3>
+<div class="outline-text-3" id="text-orga56a73c">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org4a778dc">(<span class="org-keyword">defvar</span> <span class="org-variable-name">my/timezones</span> nil <span class="org-doc">"Timezones"</span>)
-(<span class="org-keyword">setq</span> my/timezones (mapcar 'car timezones))
-(<span class="org-keyword">defun</span> <span class="org-function-name">my/summarize-times</span> (time timezones)
+<pre class="src src-emacs-lisp" id="org93cf317">(<span class="org-keyword">defun</span> <span class="org-function-name">my/summarize-times</span> (time timezones)
   (<span class="org-keyword">let</span> (prev-day)
     (mapconcat
      (<span class="org-keyword">lambda</span> (tz)
@@ -424,11 +494,11 @@ highlight_end = datetime.utcnow() + relativedelta(months=+1)
              cur-time
            (<span class="org-keyword">setq</span> prev-day cur-day)
            (concat cur-day <span class="org-string">" "</span> cur-time))))
-     (sort timezones (<span class="org-keyword">lambda</span> (a b) (&lt; (car (current-time-zone nil a)) (car (current-time-zone nil b)))))
+     timezones
      <span class="org-string">" / "</span>)))
 
-(<span class="org-keyword">defun</span> <span class="org-function-name">my/org-summarize-event-in-timezones</span> ()
-  (<span class="org-keyword">interactive</span>)
+(<span class="org-keyword">defun</span> <span class="org-function-name">my/org-summarize-event-in-timezones</span> (timezones)
+  (<span class="org-keyword">interactive</span> (list (<span class="org-keyword">or</span> timezones my/timezones)))
   (<span class="org-keyword">save-window-excursion</span>
     (<span class="org-keyword">save-excursion</span>
       (<span class="org-keyword">when</span> (derived-mode-p 'org-agenda-mode) (org-agenda-goto))
@@ -438,7 +508,7 @@ highlight_end = datetime.utcnow() + relativedelta(months=+1)
                (start-time (org-timestamp-to-time (org-timestamp-split-range times)))
                (msg (format <span class="org-string">"%s - %s - %s"</span>
                             (org-get-heading t t t t)
-                            (my/summarize-times start-time my/timezones)
+                            (my/summarize-times start-time timezones)
                             <span class="org-comment-delimiter">;; </span><span class="org-comment">(cond</span>
                             <span class="org-comment-delimiter">;;  </span><span class="org-comment">((time-less-p (org-timestamp-to-time (org-timestamp-split-range times t)) (current-time))</span>
                             <span class="org-comment-delimiter">;;   </span><span class="org-comment">"(past)")</span>
@@ -446,7 +516,7 @@ highlight_end = datetime.utcnow() + relativedelta(months=+1)
                             <span class="org-comment-delimiter">;;   </span><span class="org-comment">(concat "in " (format-seconds "%D %H %M%Z" (time-subtract start-time (current-time)))))</span>
                             <span class="org-comment-delimiter">;;  </span><span class="org-comment">(t "(ongoing)"))</span>
                             (org-entry-get (point) <span class="org-string">"LOCATION"</span>))))
-          (<span class="org-keyword">if</span> (interactive-p)
+          (<span class="org-keyword">if</span> (called-interactively-p 'any)
               (<span class="org-keyword">progn</span>
                 (message <span class="org-string">"%s"</span> msg)
                 (kill-new msg))
@@ -460,12 +530,12 @@ my/org-summarize-event-in-timezones
 </div>
 </div>
 
-<div id="outline-container-org81efd06" class="outline-3">
-<h3 id="org81efd06">Summarize upcoming ones</h3>
-<div class="outline-text-3" id="text-org81efd06">
+<div id="outline-container-org77ce72d" class="outline-3">
+<h3 id="org77ce72d">Summarize upcoming ones</h3>
+<div class="outline-text-3" id="text-org77ce72d">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgfc9be2d">(<span class="org-keyword">defun</span> <span class="org-function-name">my/summarize-upcoming-events</span> (limit)
-  (<span class="org-keyword">interactive</span> (list (org-read-date nil t)))
+<pre class="src src-emacs-lisp" id="org02a549e">(<span class="org-keyword">defun</span> <span class="org-function-name">my/summarize-upcoming-events</span> (limit timezones)
+  (<span class="org-keyword">interactive</span> (list (org-read-date nil t) my/timezones))
   (<span class="org-keyword">let</span> (result)
     (<span class="org-keyword">with-current-buffer</span> (find-file-noselect <span class="org-string">"~/code/emacs-calendar/emacs-calendar-toronto.org"</span>)
       (goto-char (point-min))
@@ -477,8 +547,15 @@ my/org-summarize-event-in-timezones
              (<span class="org-keyword">let</span> ((time (org-timestamp-to-time (org-timestamp-split-range (org-element-timestamp-parser)))))
                (<span class="org-keyword">when</span> (<span class="org-keyword">and</span> (time-less-p (current-time) time)
                           (time-less-p time limit))
-                 (<span class="org-keyword">setq</span> result (cons (my/org-summarize-event-in-timezones) result)))))))))
-    (<span class="org-keyword">setq</span> result (mapconcat (<span class="org-keyword">lambda</span> (o) (format <span class="org-string">"- %s"</span> o)) (reverse result) <span class="org-string">"\n"</span>))
+                 (<span class="org-keyword">setq</span> result (cons
+                               (cons time
+                                     (my/org-summarize-event-in-timezones timezones)) <span class="org-warning">result)))))))))</span>
+    (<span class="org-keyword">setq</span> result (mapconcat
+                  (<span class="org-keyword">lambda</span> (o) (format <span class="org-string">"- %s"</span> (cdr  o)))
+                  (sort result (<span class="org-keyword">lambda</span> (a b)
+                                 (time-less-p (car a) (car b))
+                                 ))
+                  <span class="org-string">"\n"</span>))
     (<span class="org-keyword">if</span> (interactive-p)
         (insert result)
       result)))
@@ -491,9 +568,61 @@ my/summarize-upcoming-events
 </div>
 </div>
 
-<div id="outline-container-org11f054c" class="outline-3">
-<h3 id="org11f054c">Update EmacsWiki</h3>
-<div class="outline-text-3" id="text-org11f054c">
+
+<div id="outline-container-org50ae914" class="outline-3">
+<h3 id="org50ae914">Announcing Emacs events</h3>
+<div class="outline-text-3" id="text-org50ae914">
+<div class="org-src-container">
+<pre class="src src-emacs-lisp" id="orgfd93d49">(<span class="org-keyword">defun</span> <span class="org-function-name">my/announce-on-irc</span> (channels message host port)
+  (<span class="org-keyword">with-temp-buffer</span>
+    (insert <span class="org-string">"PASS "</span> erc-password <span class="org-string">"\n"</span>
+            <span class="org-string">"USER "</span> erc-nick <span class="org-string">"\n"</span>
+            <span class="org-string">"NICK "</span> erc-nick <span class="org-string">"\n"</span>
+            (mapconcat (<span class="org-keyword">lambda</span> (o)
+                         (format <span class="org-string">"PRIVMSG %s :%s\n"</span> o message))
+                       channels <span class="org-string">""</span>)
+            <span class="org-string">"QUIT\n"</span>)
+    (call-process-region (point-min) (point-max) <span class="org-string">"ncat"</span> nil 0 nil
+                         <span class="org-string">"--ssl"</span> host (number-to-string port))))
+
+(<span class="org-keyword">defun</span> <span class="org-function-name">my/announce-on-irc-and-twitter</span> (channels message host port)
+  (shell-command-to-string (format <span class="org-string">"zsh -l -c 'rvm use 2.4.1; t update %s'"</span> (shell-quote-argument message)))
+  (my/announce-on-irc channels message host port))
+
+(<span class="org-keyword">defun</span> <span class="org-function-name">my/schedule-announcement</span> (time message)
+  (<span class="org-keyword">interactive</span> (list (org-read-date t t) (read-string <span class="org-string">"Message: "</span>)))
+  (run-at-time time nil #'my/announce-on-irc-and-twitter '(<span class="org-string">"#emacs"</span> <span class="org-string">"#emacsconf"</span>) message erc-server erc-port))
+
+(<span class="org-keyword">defun</span> <span class="org-function-name">my/schedule-announcements-for-upcoming-emacs-meetups</span> ()
+  (<span class="org-keyword">interactive</span>)
+  (cancel-function-timers #'my/announce-on-irc-and-twitter)
+  (<span class="org-keyword">let</span> ((events (my/org-table-as-alist (pcsv-parse-file <span class="org-string">"~/code/emacs-calendar/events.csv"</span>)))
+        (now (current-time))
+        (before-limit (time-add (current-time) (seconds-to-time (* 7 24 60 60)))))
+    (mapc (<span class="org-keyword">lambda</span> (o)
+            (<span class="org-keyword">let*</span> ((start-time (encode-time (parse-time-string (alist-get 'DTSTART o))))
+                   (fifteen-minutes-before (seconds-to-time (- (time-to-seconds start-time) (* 15 60)))))
+              (<span class="org-keyword">when</span> (<span class="org-keyword">and</span> (time-less-p now fifteen-minutes-before)
+                         (time-less-p fifteen-minutes-before before-limit))
+                (my/schedule-announcement fifteen-minutes-before
+                                          (format <span class="org-string">"In 15 minutes: %s - see %s for details"</span>
+                                                  (alist-get 'SUMMARY o)
+                                                  (alist-get 'LOCATION o))))
+              (<span class="org-keyword">when</span> (<span class="org-keyword">and</span> (time-less-p now start-time)
+                         (time-less-p start-time before-limit))
+                (my/schedule-announcement start-time
+                                          (format <span class="org-string">"Starting now: %s - see %s for details"</span>
+                                                  (alist-get 'SUMMARY o)
+                                                  (alist-get 'LOCATION o))))))
+          events)))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc527fb8" class="outline-3">
+<h3 id="orgc527fb8">Update EmacsWiki</h3>
+<div class="outline-text-3" id="text-orgc527fb8">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(<span class="org-keyword">use-package</span> <span class="org-constant">oddmuse</span>
 <span class="org-builtin">:load-path</span> <span class="org-string">"~/vendor/oddmuse-el"</span>
@@ -511,11 +640,7 @@ my/summarize-upcoming-events
 
 
 <p>
-<a href="(oddmuse-edit "EmacsWiki" "Usergroups")">(oddmuse-edit "EmacsWiki" "Usergroups")</a>
-</p>
-
-<p>
-#+end_src
+<span title="(oddmuse-edit &quot;EmacsWiki&quot; &quot;Usergroups&quot;)">nil</span>
 </p>
 </div>
 </div>

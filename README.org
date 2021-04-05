@@ -2,32 +2,54 @@
 
 * Actions  :noexport:
 
-#+CALL: update() :results none :eval never-export
 #+CALL: sync() :results none :eval never-export
+
+#+begin_src emacs-lisp :noweb yes
+<<announce>>
+(defun my/prepare-calendar-for-export ()
+  (interactive)
+  (goto-char (point-min))
+  (re-search-forward "#\\+NAME: event-summary")
+  (org-ctrl-c-ctrl-c)
+  (org-export-to-file 'html "README.html")
+  (org-babel-goto-named-result "event-summary")
+  (re-search-forward "^- ")
+  (goto-char (match-beginning 0))
+  (let ((events (org-babel-read-result)))
+    (oddmuse-edit "EmacsWiki" "Usergroups")
+    (goto-char (point-min))
+    (delete-region (progn (re-search-forward "== Upcoming events ==\n\n") (match-end 0))
+                   (progn (re-search-forward "^$") (match-beginning 0)))
+    (save-excursion (insert (mapconcat (lambda (s) (concat "* " (car s) "\n")) events "")))))
+(my/prepare-calendar-for-export)
+(org-export-to-file 'html "README.html")
+(my/schedule-announcements-for-upcoming-emacs-meetups)
+#+end_src
+
+(oddmuse-edit "EmacsWiki" "Usergroups")
+
+(find-file "~/sync/emacs-news/index.org")
+[[elisp:(org-export-to-file 'html "README.html")]]
+[[elisp:my/schedule-announcements-for-upcoming-emacs-meetups]]
 
 * Upcoming events
 
-#+begin_src emacs-lisp :noweb no-export :tangle no :var timezones=timezones :results drawer :exports both 
-<<convert-timezones>>
-<<upcoming-events>>
-(my/summarize-upcoming-events (org-read-date nil t "+4w"))
-#+end_src
+#+NAME: event-summary
+#+CALL: update() :results drawer :eval never-export
 
-#+RESULTS:
+#+RESULTS: event-summary
 :results:
-- EmacsFFM: Creating our own major mode (virtual) - Wed Feb 17 1900H GMT / 2000H CET / Thu Feb 18 0030H IST / 0300H CST / 0300H +08 - https://www.meetup.com/emacs-ffm/events/275881281/
-- Emacs Berlin (virtual, in English) - Wed Feb 24 1730H GMT / 1830H CET / 2300H IST / Thu Feb 25 0130H CST / 0130H +08 - https://emacs-berlin.org/
-- Emacs Berlin (virtual, in English) - Wed Feb 24 1730H GMT / 1830H CET / 2300H IST / Thu Feb 25 0130H CST / 0130H +08 - https://emacs-berlin.org/
-- Emacs Berlin (virtual, in English) - Wed Feb 24 1730H GMT / 1830H CET / 2300H IST / Thu Feb 25 0130H CST / 0130H +08 - https://emacs-berlin.org/
-- Emacs Berlin (virtual, in English) - Wed Feb 24 1730H GMT / 1830H CET / 2300H IST / Thu Feb 25 0130H CST / 0130H +08 - https://emacs-berlin.org/
-- Emacs APAC (virtual, in English) - Sat Feb 27 0030H PST / 0230H CST / 0330H EST / 0830H GMT / 0930H CET / 1400H IST / 1630H CST / 1630H +08 - https://emacs-apac.gitlab.io/
-- Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 - 
-- Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 - 
-- Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 - 
-- Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 - 
-- Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 - 
-- Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 - 
-- Emacs Paris (virtual) - Thu Mar 4 1630H GMT / 1730H CET / 2200H IST / Fri Mar 5 0030H CST / 0030H +08 - 
+
+- EmacsNYC: Monthly Online Meetup - Guided Discussion: Meta Emacs and One Year online https://www.meetup.com/New-York-Emacs-Meetup/events/277123630/ Mon Apr 5 1600 Vancouver / 1800 Chicago / 1900 Toronto / 2300 GMT -- Tue Apr 6 0100 Berlin / 0430 Kolkata / 0700 Singapore
+- Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/ Tue Apr 6 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore
+- EmacsATX: Emacs as a Spreadsheet and Emacs Social https://www.meetup.com/EmacsATX/events/277079765/ Wed Apr 7 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT -- Thu Apr 8 0130 Berlin / 0500 Kolkata / 0730 Singapore
+- M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu Apr 15 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+- EmacsSF: Some early Emacs history, Lightning talks, and General Discussion https://www.meetup.com/Emacs-SF/events/277309406/ Thu Apr 15 1000 Vancouver / 1200 Chicago / 1300 Toronto / 1700 GMT / 1900 Berlin / 2230 Kolkata -- Fri Apr 16 0100 Singapore
+- Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat Apr 24 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 1030 Berlin / 1400 Kolkata / 1630 Singapore
+- Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Apr 28 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata -- Thu Apr 29 0030 Singapore
+- EmacsATX: TBD https://www.meetup.com/EmacsATX/events/hkckgsycchbhb/ Wed May 5 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT -- Thu May 6 0130 Berlin / 0500 Kolkata / 0730 Singapore
+- M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu May 6 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+- Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/ Thu May 6 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore
 :end:
 
 * Introduction
@@ -39,7 +61,7 @@ https://www.emacswiki.org/emacs/Usergroups.
 
 Or you can add this iCal to your calendar program:
 
-https://calendar.google.com/calendar/ical/c_rkq3fc6u8k1nem23qegqc90l6c%40group.calendar.google.com/public/basic.ics
+[[https://emacslife.com/calendar/emacs-calendar.ics]]
 
 Or you view the following HTML calendars:
 
@@ -97,12 +119,12 @@ Enjoy!
 
 ** Download and parse the iCal file with Python
 
-#+begin_src sh :results silent
+#+begin_src sh :results silent :eval never-export
 pip3 install icalevents recurring_ical_events pypandoc
 #+end_src
 
 #+NAME: update
-#+begin_src python :session "cal" :results output drawer :var timezones=timezones :tangle yes :eval never-export
+#+begin_src python :session "cal" :results output drawer :var timezones=timezones :tangle "update.py" :eval never-export
 from urllib.request import urlopen
 from icalendar import Calendar
 from datetime import date, datetime
@@ -111,22 +133,117 @@ import recurring_ical_events
 import pytz
 import re
 import pypandoc
+import subprocess
+import sys
+import csv
+
+other_meetups = {'EmacsNYC': 'New-York-Emacs-Meetup', 'EmacsSF': 'Emacs-SF',
+                 'Chicago': 'Chicago-Emacs-User-Group', 'EmacsATX': 'EmacsATX',
+                 'Boulder': 'Boulder-Emacs-Meetup', 'Princeton': 'Princeton-Emacs',
+                 'DC': 'NOVA-EMACS',
+                 'Pelotas, Brazil': 'Pelotas-Emacs-Meetup',
+                 'Sao Paulo': 'Grupo-de-usuarios-de-Emacs-de-Sao-Paulo',
+                 'Frankfurt': 'emacs-ffm',
+                 'London Emacs Hacking': 'London-Emacs-Hacking',
+                 'London Emacs Lisp': 'London-Emacs-Lisp-Meetup',
+                 'Stockholm': 'Stockholm-Emacs-Meetup',
+                 'Madrid': 'Emacs-Madrid',
+                 'Finland': 'Finland-Emacs-User-Group',
+                 'Amsterdam': 'Amsterdam-Emacs-Users-Group',
+                 'GenEmacs': 'GenEmacs',
+                 'Johannesburg': 'Jozi-Emacs-Meetup',
+                 'Singapore': 'Emacs-SG',
+                 'Delhi': 'Emacs-Delhi',
+                 'Pune': 'the-peg'}
+# https://www.meetup.com/Emacs-SF/events/ical/',
+
+def summarized_event(e, timezones):
+  times = [[e['DTSTART'].dt.astimezone(pytz.timezone(t[0])), t[0], e['DTSTART'].dt.astimezone(pytz.timezone(t[0])).utcoffset()] for t in timezones]
+  times.sort(key=lambda x: x[2])
+  s = ""
+  for i, t in enumerate(times):
+    if i == 0 or t[0].day != times[i - 1][0].day:
+       if i > 0:
+         s += " -- "
+       s += t[0].strftime('%a %b %-d %H%M') + " " + re.sub('^.*?/', '', t[1])
+    else:
+       s += " / " + t[0].strftime('%H%M') + " " + re.sub('^.*?/', '', t[1])
+  return "- %s %s %s" % (e['SUMMARY'], e['LOCATION'], s)
+                     
+
 link = "https://calendar.google.com/calendar/ical/c_rkq3fc6u8k1nem23qegqc90l6c%40group.calendar.google.com/public/basic.ics"
 f = urlopen(link)
 cal = Calendar.from_ical(f.read())
 start_date = date(date.today().year, date.today().month, 1)
 end_date = date(date.today().year + 1, date.today().month + 1, 1)
+
+for event in cal.walk():
+  if event.name == 'VEVENT':
+    if event.get('location') == '':
+      match = re.search(r'href="([^"]+)"', event.get('description'))
+      if not match:
+        match = re.search('^(http.*?)(&nbsp;|<br>|\n)', event.get('description'))
+      if match:                 
+        event['location'] = match.group(1)
+      else:
+        print(event.get('description'))
+                        
+
+def merge_meetup_events(cal):
+  global other_meetups
+  for name, identifier in other_meetups.items():
+    url = "https://www.meetup.com/%s/events/ical/" % (identifier)
+    meetup_cal = Calendar.from_ical(urlopen(url).read())
+    meetup_events = recurring_ical_events.of(meetup_cal).between(start_date, end_date)
+    for event in meetup_events:
+      event['SUMMARY'] = name + ': ' + event['SUMMARY']
+      event['LOCATION'] = event['URL']
+      cal.add_component(event)
+     
+merge_meetup_events(cal)
+f = open('emacs-calendar.ics', 'wb')
+f.write(cal.to_ical())
+f.close()
+
 events = recurring_ical_events.of(cal).between(start_date, end_date)
 events.sort(key=lambda x: x['DTSTART'].dt)
+files = {}
+org_date = "%Y-%m-%d %a %H:%M" # 2006-11-01 Wed 19:15
+# Prepare string for copying
+highlight_start = datetime.utcnow()
+highlight_end = datetime.utcnow() + relativedelta(weeks=+6)
+
 for t in timezones:
-  filename = "emacs-calendar-" + re.sub('^.*?/', '', t[0]).lower() + '.org'
-  zone = pytz.timezone(t[0])
-  with open(filename, "w") as f:
-    for e in events:
-      start = e['DTSTART'].dt.astimezone(zone)
-      org_date = "%Y-%m-%d %a %H:%M" # 2006-11-01 Wed 19:15
-      end = e['DTEND'].dt.astimezone(zone)
-      f.write("""* %s
+  stub = "emacs-calendar-" + re.sub('^.*?/', '', t[0]).lower()
+  ical_args = ["ical2html", "-l", "-f", "Times are in " + t[0], "-z", t[0], datetime.today().strftime("%Y%m01"), "P8W", "emacs-calendar.ics"]
+  output = subprocess.check_output(ical_args).decode(sys.stdout.encoding)
+  changed = re.sub(r'<span class=summary>([^<]+)</span>\n<pre><b class=location>([^<]+)</b></pre>',
+                   r'<span class="summary"><a href="\2">\1</a></span>', output)
+  f = open(stub + '.html', 'wb')
+  f.write(changed.encode(sys.stdout.encoding))
+  f.close()
+  files[t[0]] = open(stub + '.org', "w")
+
+with open('events.csv', 'w', newline='') as csvfile:
+  fieldnames = ['DTSTART', 'DTEND', 'LOCATION', 'SUMMARY']
+  writer = csv.DictWriter(csvfile, fieldnames=fieldnames, extrasaction='ignore')
+  writer.writeheader()
+  for e in events:
+    writer.writerow({**e,
+                     'DTSTART': e['DTSTART'].dt.isoformat(),
+                     'DTEND': e['DTEND'].dt.isoformat(),
+                     })
+    
+for e in events:
+  desc = pypandoc.convert_text(e['DESCRIPTION'], 'org', format='html').replace('\\\\', '')
+  utc = datetime.utcfromtimestamp(e['DTSTART'].dt.timestamp())
+  if utc >= highlight_start and utc <= highlight_end:
+    print(summarized_event(e, timezones))
+  for t in timezones:
+    zone = pytz.timezone(t[0])
+    start = e['DTSTART'].dt.astimezone(zone)
+    end = e['DTEND'].dt.astimezone(zone)
+    files[t[0]].write("""* %s
 :PROPERTIES:
 :LOCATION: %s
 :END:
@@ -134,37 +251,23 @@ for t in timezones:
 
 %s
 
-""" % (e['SUMMARY'], e['LOCATION'], start.strftime(org_date), end.strftime(org_date), pypandoc.convert_text(e['DESCRIPTION'], 'org', format='html').replace('\\\\', '')))
-# Prepare string for copying
-highlight_start = datetime.utcnow()
-highlight_end = datetime.utcnow() + relativedelta(months=+1)
-for e in events:
-  utc = datetime.utcfromtimestamp(e['DTSTART'].dt.timestamp())
-  if utc < highlight_start or utc > highlight_end:
-    continue
-  times = [[e['DTSTART'].dt.astimezone(pytz.timezone(t[0])), t[0], e['DTSTART'].dt.astimezone(pytz.timezone(t[0])).utcoffset()] for t in timezones]
-  times.sort(key=lambda x: x[2])
-  s = ""
-  for i, t in enumerate(times):
-    if i == 0 or t[0].day != times[i - 1][0].day:
-       if i > 0:
-         s += " // "
-       s += t[0].strftime('%a %b %-d %H%M') + " " + re.sub('^.*?/', '', t[1])
-    else:
-       s += " / " + t[0].strftime('%H%M') + " " + re.sub('^.*?/', '', t[1])
-  print("- %s %s %s" % (e['SUMMARY'], e['LOCATION'], s))
+""" % (e['SUMMARY'], e['LOCATION'], start.strftime(org_date), end.strftime(org_date), desc))
+
 #+end_src
 
 #+RESULTS: update
 :results:
-- EmacsSF: Discussion of emacs in general and completion frameworks in particular https://www.meetup.com/Emacs-SF/events/276234974/ Fri Feb 12 1000 Vancouver / 1200 Chicago / 1300 Toronto / 1800 GMT / 1900 Berlin / 2330 Kolkata // Sat Feb 13 0200 Singapore
-- EmacsFFM: Creating our own major mode (virtual) https://www.meetup.com/emacs-ffm/events/275881281/ Wed Feb 17 1100 Vancouver / 1300 Chicago / 1400 Toronto / 1900 GMT / 2000 Berlin // Thu Feb 18 0030 Kolkata / 0300 Singapore
-- Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Feb 24 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1730 GMT / 1830 Berlin / 2300 Kolkata // Thu Feb 25 0130 Singapore
-- Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat Feb 27 0030 Vancouver / 0230 Chicago / 0330 Toronto / 0830 GMT / 0930 Berlin / 1400 Kolkata / 1630 Singapore
-- EmacsNYC: Mail Month https://emacsnyc.org/2021/02/03/monthly-online-meetup-mail-month.html Mon Mar 1 1600 Vancouver / 1800 Chicago / 1900 Toronto // Tue Mar 2 0000 GMT / 0100 Berlin / 0530 Kolkata / 0800 Singapore
-- Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/  Thu Mar 4 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1630 GMT / 1730 Berlin / 2200 Kolkata // Fri Mar 5 0030 Singapore
-:end:
 
+- Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat Mar 27 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 0930 Berlin / 1400 Kolkata / 1630 Singapore
+- Singapore: Emacs & Never Code Alone SG https://www.meetup.com/Emacs-SG/events/268260076/ Wed Mar 31 0400 Vancouver / 0600 Chicago / 0700 Toronto / 1100 GMT / 1300 Berlin / 1630 Kolkata / 1900 Singapore
+- Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Mar 31 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata -- Thu Apr 1 0030 Singapore
+- M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu Apr 1 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+- EmacsSF: Emacs Lisp - Coding a minor mode; lispy mode; Lightning Talks and Discussion https://www.meetup.com/Emacs-SF/events/276954899/ Thu Apr 1 1000 Vancouver / 1200 Chicago / 1300 Toronto / 1700 GMT / 1900 Berlin / 2230 Kolkata -- Fri Apr 2 0100 Singapore
+- Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/ Tue Apr 6 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore
+- M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu Apr 15 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+- Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat Apr 24 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 1030 Berlin / 1400 Kolkata / 1630 Singapore
+- Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Apr 28 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata -- Thu Apr 29 0030 Singapore
+:end:
 
 ** Sync
 
@@ -172,6 +275,30 @@ for e in events:
 #+begin_src sh :exports code :eval never-export
 rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
 #+end_src
+
+#+RESULTS: sync
+:results:
+sending incremental file list
+README.org
+emacs-calendar-berlin.html
+emacs-calendar-berlin.org
+emacs-calendar-chicago.html
+emacs-calendar-chicago.org
+emacs-calendar-gmt.html
+emacs-calendar-gmt.org
+emacs-calendar-kolkata.html
+emacs-calendar-kolkata.org
+emacs-calendar-singapore.html
+emacs-calendar-singapore.org
+emacs-calendar-toronto.html
+emacs-calendar-toronto.org
+emacs-calendar-vancouver.html
+emacs-calendar-vancouver.org
+emacs-calendar.ics
+
+sent 8,195 bytes  received 6,729 bytes  29,848.00 bytes/sec
+total size is 927,214  speedup is 62.13
+:end:
 
 ** Convert timezones
 
@@ -256,6 +383,55 @@ rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
 #+RESULTS:
 : my/summarize-upcoming-events
 
+
+** Announcing Emacs events
+
+#+NAME: announce
+#+begin_src emacs-lisp
+(defun my/announce-on-irc (channels message host port)
+  (with-temp-buffer
+    (insert "PASS " erc-password "\n"
+            "USER " erc-nick "\n"
+            "NICK " erc-nick "\n"
+            (mapconcat (lambda (o)
+                         (format "PRIVMSG %s :%s\n" o message))
+                       channels "")
+            "QUIT\n")
+    (call-process-region (point-min) (point-max) "ncat" nil 0 nil
+                         "--ssl" host (number-to-string port))))
+
+(defun my/announce-on-irc-and-twitter (channels message host port)
+  (shell-command-to-string (format "zsh -l -c 'rvm use 2.4.1; t update %s'" (shell-quote-argument message)))
+  (my/announce-on-irc channels message host port))
+
+(defun my/schedule-announcement (time message)
+  (interactive (list (org-read-date t t) (read-string "Message: ")))
+  (run-at-time time nil #'my/announce-on-irc-and-twitter '("#emacs" "#emacsconf") message erc-server erc-port))
+
+(defun my/schedule-announcements-for-upcoming-emacs-meetups ()
+  (interactive)
+  (cancel-function-timers #'my/announce-on-irc-and-twitter)
+  (let ((events (my/org-table-as-alist (pcsv-parse-file "~/code/emacs-calendar/events.csv")))
+        (now (current-time))
+        (before-limit (time-add (current-time) (seconds-to-time (* 7 24 60 60)))))
+    (mapc (lambda (o)
+            (let* ((start-time (encode-time (parse-time-string (alist-get 'DTSTART o))))
+                   (fifteen-minutes-before (seconds-to-time (- (time-to-seconds start-time) (* 15 60)))))
+              (when (and (time-less-p now fifteen-minutes-before)
+                         (time-less-p fifteen-minutes-before before-limit))
+                (my/schedule-announcement fifteen-minutes-before
+                                          (format "In 15 minutes: %s - see %s for details"
+                                                  (alist-get 'SUMMARY o)
+                                                  (alist-get 'LOCATION o))))
+              (when (and (time-less-p now start-time)
+                         (time-less-p start-time before-limit))
+                (my/schedule-announcement start-time
+                                          (format "Starting now: %s - see %s for details"
+                                                  (alist-get 'SUMMARY o)
+                                                  (alist-get 'LOCATION o))))))
+          events)))
+  #+end_src
+  
 ** Update EmacsWiki
 
 #+begin_src emacs-lisp  :results nil
@@ -275,7 +451,6 @@ rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
 
 [[elisp:(oddmuse-edit "EmacsWiki" "Usergroups")]]
 
-#+end_src
 ** Testing agenda files :noexport:
 
 #+begin_src emacs-lisp :exports results :var timezones=timezones :results list
@@ -291,7 +466,6 @@ rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
 - [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-shanghai.org")))) (org-agenda-list nil nil 31))][View Asia/Shanghai agenda]]
 - [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-singapore.org")))) (org-agenda-list nil nil 31))][View Asia/Singapore agenda]]
 - [[elisp:(let ((org-agenda-files (list (expand-file-name "emacs-calendar-berlin.org")))) (org-agenda-list nil nil 31))][View Europe/Berlin agenda]]
-
 
 
 
