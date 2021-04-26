@@ -52,10 +52,49 @@ TZOFFSETTO:+0100
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+SUMMARY:Emacs Org mode features you may not know
+DTSTART:20210410T150000Z
+DTEND:20210410T154000Z
+DTSTAMP:20210426T231507Z
+UID:37ans5j8e85fgvf05aa5lusbkj@google.com
+SEQUENCE:0
+CREATED:20210405T234130Z
+DESCRIPTION:<a href="https://pretalx.linuxtage.at/glt21/talk/ZKEXNW/" id="
+ ow2049" __is_owner="true">https://pretalx.linuxtage.at/glt21/talk/ZKEXNW/<
+ /a><br>Chat: www.oftc.net #glt21<br><a href="https://karl-voit.at/2021/04/
+ 10/GLT21-emacs-org-features/" id="ow2063" __is_owner="true">https://karl-v
+ oit.at/2021/04/10/GLT21-emacs-org-features/</a><br><a href="https://www.re
+ ddit.com/r/emacs/comments/mif3sb/glt21conferencetalk_emacs_org_mode_featur
+ es_you/" id="ow2077" __is_owner="true">https://www.reddit.com/r/emacs/comm
+ ents/mif3sb/glt21conferencetalk_emacs_org_mode_features_you/</a><br><secti
+ on><p>Emacs Org mode is huge and might overwhelm some people. Therefore\, 
+ helpful features often gets lost in this large amount of documentation. In
+  this talk\, hand-selected tricks are demonstrated that may help the avera
+ ge Org mode user in her daily life.</p></section><hr><section><p>Bastien G
+ uerry wrote&nbsp\;<a href="https://bzg.fr/en/some-emacs-org-mode-features-
+ you-may-not-know.html/">this article where he shows nice but rather unknow
+ n Org features</a>. His article inspired this talk which is about a select
+ ion of those features and much more here and there. It also covers some ge
+ neral Emacs features.</p><p>For this talk\, you should have a minimum leve
+ l of experience with GNU/Emacs and Org mode. If not\, it might provide som
+ e inspiration and motivation to start with GNU/Emacs. However the talk hig
+ hlights only some features and tricks here and there\, not providing a gen
+ eral overview.</p><p>You can find the show-notes of the talk\, links to ex
+ ternal sources and the&nbsp\;<a href="https://en.wikipedia.org/wiki/Coloph
+ on_(publishing)">colophon</a>&nbsp\;on&nbsp\;<a href="https://karl-voit.at
+ /2021/04/10/GLT21-emacs-org-features/">this web page</a>.</p><p>Please do 
+ send a short feedback&nbsp\;<a href="https://pretalx.linuxtage.at/glt21/ta
+ lk/ZKEXNW/feedback/">here</a>&nbsp\;after the talk.</p></section>
+LAST-MODIFIED:20210405T234228Z
+LOCATION:https://pretalx.linuxtage.at/glt21/talk/ZKEXNW/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Emacs Berlin (virtual\, in English)
 DTSTART:20201230T173000Z
 DTEND:20201230T193000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:6ci2it6qvlsmqu26qmd05on7o6@google.com
 SEQUENCE:0
 CREATED:20201202T183231Z
@@ -93,7 +132,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs APAC virtual meetup
 DTSTART:20201226T083000Z
 DTEND:20201226T103000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:2fu8nnf8eas6nh5k1fdsf6rspr@google.com
 SEQUENCE:0
 CREATED:20201224T042625Z
@@ -123,7 +162,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (virtual\, contact them for passcode)
 DTSTART;TZID=Europe/London:20210304T150000
 DTEND;TZID=Europe/London:20210304T160000
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:270djiv02kknd9crnk6oinirt4@google.com
 RECURRENCE-ID;TZID=Europe/London:20210304T150000
 SEQUENCE:0
@@ -158,7 +197,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (virtual\, contact them for passcode)
 DTSTART;TZID=Europe/London:20210304T150000
 DTEND;TZID=Europe/London:20210304T160000
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:270djiv02kknd9crnk6oinirt4@google.com
 SEQUENCE:0
 RRULE:FREQ=MONTHLY;BYDAY=1TH
@@ -193,7 +232,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (virtual\, contact them for passcode)
 DTSTART;TZID=Europe/London:20210318T150000
 DTEND;TZID=Europe/London:20210318T160000
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:1tsf0eqv3vdgke64akra4n6elj@google.com
 SEQUENCE:0
 RRULE:FREQ=MONTHLY;BYDAY=3TH
@@ -229,7 +268,7 @@ SUMMARY:EmacsSF (virtual): Emacs Lisp and menu packages: dmenu\, hydra\, p
  osframe\, transient\, etc.
 DTSTART:20210305T180000Z
 DTEND:20210305T200000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:4d36q2v30pm71iglevcl9vk18h@google.com
 SEQUENCE:0
 CREATED:20210305T033635Z
@@ -252,7 +291,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs Berlin (virtual\, in English)
 DTSTART;TZID=Europe/Berlin:20210224T183000
 DTEND;TZID=Europe/Berlin:20210224T203000
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:61i3aeb4clhm4b9mcgqjeb9k6dijibb16tim4bb2cgo30chjccoj4dj3c8@google.com
 SEQUENCE:2
 RRULE:FREQ=MONTHLY;BYDAY=-1WE
@@ -294,7 +333,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs APAC (virtual\, in English)
 DTSTART;TZID=Asia/Kolkata:20210123T140000
 DTEND;TZID=Asia/Kolkata:20210123T160000
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:6spjce1k6cq3abb36gsjib9kc5ij4b9pcdhj4b9p6gomap32cos64dhl68@google.com
 SEQUENCE:2
 RRULE:FREQ=MONTHLY;BYDAY=4SA
@@ -333,7 +372,7 @@ SUMMARY:EmacsSF: Discussion of emacs in general and completion frameworks
  in particular
 DTSTART:20210212T180000Z
 DTEND:20210212T200000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:3nbjlu8ujcu8fgi7l5ahf5aind@google.com
 SEQUENCE:0
 CREATED:20210208T050207Z
@@ -353,7 +392,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsNYC: Mail Month
 DTSTART:20210302T000000Z
 DTEND:20210302T020000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:3d6it79mltfdcp2608be3hnc4n@google.com
 SEQUENCE:0
 CREATED:20210208T050041Z
@@ -380,7 +419,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs Paris (virtual)
 DTSTART:20210601T153000Z
 DTEND:20210601T170000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:3g2a8u16651g7a9knf28tnjhhg@google.com
 SEQUENCE:0
 CREATED:20201205T215221Z
@@ -424,7 +463,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs Paris (virtual)
 DTSTART:20210506T153000Z
 DTEND:20210506T170000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:3pi8vlr86n5binh71kplks26hr@google.com
 SEQUENCE:0
 CREATED:20201205T215202Z
@@ -468,7 +507,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs Paris (virtual)
 DTSTART:20210304T163000Z
 DTEND:20210304T180000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:2fsda262g86i3ahc2cdfjf6nv4@google.com
 SEQUENCE:0
 CREATED:20201205T215015Z
@@ -512,7 +551,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs Paris (virtual)
 DTSTART:20210406T153000Z
 DTEND:20210406T170000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:0sr3elhttmu6ne4s3e8ei0p3u2@google.com
 SEQUENCE:0
 CREATED:20201205T215144Z
@@ -557,7 +596,7 @@ SUMMARY:FOSDEM21: A Lisp REPL as my main shell - The shell is dead\, long
  live the REPL!
 DTSTART:20210207T162000Z
 DTEND:20210207T165000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:62lmpetkmqoi809c758987lhls@google.com
 SEQUENCE:0
 CREATED:20210204T031727Z
@@ -585,7 +624,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsATX: Eshell and Emacs Social
 DTSTART:20210204T003000Z
 DTEND:20210204T023000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:256q86rn8dqsilpang8qgogt8t@google.com
 SEQUENCE:0
 CREATED:20210203T213643Z
@@ -607,7 +646,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsFFM: Creating our own major mode (virtual)
 DTSTART:20210217T190000Z
 DTEND:20210217T210000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:38cqq88h0bine14nu0f29khjng@google.com
 SEQUENCE:0
 CREATED:20210129T141614Z
@@ -628,7 +667,7 @@ SUMMARY:EmacsSF: discussion of emacs\, org-mode\, org-roam and similar pac
  kages
 DTSTART:20210128T023000Z
 DTEND:20210128T043000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:7lofjcidv0q0auv59kqnmp9va5@google.com
 SEQUENCE:0
 CREATED:20210125T055204Z
@@ -650,7 +689,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsNYC: Lightning Talks
 DTSTART:20210202T000000Z
 DTEND:20210202T020000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:7q1k9g0f97gl4dce3he0o8prrk@google.com
 SEQUENCE:0
 CREATED:20210125T053526Z
@@ -681,7 +720,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsSG: Emacs and Never Code Alone (tentative?)
 DTSTART:20210127T110000Z
 DTEND:20210127T140000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:7jgjmo33k372usethv76c139pd@google.com
 SEQUENCE:0
 CREATED:20201205T213653Z
@@ -701,7 +740,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs Paris (virtual)
 DTSTART:20210202T163000Z
 DTEND:20210202T180000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:0toe1npqb53ab5bmoos5bqi9et@google.com
 SEQUENCE:0
 CREATED:20201205T214929Z
@@ -745,7 +784,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsFFM: Creating our own major mode (virtual)
 DTSTART:20210120T190000Z
 DTEND:20210120T210000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:6eafmcuut04jcfsii9elrgr1jc@google.com
 SEQUENCE:0
 CREATED:20201219T153708Z
@@ -772,7 +811,7 @@ SUMMARY:Livestream: Keeping organized with Emacs and Orgmode\, by Henrique
   Castro
 DTSTART:20210114T153000Z
 DTEND:20210114T163000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:4vofj3i6bcltrhint3gh1tdckc@google.com
 SEQUENCE:0
 CREATED:20201221T062728Z
@@ -788,7 +827,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs Paris (virtual)
 DTSTART:20210107T163000Z
 DTEND:20210107T180000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:2olvnahj3ut322mpej3lp2jkg2@google.com
 SEQUENCE:0
 CREATED:20201205T214723Z
@@ -832,7 +871,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsNYC: How Do We Improve Emacs? (virtual)
 DTSTART:20210105T000000Z
 DTEND:20210105T020000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:6kq6ap1lc5j36bb670r6ab9kcgs64b9p75h6cb9pc9gm2e9h61gm8pj270@google.com
 SEQUENCE:0
 CREATED:20210102T153409Z
@@ -866,7 +905,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs Paris (virtual)
 DTSTART:20201208T163000Z
 DTEND:20201208T180000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:6m5e1nio8jukuuu69eneaaqqi6@google.com
 SEQUENCE:0
 CREATED:20201205T214546Z
@@ -901,7 +940,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsFFM: Creating our own major mode (virtual)
 DTSTART:20201216T190000Z
 DTEND:20201216T210000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:4bq2kb9qdmrldl5263di86g80q@google.com
 SEQUENCE:0
 CREATED:20201205T213349Z
@@ -927,7 +966,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsNYC: Literate Programming with Org Mode (virtual)
 DTSTART:20201208T000000Z
 DTEND:20201208T020000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:632379356090cvkmnnfhi9injf@google.com
 SEQUENCE:0
 CREATED:20201201T173817Z
@@ -959,7 +998,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsConf: The Horizon
 DTSTART:20201212T150000Z
 DTEND:20201212T163000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:6qlup44nvrqi4tlb4voq51oheo@google.com
 SEQUENCE:0
 CREATED:20201205T203454Z
@@ -973,7 +1012,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsATX: re-builder\, leaf\, feather
 DTSTART:20201203T003000Z
 DTEND:20201203T023000Z
-DTSTAMP:20210405T135437Z
+DTSTAMP:20210426T231507Z
 UID:4plfjrnugmaorl4pjghrtgnk74@google.com
 SEQUENCE:0
 CREATED:20201201T173622Z
@@ -994,66 +1033,46 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:EmacsNYC: Monthly Online Meetup - Guided Discussion: Meta Emacs an
- d One Year online
-DTSTART;TZID=America/New_York;VALUE=DATE-TIME:20210405T190000
-DTEND;TZID=America/New_York;VALUE=DATE-TIME:20210405T210000
-DTSTAMP:20210405T135437Z
-UID:event_277123630@meetup.com
+SUMMARY:EmacsNYC: Monthly Online Meetup - Lightning Talks
+DTSTART;TZID=America/New_York;VALUE=DATE-TIME:20210503T190000
+DTEND;TZID=America/New_York;VALUE=DATE-TIME:20210503T210000
+DTSTAMP:20210426T231508Z
+UID:event_277390026@meetup.com
 CLASS:PUBLIC
-CREATED:20210324T014615Z
-DESCRIPTION:New York Emacs Meetup\nMonday\, April 5 at 7:00 PM\n\nJoin us 
- online: https://meet.jit.si/EmacsNYCAnd join us using your favorite IRC cl
- ient at #emacsnyc or use https://webchat.freenode.net. ----- We will...\n\
- nhttps://www.meetup.com/New-York-Emacs-Meetup/events/277123630/
+CREATED:20210406T005035Z
+DESCRIPTION:New York Emacs Meetup\nMonday\, May 3 at 7:00 PM\n\nJoin us on
+ line: https://meet.jit.si/EmacsNYCAnd join us using your favorite IRC clie
+ nt at #emacsnyc or use https://webchat.freenode.net. This month we...\n\nh
+ ttps://www.meetup.com/New-York-Emacs-Meetup/events/277390026/
 GEO:40.75;-73.98
-LAST-MODIFIED:20210405T062703Z
-LOCATION:https://www.meetup.com/New-York-Emacs-Meetup/events/277123630/
+LAST-MODIFIED:20210406T005035Z
+LOCATION:https://www.meetup.com/New-York-Emacs-Meetup/events/277390026/
 STATUS:CONFIRMED
-URL:https://www.meetup.com/New-York-Emacs-Meetup/events/277123630/
+URL:https://www.meetup.com/New-York-Emacs-Meetup/events/277390026/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:EmacsSF: Some early Emacs history\, Lightning talks\, and General 
- Discussion
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20210415T100000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20210415T120000
-DTSTAMP:20210405T135437Z
-UID:event_277309406@meetup.com
+SUMMARY:EmacsSF: Emacs Lisp: Foundational Utility Packages
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20210429T100000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20210429T120000
+DTSTAMP:20210426T231508Z
+UID:event_277722919@meetup.com
 CLASS:PUBLIC
-CREATED:20210401T212006Z
-DESCRIPTION:Emacs SF\nThursday\, April 15 at 10:00 AM\n\nGuest speaker\, L
- ars Brinkhoff\, will join us from Sweeden to talk about and demo some earl
- y versions of TECO and Emacs editors. This will be followed b...\n\nhttps:
- //www.meetup.com/Emacs-SF/events/277309406/
+CREATED:20210422T005728Z
+DESCRIPTION:Emacs SF\nThursday\, April 29 at 10:00 AM\n\nKicking off a ser
+ ies of meetups on deeper elisp topics with a discussion on commonly-used E
+ macs utility libraries targeted at coders. We'll cover at l...\n\nhttps://
+ www.meetup.com/Emacs-SF/events/277722919/
 GEO:37.79;-122.4
-LAST-MODIFIED:20210401T212406Z
-LOCATION:https://www.meetup.com/Emacs-SF/events/277309406/
+LAST-MODIFIED:20210422T005728Z
+LOCATION:https://www.meetup.com/Emacs-SF/events/277722919/
 STATUS:CONFIRMED
-URL:https://www.meetup.com/Emacs-SF/events/277309406/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:EmacsATX: Emacs as a Spreadsheet and Emacs Social
-DTSTART;TZID=America/Chicago;VALUE=DATE-TIME:20210407T183000
-DTEND;TZID=America/Chicago;VALUE=DATE-TIME:20210407T203000
-DTSTAMP:20210405T135438Z
-UID:event_hkckgsyccgbkb@meetup.com
-CLASS:PUBLIC
-CREATED:20210322T022747Z
-DESCRIPTION:EmacsATX\nWednesday\, April 7 at 6:30 PM\n\nAbout Emacs ATX is
-  a meetup devoted to exploring the vast and ever expanding universe of the
-  extensible\, customizable\, free/libre editor Emacs. We are...\n\nhttps:/
- /www.meetup.com/EmacsATX/events/277079765/
-GEO:30.29;-97.73
-LAST-MODIFIED:20210322T231140Z
-LOCATION:https://www.meetup.com/EmacsATX/events/277079765/
-STATUS:CONFIRMED
-URL:https://www.meetup.com/EmacsATX/events/277079765/
+URL:https://www.meetup.com/Emacs-SF/events/277722919/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:EmacsATX: TBD
 DTSTART;TZID=America/Chicago;VALUE=DATE-TIME:20210505T183000
 DTEND;TZID=America/Chicago;VALUE=DATE-TIME:20210505T203000
-DTSTAMP:20210405T135438Z
+DTSTAMP:20210426T231508Z
 UID:event_hkckgsycchbhb@meetup.com
 CLASS:PUBLIC
 CREATED:20210322T023223Z
@@ -1071,7 +1090,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsATX: TBD
 DTSTART;TZID=America/Chicago;VALUE=DATE-TIME:20210602T183000
 DTEND;TZID=America/Chicago;VALUE=DATE-TIME:20210602T203000
-DTSTAMP:20210405T135438Z
+DTSTAMP:20210426T231508Z
 UID:event_hkckgsyccjbdb@meetup.com
 CLASS:PUBLIC
 CREATED:20210322T023223Z
@@ -1089,7 +1108,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsATX: TBD
 DTSTART;TZID=America/Chicago;VALUE=DATE-TIME:20210707T183000
 DTEND;TZID=America/Chicago;VALUE=DATE-TIME:20210707T203000
-DTSTAMP:20210405T135438Z
+DTSTAMP:20210426T231508Z
 UID:event_hkckgsycckbkb@meetup.com
 CLASS:PUBLIC
 CREATED:20210322T023223Z
@@ -1107,7 +1126,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsATX: TBD
 DTSTART;TZID=America/Chicago;VALUE=DATE-TIME:20210804T183000
 DTEND;TZID=America/Chicago;VALUE=DATE-TIME:20210804T203000
-DTSTAMP:20210405T135438Z
+DTSTAMP:20210426T231508Z
 UID:event_hkckgsycclbgb@meetup.com
 CLASS:PUBLIC
 CREATED:20210322T023223Z
@@ -1125,7 +1144,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsATX: TBD
 DTSTART;TZID=America/Chicago;VALUE=DATE-TIME:20210901T183000
 DTEND;TZID=America/Chicago;VALUE=DATE-TIME:20210901T203000
-DTSTAMP:20210405T135438Z
+DTSTAMP:20210426T231508Z
 UID:event_hkckgsyccmbcb@meetup.com
 CLASS:PUBLIC
 CREATED:20210322T023223Z
@@ -1140,10 +1159,46 @@ STATUS:CONFIRMED
 URL:https://www.meetup.com/EmacsATX/events/hkckgsyccmbcb/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:EmacsATX: TBD
+DTSTART;TZID=America/Chicago;VALUE=DATE-TIME:20211006T183000
+DTEND;TZID=America/Chicago;VALUE=DATE-TIME:20211006T203000
+DTSTAMP:20210426T231508Z
+UID:event_hkckgsyccnbjb@meetup.com
+CLASS:PUBLIC
+CREATED:20210322T023223Z
+DESCRIPTION:EmacsATX\nWednesday\, October 6 at 6:30 PM\n\nAbout Emacs ATX 
+ is a meetup devoted to exploring the vast and ever expanding universe of t
+ he extensible\, customizable\, free/libre editor Emacs. We are...\n\nhttps
+ ://www.meetup.com/EmacsATX/events/hkckgsyccnbjb/
+GEO:30.29;-97.73
+LAST-MODIFIED:20210322T023223Z
+LOCATION:https://www.meetup.com/EmacsATX/events/hkckgsyccnbjb/
+STATUS:CONFIRMED
+URL:https://www.meetup.com/EmacsATX/events/hkckgsyccnbjb/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Frankfurt: Emacs FFM Meetup! April 2021
+DTSTART;TZID=Europe/Berlin;VALUE=DATE-TIME:20210428T190000
+DTEND;TZID=Europe/Berlin;VALUE=DATE-TIME:20210428T210000
+DTSTAMP:20210426T231509Z
+UID:event_277606530@meetup.com
+CLASS:PUBLIC
+CREATED:20210416T113548Z
+DESCRIPTION:Emacs FFM\nWednesday\, April 28 at 7:00 PM\n\nThis time\, let 
+ us try Discord as our video conference platform. You can join the Discord 
+ chat **right now** and say hi! No need to wait until the next...\n\nhttps:
+ //www.meetup.com/emacs-ffm/events/277606530/
+GEO:50.11;8.68
+LAST-MODIFIED:20210416T113548Z
+LOCATION:https://www.meetup.com/emacs-ffm/events/277606530/
+STATUS:CONFIRMED
+URL:https://www.meetup.com/emacs-ffm/events/277606530/
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Singapore: Emacs & Never Code Alone SG
 DTSTART;TZID=Asia/Singapore;VALUE=DATE-TIME:20210526T190000
 DTEND;TZID=Asia/Singapore;VALUE=DATE-TIME:20210526T220000
-DTSTAMP:20210405T135440Z
+DTSTAMP:20210426T231511Z
 UID:event_268260076@meetup.com
 CLASS:PUBLIC
 CREATED:20200128T060426Z

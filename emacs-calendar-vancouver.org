@@ -55,18 +55,6 @@ channel of UKRSE Slack, or
 email [[mailto:mark.dawson@swansea.ac.uk][mark.dawson@swansea.ac.uk]]
 
 
-* EmacsNYC: Monthly Online Meetup - Guided Discussion: Meta Emacs and One Year online
-:PROPERTIES:
-:LOCATION: https://www.meetup.com/New-York-Emacs-Meetup/events/277123630/
-:END:
-<2021-04-05 Mon 16:00>--<2021-04-05 Mon 18:00>
-
-New York Emacs Meetup Monday, April 5 at 7:00 PM Join us online:
-https://meet.jit.si/EmacsNYCAnd join us using your favorite IRC client
-at #emacsnyc or use https://webchat.freenode.net. ----- We will...
-https://www.meetup.com/New-York-Emacs-Meetup/events/277123630/
-
-
 * Emacs Paris (virtual)
 :PROPERTIES:
 :LOCATION: https://www.emacs-doctor.com/emacs-paris-user-group/
@@ -149,16 +137,46 @@ dépôt]].
 
 
 
-* EmacsATX: Emacs as a Spreadsheet and Emacs Social
+* Emacs Org mode features you may not know
 :PROPERTIES:
-:LOCATION: https://www.meetup.com/EmacsATX/events/277079765/
+:LOCATION: https://pretalx.linuxtage.at/glt21/talk/ZKEXNW/
 :END:
-<2021-04-07 Wed 16:30>--<2021-04-07 Wed 18:30>
+<2021-04-10 Sat 08:00>--<2021-04-10 Sat 08:40>
 
-EmacsATX Wednesday, April 7 at 6:30 PM About Emacs ATX is a meetup
-devoted to exploring the vast and ever expanding universe of the
-extensible, customizable, free/libre editor Emacs. We are...
-https://www.meetup.com/EmacsATX/events/277079765/
+[[https://pretalx.linuxtage.at/glt21/talk/ZKEXNW/]]
+Chat: www.oftc.net #glt21
+[[https://karl-voit.at/2021/04/10/GLT21-emacs-org-features/]]
+[[https://www.reddit.com/r/emacs/comments/mif3sb/glt21conferencetalk_emacs_org_mode_features_you/]]
+
+Emacs Org mode is huge and might overwhelm some people. Therefore,
+helpful features often gets lost in this large amount of documentation.
+In this talk, hand-selected tricks are demonstrated that may help the
+average Org mode user in her daily life.
+
+--------------
+
+Bastien Guerry
+wrote [[https://bzg.fr/en/some-emacs-org-mode-features-you-may-not-know.html/][this
+article where he shows nice but rather unknown Org features]]. His
+article inspired this talk which is about a selection of those features
+and much more here and there. It also covers some general Emacs
+features.
+
+For this talk, you should have a minimum level of experience with
+GNU/Emacs and Org mode. If not, it might provide some inspiration and
+motivation to start with GNU/Emacs. However the talk highlights only
+some features and tricks here and there, not providing a general
+overview.
+
+You can find the show-notes of the talk, links to external sources and
+the [[https://en.wikipedia.org/wiki/Colophon_(publishing)][colophon]] on [[https://karl-voit.at/2021/04/10/GLT21-emacs-org-features/][this
+web page]].
+
+Please do send a short
+feedback [[https://pretalx.linuxtage.at/glt21/talk/ZKEXNW/feedback/][here]] after
+the talk.
+
+
 
 
 * M-x Research (virtual, contact them for passcode)
@@ -216,18 +234,6 @@ link]].
 To speak at an event or propose a topic, get in touch on the #emacs
 channel of UKRSE Slack, or
 email [[mailto:mark.dawson@swansea.ac.uk][mark.dawson@swansea.ac.uk]]
-
-
-* EmacsSF: Some early Emacs history, Lightning talks, and General Discussion
-:PROPERTIES:
-:LOCATION: https://www.meetup.com/Emacs-SF/events/277309406/
-:END:
-<2021-04-15 Thu 10:00>--<2021-04-15 Thu 12:00>
-
-Emacs SF Thursday, April 15 at 10:00 AM Guest speaker, Lars Brinkhoff,
-will join us from Sweeden to talk about and demo some early versions of
-TECO and Emacs editors. This will be followed b...
-https://www.meetup.com/Emacs-SF/events/277309406/
 
 
 * Emacs APAC (virtual, in English)
@@ -326,6 +332,42 @@ on [[http://meetup.com/Emacs-Berlin-Meetup][meetup.com/Emacs-Berlin-Meetup]]
 ([[https://www.meetup.com/Emacs-Berlin-Meetup/]])
 Non-public contact via email: organizers email
 (mailto:[[mailto:emacs-berlin-owner@emacs-berlin.org][emacs-berlin-owner@emacs-berlin.org]])
+
+
+* Frankfurt: Emacs FFM Meetup! April 2021
+:PROPERTIES:
+:LOCATION: https://www.meetup.com/emacs-ffm/events/277606530/
+:END:
+<2021-04-28 Wed 10:00>--<2021-04-28 Wed 12:00>
+
+Emacs FFM Wednesday, April 28 at 7:00 PM This time, let us try Discord
+as our video conference platform. You can join the Discord chat **right
+now** and say hi! No need to wait until the next...
+https://www.meetup.com/emacs-ffm/events/277606530/
+
+
+* EmacsSF: Emacs Lisp: Foundational Utility Packages
+:PROPERTIES:
+:LOCATION: https://www.meetup.com/Emacs-SF/events/277722919/
+:END:
+<2021-04-29 Thu 10:00>--<2021-04-29 Thu 12:00>
+
+Emacs SF Thursday, April 29 at 10:00 AM Kicking off a series of meetups
+on deeper elisp topics with a discussion on commonly-used Emacs utility
+libraries targeted at coders. We'll cover at l...
+https://www.meetup.com/Emacs-SF/events/277722919/
+
+
+* EmacsNYC: Monthly Online Meetup - Lightning Talks
+:PROPERTIES:
+:LOCATION: https://www.meetup.com/New-York-Emacs-Meetup/events/277390026/
+:END:
+<2021-05-03 Mon 16:00>--<2021-05-03 Mon 18:00>
+
+New York Emacs Meetup Monday, May 3 at 7:00 PM Join us online:
+https://meet.jit.si/EmacsNYCAnd join us using your favorite IRC client
+at #emacsnyc or use https://webchat.freenode.net. This month we...
+https://www.meetup.com/New-York-Emacs-Meetup/events/277390026/
 
 
 * EmacsATX: TBD
@@ -1624,6 +1666,18 @@ Non-public contact via email: organizers email
 (mailto:[[mailto:emacs-berlin-owner@emacs-berlin.org][emacs-berlin-owner@emacs-berlin.org]])
 
 
+* EmacsATX: TBD
+:PROPERTIES:
+:LOCATION: https://www.meetup.com/EmacsATX/events/hkckgsyccnbjb/
+:END:
+<2021-10-06 Wed 16:30>--<2021-10-06 Wed 18:30>
+
+EmacsATX Wednesday, October 6 at 6:30 PM About Emacs ATX is a meetup
+devoted to exploring the vast and ever expanding universe of the
+extensible, customizable, free/libre editor Emacs. We are...
+https://www.meetup.com/EmacsATX/events/hkckgsyccnbjb/
+
+
 * M-x Research (virtual, contact them for passcode)
 :PROPERTIES:
 :LOCATION: https://m-x-research.github.io/
@@ -2803,6 +2857,218 @@ email [[mailto:mark.dawson@swansea.ac.uk][mark.dawson@swansea.ac.uk]]
 :LOCATION: https://emacs-apac.gitlab.io/
 :END:
 <2022-03-26 Sat 01:30>--<2022-03-26 Sat 03:30>
+
+We are Emacs enthusiasts who live in the Asia-Pacific (APAC) time-zone.
+We meet every fourth Saturday of the month.
+
+** Where
+   :PROPERTIES:
+   :CUSTOM_ID: where
+   :END:
+
+The event is scheduled virtually using Jitsi Meet at 1400 Indian
+Standard Time (IST). The meeting URL is posted on Freenode IRC
+channels =#emacs=, =#ilugc= and =#emacsconf=, 30 minutes prior to the
+meeting, and also on the [[https://www.freelists.org/list/ilugc][ILUGC
+mailing list]] on the day of the meetup. If you are not subscribed, you
+can also check
+the [[https://www.freelists.org/archive/ilugc/][archive]].
+
+Checkout the upcoming
+meetings [[https://emacs-apac.gitlab.io/#upcoming][here]].
+
+** Talks
+   :PROPERTIES:
+   :CUSTOM_ID: talks
+   :END:
+
+We usually have free flowing discussions around new Emacs packages /
+features discovered, issues faced, experiences, usage tips, resources
+for further learning etc. These are related to GNU Emacs and its
+variants. Sometimes people also share their screens and give demos of
+their Emacs setup and use.
+
+If you would like to give a talk (20 minutes maximum), please send an
+email to TODO with the details.
+
+** Frequently Asked Questions
+   :PROPERTIES:
+   :CUSTOM_ID: frequently-asked-questions
+   :END:
+
+- *I'm new to Emacs, can / should I join?*
+  Yes! You are always welcome. We have participants from different walks
+  of life with varied experiences in Emacs. You can ask your questions
+  and the attendees will be able to help, at least point you in the
+  right direction.
+
+- *Which language is used for communication?*
+  English.
+
+- *I'm not from APAC, can I join?*
+  Definitely! If the timing is suitable for you, please join.
+
+
+
+
+* Emacs Berlin (virtual, in English)
+:PROPERTIES:
+:LOCATION: https://emacs-berlin.org/
+:END:
+<2022-03-30 Wed 09:30>--<2022-03-30 Wed 11:30>
+
+[[https://emacs-berlin.org/]] 
+
+New to Emacs? Longtime elisp expert? Just want to know what this is all
+about? Come join us!
+
+Location
+
+Room open from 18:30 CET, if there are talks they'll start at 19:00 CET.
+The video link will be posted on the day of the meetup to the mailing
+list. Check the archive
+([[https://mailb.org/pipermail/emacs-berlin/2021/thread.html]]) if you
+are not subscribed.
+
+About Emacs Berlin
+We are Emacs enthusiasts in Berlin, meeting every last Wednesday of the
+month.
+The best way to stay posted is through our mailing list. Sign up
+([[https://mailb.org/mailman/listinfo/emacs-berlin]]) and meet your
+fellow Emacsers, or have a look at the mailing list archives
+([[https://mailb.org/pipermail/emacs-berlin/]]) (gmane).
+Feel free to send an email introducing yourself after subscribing!
+You can also chat with us on irc: #emacs-berlin (connection instructions
+([[https://mailb.org/pipermail/emacs-berlin/2020/000583.html]]))
+Or on Twitter: @emacsberlin ([[https://twitter.com/emacsberlin]])
+And there's a YouTube Channel
+([[https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw]])  
+And
+on [[http://meetup.com/Emacs-Berlin-Meetup][meetup.com/Emacs-Berlin-Meetup]]
+([[https://www.meetup.com/Emacs-Berlin-Meetup/]])
+Non-public contact via email: organizers email
+(mailto:[[mailto:emacs-berlin-owner@emacs-berlin.org][emacs-berlin-owner@emacs-berlin.org]])
+
+
+* M-x Research (virtual, contact them for passcode)
+:PROPERTIES:
+:LOCATION: https://m-x-research.github.io/
+:END:
+<2022-04-07 Thu 07:00>--<2022-04-07 Thu 08:00>
+
+[[https://m-x-research.github.io/]] - See "Contact Us" section below for
+password
+
+* The Community
+  :PROPERTIES:
+  :CUSTOM_ID: the-community
+  :END:
+
+M-x Research is a community of Researchers and Research Software
+Engineers, first conceived in the UK Research Software Engineering
+Society Slack channels.
+
+We meet virtually every 1st and 3rd Thursday of every month to dicuss
+and share Emacs experiences, tips, tricks and tools useful for
+researchers and research software engineers.
+
+* Environment
+  :PROPERTIES:
+  :CUSTOM_ID: environment
+  :END:
+
+We strive to be welcoming and inclusive and to recognise the diversity
+of backgrounds and experience in the Emacs world. Newcomers and veterans
+are all welcome. Ultimately we are all learners.
+
+* Events
+  :PROPERTIES:
+  :CUSTOM_ID: events
+  :END:
+
+Join our meetups on Zoom by following [[https://bit.ly/mxresearch]] @
+3pm (UK time)
+
+Get in touch (details below) to request a password.
+
+Add the shared
+calendar [[https://calendar.google.com/calendar?cid=bzB0aWFkbGpwNWRxN2xrYjUxbW52bnJoMDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ][on
+google calendar]] or as
+an [[https://calendar.google.com/calendar/ical/o0tiadljp5dq7lkb51mnvnrh04%40group.calendar.google.com/public/basic.ics][iCal
+link]].
+
+* Contact Us
+  :PROPERTIES:
+  :CUSTOM_ID: contact-us
+  :END:
+
+To speak at an event or propose a topic, get in touch on the #emacs
+channel of UKRSE Slack, or
+email [[mailto:mark.dawson@swansea.ac.uk][mark.dawson@swansea.ac.uk]]
+
+
+* M-x Research (virtual, contact them for passcode)
+:PROPERTIES:
+:LOCATION: https://m-x-research.github.io/
+:END:
+<2022-04-21 Thu 07:00>--<2022-04-21 Thu 08:00>
+
+[[https://m-x-research.github.io/]] - See "Contact Us" section below for
+password
+
+* The Community
+  :PROPERTIES:
+  :CUSTOM_ID: the-community
+  :END:
+
+M-x Research is a community of Researchers and Research Software
+Engineers, first conceived in the UK Research Software Engineering
+Society Slack channels.
+
+We meet virtually every 1st and 3rd Thursday of every month to dicuss
+and share Emacs experiences, tips, tricks and tools useful for
+researchers and research software engineers.
+
+* Environment
+  :PROPERTIES:
+  :CUSTOM_ID: environment
+  :END:
+
+We strive to be welcoming and inclusive and to recognise the diversity
+of backgrounds and experience in the Emacs world. Newcomers and veterans
+are all welcome. Ultimately we are all learners.
+
+* Events
+  :PROPERTIES:
+  :CUSTOM_ID: events
+  :END:
+
+Join our meetups on Zoom by following [[https://bit.ly/mxresearch]] @
+3pm (UK time)
+
+Get in touch (details below) to request a password.
+
+Add the shared
+calendar [[https://calendar.google.com/calendar?cid=bzB0aWFkbGpwNWRxN2xrYjUxbW52bnJoMDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ][on
+google calendar]] or as
+an [[https://calendar.google.com/calendar/ical/o0tiadljp5dq7lkb51mnvnrh04%40group.calendar.google.com/public/basic.ics][iCal
+link]].
+
+* Contact Us
+  :PROPERTIES:
+  :CUSTOM_ID: contact-us
+  :END:
+
+To speak at an event or propose a topic, get in touch on the #emacs
+channel of UKRSE Slack, or
+email [[mailto:mark.dawson@swansea.ac.uk][mark.dawson@swansea.ac.uk]]
+
+
+* Emacs APAC (virtual, in English)
+:PROPERTIES:
+:LOCATION: https://emacs-apac.gitlab.io/
+:END:
+<2022-04-23 Sat 01:30>--<2022-04-23 Sat 03:30>
 
 We are Emacs enthusiasts who live in the Asia-Pacific (APAC) time-zone.
 We meet every fourth Saturday of the month.

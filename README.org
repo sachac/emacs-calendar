@@ -4,7 +4,7 @@
 
 #+CALL: sync() :results none :eval never-export
 
-#+begin_src emacs-lisp :noweb yes
+#+begin_src emacs-lisp :noweb yes :results silent
 <<announce>>
 (defun my/prepare-calendar-for-export ()
   (interactive)
@@ -12,21 +12,20 @@
   (re-search-forward "#\\+NAME: event-summary")
   (org-ctrl-c-ctrl-c)
   (org-export-to-file 'html "README.html")
-  (org-babel-goto-named-result "event-summary")
-  (re-search-forward "^- ")
-  (goto-char (match-beginning 0))
-  (let ((events (org-babel-read-result)))
-    (oddmuse-edit "EmacsWiki" "Usergroups")
-    (goto-char (point-min))
-    (delete-region (progn (re-search-forward "== Upcoming events ==\n\n") (match-end 0))
-                   (progn (re-search-forward "^$") (match-beginning 0)))
-    (save-excursion (insert (mapconcat (lambda (s) (concat "* " (car s) "\n")) events "")))))
+  (when my/laptop-p
+    (org-babel-goto-named-result "event-summary")
+    (re-search-forward "^- ")
+    (goto-char (match-beginning 0))
+    (let ((events (org-babel-read-result)))
+      (oddmuse-edit "EmacsWiki" "Usergroups")
+      (goto-char (point-min))
+      (delete-region (progn (re-search-forward "== Upcoming events ==\n\n") (match-end 0))
+                     (progn (re-search-forward "^$") (match-beginning 0)))
+      (save-excursion (insert (mapconcat (lambda (s) (concat "* " (car s) "\n")) events ""))))))
 (my/prepare-calendar-for-export)
 (org-export-to-file 'html "README.html")
-(my/schedule-announcements-for-upcoming-emacs-meetups)
+(unless my/laptop-p (my/schedule-announcements-for-upcoming-emacs-meetups))
 #+end_src
-
-(oddmuse-edit "EmacsWiki" "Usergroups")
 
 (find-file "~/sync/emacs-news/index.org")
 [[elisp:(org-export-to-file 'html "README.html")]]
@@ -35,22 +34,29 @@
 * Upcoming events
 
 #+NAME: event-summary
-#+CALL: update() :results drawer :eval never-export
+#+CALL: update() :results output drawer :eval never-export 
 
 #+RESULTS: event-summary
 :results:
 
-- EmacsNYC: Monthly Online Meetup - Guided Discussion: Meta Emacs and One Year online https://www.meetup.com/New-York-Emacs-Meetup/events/277123630/ Mon Apr 5 1600 Vancouver / 1800 Chicago / 1900 Toronto / 2300 GMT -- Tue Apr 6 0100 Berlin / 0430 Kolkata / 0700 Singapore
-- Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/ Tue Apr 6 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore
-- EmacsATX: Emacs as a Spreadsheet and Emacs Social https://www.meetup.com/EmacsATX/events/277079765/ Wed Apr 7 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT -- Thu Apr 8 0130 Berlin / 0500 Kolkata / 0730 Singapore
-- M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu Apr 15 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
-- EmacsSF: Some early Emacs history, Lightning talks, and General Discussion https://www.meetup.com/Emacs-SF/events/277309406/ Thu Apr 15 1000 Vancouver / 1200 Chicago / 1300 Toronto / 1700 GMT / 1900 Berlin / 2230 Kolkata -- Fri Apr 16 0100 Singapore
-- Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat Apr 24 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 1030 Berlin / 1400 Kolkata / 1630 Singapore
+Error with url: https://www.meetup.com/Chicago-Emacs-User-Group/events/ical/
+Error with url: https://www.meetup.com/Princeton-Emacs/events/ical/
 - Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Apr 28 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata -- Thu Apr 29 0030 Singapore
+- Frankfurt: Emacs FFM Meetup! April 2021 https://www.meetup.com/emacs-ffm/events/277606530/ Wed Apr 28 1000 Vancouver / 1200 Chicago / 1300 Toronto / 1700 GMT / 1900 Berlin / 2230 Kolkata -- Thu Apr 29 0100 Singapore
+- EmacsSF: Emacs Lisp: Foundational Utility Packages https://www.meetup.com/Emacs-SF/events/277722919/ Thu Apr 29 1000 Vancouver / 1200 Chicago / 1300 Toronto / 1700 GMT / 1900 Berlin / 2230 Kolkata -- Fri Apr 30 0100 Singapore
+- EmacsNYC: Monthly Online Meetup - Lightning Talks https://www.meetup.com/New-York-Emacs-Meetup/events/277390026/ Mon May 3 1600 Vancouver / 1800 Chicago / 1900 Toronto / 2300 GMT -- Tue May 4 0100 Berlin / 0430 Kolkata / 0700 Singapore
 - EmacsATX: TBD https://www.meetup.com/EmacsATX/events/hkckgsycchbhb/ Wed May 5 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT -- Thu May 6 0130 Berlin / 0500 Kolkata / 0730 Singapore
 - M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu May 6 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
 - Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/ Thu May 6 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore
+- M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu May 20 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+- Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat May 22 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 1030 Berlin / 1400 Kolkata / 1630 Singapore
+- Singapore: Emacs & Never Code Alone SG https://www.meetup.com/Emacs-SG/events/268260076/ Wed May 26 0400 Vancouver / 0600 Chicago / 0700 Toronto / 1100 GMT / 1300 Berlin / 1630 Kolkata / 1900 Singapore
+- Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed May 26 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata -- Thu May 27 0030 Singapore
+- Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/ Tue Jun 1 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore
+- EmacsATX: TBD https://www.meetup.com/EmacsATX/events/hkckgsyccjbdb/ Wed Jun 2 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT -- Thu Jun 3 0130 Berlin / 0500 Kolkata / 0730 Singapore
+- M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu Jun 3 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
 :end:
+
 
 * Introduction
   
@@ -137,9 +143,10 @@ import subprocess
 import sys
 import csv
 
-other_meetups = {'EmacsNYC': 'New-York-Emacs-Meetup', 'EmacsSF': 'Emacs-SF',
-                 'Chicago': 'Chicago-Emacs-User-Group', 'EmacsATX': 'EmacsATX',
-                 'Boulder': 'Boulder-Emacs-Meetup', 'Princeton': 'Princeton-Emacs',
+other_meetups = {'EmacsNYC': 'New-York-Emacs-Meetup',
+                 'EmacsSF': 'Emacs-SF',
+                 'EmacsATX': 'EmacsATX',
+                 'Boulder': 'Boulder-Emacs-Meetup',
                  'DC': 'NOVA-EMACS',
                  'Pelotas, Brazil': 'Pelotas-Emacs-Meetup',
                  'Sao Paulo': 'Grupo-de-usuarios-de-Emacs-de-Sao-Paulo',
@@ -193,7 +200,11 @@ def merge_meetup_events(cal):
   global other_meetups
   for name, identifier in other_meetups.items():
     url = "https://www.meetup.com/%s/events/ical/" % (identifier)
-    meetup_cal = Calendar.from_ical(urlopen(url).read())
+    try:
+      meetup_cal = Calendar.from_ical(urlopen(url).read())
+    except:
+      print("Error with url: %s" % url)
+      continue
     meetup_events = recurring_ical_events.of(meetup_cal).between(start_date, end_date)
     for event in meetup_events:
       event['SUMMARY'] = name + ': ' + event['SUMMARY']
@@ -225,13 +236,14 @@ for t in timezones:
   files[t[0]] = open(stub + '.org', "w")
 
 with open('events.csv', 'w', newline='') as csvfile:
-  fieldnames = ['DTSTART', 'DTEND', 'LOCATION', 'SUMMARY']
+  fieldnames = ['DTSTART', 'DTEND', 'LOCATION', 'SUMMARY', 'TEXT']
   writer = csv.DictWriter(csvfile, fieldnames=fieldnames, extrasaction='ignore')
   writer.writeheader()
   for e in events:
     writer.writerow({**e,
                      'DTSTART': e['DTSTART'].dt.isoformat(),
                      'DTEND': e['DTEND'].dt.isoformat(),
+                     'TEXT': summarized_event(e, timezones)
                      })
     
 for e in events:
@@ -258,15 +270,22 @@ for e in events:
 #+RESULTS: update
 :results:
 
-- Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat Mar 27 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 0930 Berlin / 1400 Kolkata / 1630 Singapore
-- Singapore: Emacs & Never Code Alone SG https://www.meetup.com/Emacs-SG/events/268260076/ Wed Mar 31 0400 Vancouver / 0600 Chicago / 0700 Toronto / 1100 GMT / 1300 Berlin / 1630 Kolkata / 1900 Singapore
-- Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Mar 31 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata -- Thu Apr 1 0030 Singapore
-- M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu Apr 1 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
-- EmacsSF: Emacs Lisp - Coding a minor mode; lispy mode; Lightning Talks and Discussion https://www.meetup.com/Emacs-SF/events/276954899/ Thu Apr 1 1000 Vancouver / 1200 Chicago / 1300 Toronto / 1700 GMT / 1900 Berlin / 2230 Kolkata -- Fri Apr 2 0100 Singapore
-- Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/ Tue Apr 6 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore
-- M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu Apr 15 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
-- Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat Apr 24 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 1030 Berlin / 1400 Kolkata / 1630 Singapore
+Error with url: https://www.meetup.com/Chicago-Emacs-User-Group/events/ical/
+Error with url: https://www.meetup.com/Princeton-Emacs/events/ical/
 - Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Apr 28 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata -- Thu Apr 29 0030 Singapore
+- Frankfurt: Emacs FFM Meetup! April 2021 https://www.meetup.com/emacs-ffm/events/277606530/ Wed Apr 28 1000 Vancouver / 1200 Chicago / 1300 Toronto / 1700 GMT / 1900 Berlin / 2230 Kolkata -- Thu Apr 29 0100 Singapore
+- EmacsSF: Emacs Lisp: Foundational Utility Packages https://www.meetup.com/Emacs-SF/events/277722919/ Thu Apr 29 1000 Vancouver / 1200 Chicago / 1300 Toronto / 1700 GMT / 1900 Berlin / 2230 Kolkata -- Fri Apr 30 0100 Singapore
+- EmacsNYC: Monthly Online Meetup - Lightning Talks https://www.meetup.com/New-York-Emacs-Meetup/events/277390026/ Mon May 3 1600 Vancouver / 1800 Chicago / 1900 Toronto / 2300 GMT -- Tue May 4 0100 Berlin / 0430 Kolkata / 0700 Singapore
+- EmacsATX: TBD https://www.meetup.com/EmacsATX/events/hkckgsycchbhb/ Wed May 5 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT -- Thu May 6 0130 Berlin / 0500 Kolkata / 0730 Singapore
+- M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu May 6 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+- Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/ Thu May 6 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore
+- M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu May 20 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+- Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat May 22 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 1030 Berlin / 1400 Kolkata / 1630 Singapore
+- Singapore: Emacs & Never Code Alone SG https://www.meetup.com/Emacs-SG/events/268260076/ Wed May 26 0400 Vancouver / 0600 Chicago / 0700 Toronto / 1100 GMT / 1300 Berlin / 1630 Kolkata / 1900 Singapore
+- Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed May 26 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata -- Thu May 27 0030 Singapore
+- Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/ Tue Jun 1 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore
+- EmacsATX: TBD https://www.meetup.com/EmacsATX/events/hkckgsyccjbdb/ Wed Jun 2 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT -- Thu Jun 3 0130 Berlin / 0500 Kolkata / 0730 Singapore
+- M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu Jun 3 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
 :end:
 
 ** Sync
@@ -400,18 +419,23 @@ total size is 927,214  speedup is 62.13
     (call-process-region (point-min) (point-max) "ncat" nil 0 nil
                          "--ssl" host (number-to-string port))))
 
-(defun my/announce-on-irc-and-twitter (channels message host port)
-  (shell-command-to-string (format "zsh -l -c 'rvm use 2.4.1; t update %s'" (shell-quote-argument message)))
-  (my/announce-on-irc channels message host port))
+(defun my/announce-on-irc-and-twitter (time channels message host port)
+  (when (< (time-to-seconds (subtract-time (current-time) time)) (* 5 60))
+    (shell-command-to-string (format
+                              (if my/laptop-p
+                                  "zsh -l -c 'rvm use 2.4.1; t update %s'"
+                                "bash -l -c 't update %s'")
+                              (shell-quote-argument message)))
+    (my/announce-on-irc channels message host port)))
 
 (defun my/schedule-announcement (time message)
   (interactive (list (org-read-date t t) (read-string "Message: ")))
-  (run-at-time time nil #'my/announce-on-irc-and-twitter '("#emacs" "#emacsconf") message erc-server erc-port))
+  (run-at-time time nil #'my/announce-on-irc-and-twitter time '("#emacs" "#emacsconf") message erc-server erc-port))
 
 (defun my/schedule-announcements-for-upcoming-emacs-meetups ()
   (interactive)
   (cancel-function-timers #'my/announce-on-irc-and-twitter)
-  (let ((events (my/org-table-as-alist (pcsv-parse-file "~/code/emacs-calendar/events.csv")))
+  (let ((events (my/org-table-as-alist (pcsv-parse-file "events.csv")))
         (now (current-time))
         (before-limit (time-add (current-time) (seconds-to-time (* 7 24 60 60)))))
     (mapc (lambda (o)
@@ -431,12 +455,18 @@ total size is 927,214  speedup is 62.13
                                                   (alist-get 'LOCATION o))))))
           events)))
   #+end_src
+
+  #+RESULTS: announce
+  :results:
+  my/schedule-announcements-for-upcoming-emacs-meetups
+  :end:
   
 ** Update EmacsWiki
 
 #+begin_src emacs-lisp  :results nil
 (use-package oddmuse
 :load-path "~/vendor/oddmuse-el"
+:if my/laptop-p
 :ensure nil
 :config (oddmuse-mode-initialize)
 :hook (oddmuse-mode-hook .
