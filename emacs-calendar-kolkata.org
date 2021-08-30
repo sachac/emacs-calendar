@@ -1,168 +1,3 @@
-* Atelier Emacs (in French): Atelier Emacs Paris
-:PROPERTIES:
-:LOCATION: https://mobilizon.fr/events/ef8b82a4-f633-4bbd-ad6b-b8ac1031a01d
-:END:
-<2021-07-01 Thu 21:00>--<2021-07-01 Thu 22:00>
-
-Les rencontres ont lieu sur cette instance de BBB.Tous les détails sur
-M-x doctor RETNous gardons parfois des notes des soirées passées sur ce
-dépôt.
-
-
-* M-x Research (contact them for password): Beamer
-:PROPERTIES:
-:LOCATION: https://m-x-research.github.io/
-:END:
-<2021-07-02 Fri 19:30>--<2021-07-02 Fri 20:30>
-
-
-
-
-* EmacsConf 2021 public meeting
-:PROPERTIES:
-:LOCATION: https://lists.gnu.org/archive/html/emacsconf-discuss/2021-06/msg00001.html
-:END:
-<2021-07-03 Sat 19:30>--<2021-07-03 Sat 21:30>
-
-https://lists.gnu.org/archive/html/emacsconf-discuss/2021-06/msg00001.html
-
-
-#+BEGIN_EXAMPLE
-    Greetings, fellow Emacsians!Come help us make the next EmacsConf even better!  We'd like to announcean online meeting to prepare for the next conference.  The first meetingwill be on Saturday, July 3, 2021 at 10am EDT (equivalently: 7am PDT,2pm UTC, or 4pm CET), and other meetings may be scheduled as needed.During the meeting, we will give a quick overview of lessons learned,timelines, ideas/plans, and things we need help with in terms of:- diversity and outreach;- accessibility;- technology and infrastructure;- scheduling, including themes and tracks (e.g. talks by/for beginners,  music, multimedia, Org, GTD, gaming, system administration, etc); and- feedback and/or discussion around other aspects of the conference.The meeting will be held on the BigBlueButton instance graciously hostedby Fosshost for us, at:        https://bbb.emacsverse.org/b/ban-7vp-bw0-hdqUsing BigBlueButton requires running JavaScript, though the JavaScriptcode is free/libre software.  If you are unable or unwilling to join theBigBlueButton call, we also plan on live streaming the meeting (detailsto be announced later and added on live.emacsconf.org), and we'll try tokeep an eye on our IRC channel #emacsconf on the Libera.Chat network ifyou'd like to participate via IRC.If you can't make it to the meeting, we would still like to hear fromyou and receive your valuable feedback.  You can share your thoughtswith us about the above topics and/or other related matters by sendingan email to one of the following addresses of your choosing, whereEmacsConf organizers are subscribed and will receive your feedback:- emacsconf-org@gnu.org: publicly archived mailing list, or- emacsconf-org-private@gnu.org: private mailing list, where  only EmacsConf organizers will receive your messages.Looking forward to hearing from and seeing you for the meeting!Amin Bandali,On behalf of the EmacsConf organizers
-#+END_EXAMPLE
-
-
-* EmacsATX: Literate Config, Elfeed, SMS
-:PROPERTIES:
-:LOCATION: https://www.meetup.com/EmacsATX/events/278683891/
-:END:
-<2021-07-08 Thu 05:00>--<2021-07-08 Thu 07:00>
-
-EmacsATX Wednesday, July 7 at 6:30 PM About Emacs ATX is a meetup
-devoted to exploring the vast and ever expanding universe of the
-extensible, customizable, free/libre editor Emacs. We are...
-https://www.meetup.com/EmacsATX/events/278683891/
-
-
-* M-x Research (contact them for password): TBC
-:PROPERTIES:
-:LOCATION: https://m-x-research.github.io/
-:END:
-<2021-07-16 Fri 19:30>--<2021-07-16 Fri 20:30>
-
-
-
-
-* Emacs APAC (virtual, in English)
-:PROPERTIES:
-:LOCATION: https://emacs-apac.gitlab.io/
-:END:
-<2021-07-24 Sat 14:00>--<2021-07-24 Sat 16:00>
-
-We are Emacs enthusiasts who live in the Asia-Pacific (APAC) time-zone.
-We meet every fourth Saturday of the month.
-
-** Where
-   :PROPERTIES:
-   :CUSTOM_ID: where
-   :END:
-
-The event is scheduled virtually using Jitsi Meet at 1400 Indian
-Standard Time (IST). The meeting URL is posted on Freenode IRC
-channels =#emacs=, =#ilugc= and =#emacsconf=, 30 minutes prior to the
-meeting, and also on the [[https://www.freelists.org/list/ilugc][ILUGC
-mailing list]] on the day of the meetup. If you are not subscribed, you
-can also check
-the [[https://www.freelists.org/archive/ilugc/][archive]].
-
-Checkout the upcoming
-meetings [[https://emacs-apac.gitlab.io/#upcoming][here]].
-
-** Talks
-   :PROPERTIES:
-   :CUSTOM_ID: talks
-   :END:
-
-We usually have free flowing discussions around new Emacs packages /
-features discovered, issues faced, experiences, usage tips, resources
-for further learning etc. These are related to GNU Emacs and its
-variants. Sometimes people also share their screens and give demos of
-their Emacs setup and use.
-
-If you would like to give a talk (20 minutes maximum), please send an
-email to TODO with the details.
-
-** Frequently Asked Questions
-   :PROPERTIES:
-   :CUSTOM_ID: frequently-asked-questions
-   :END:
-
-- *I'm new to Emacs, can / should I join?*
-  Yes! You are always welcome. We have participants from different walks
-  of life with varied experiences in Emacs. You can ask your questions
-  and the attendees will be able to help, at least point you in the
-  right direction.
-
-- *Which language is used for communication?*
-  English.
-
-- *I'm not from APAC, can I join?*
-  Definitely! If the timing is suitable for you, please join.
-
-
-
-
-* Emacs Berlin (virtual, in English)
-:PROPERTIES:
-:LOCATION: https://emacs-berlin.org/
-:END:
-<2021-07-28 Wed 22:00>--<2021-07-29 Thu 00:00>
-
-[[https://emacs-berlin.org/]] 
-
-New to Emacs? Longtime elisp expert? Just want to know what this is all
-about? Come join us!
-
-Location
-
-Room open from 18:30 CET, if there are talks they'll start at 19:00 CET.
-The video link will be posted on the day of the meetup to the mailing
-list. Check the archive
-([[https://mailb.org/pipermail/emacs-berlin/2021/thread.html]]) if you
-are not subscribed.
-
-About Emacs Berlin
-We are Emacs enthusiasts in Berlin, meeting every last Wednesday of the
-month.
-The best way to stay posted is through our mailing list. Sign up
-([[https://mailb.org/mailman/listinfo/emacs-berlin]]) and meet your
-fellow Emacsers, or have a look at the mailing list archives
-([[https://mailb.org/pipermail/emacs-berlin/]]) (gmane).
-Feel free to send an email introducing yourself after subscribing!
-You can also chat with us on irc: #emacs-berlin (connection instructions
-([[https://mailb.org/pipermail/emacs-berlin/2020/000583.html]]))
-Or on Twitter: @emacsberlin ([[https://twitter.com/emacsberlin]])
-And there's a YouTube Channel
-([[https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw]])  
-And
-on [[http://meetup.com/Emacs-Berlin-Meetup][meetup.com/Emacs-Berlin-Meetup]]
-([[https://www.meetup.com/Emacs-Berlin-Meetup/]])
-Non-public contact via email: organizers email
-(mailto:[[mailto:emacs-berlin-owner@emacs-berlin.org][emacs-berlin-owner@emacs-berlin.org]])
-
-
-* EmacsATX: TBD
-:PROPERTIES:
-:LOCATION: https://www.meetup.com/EmacsATX/events/hkckgsycclbgb/
-:END:
-<2021-08-05 Thu 05:00>--<2021-08-05 Thu 07:00>
-
-EmacsATX Wednesday, August 4 at 6:30 PM About Emacs ATX is a meetup
-devoted to exploring the vast and ever expanding universe of the
-extensible, customizable, free/libre editor Emacs. We are...
-https://www.meetup.com/EmacsATX/events/hkckgsycclbgb/
-
-
 * M-x Research (contact them for password): TBA
 :PROPERTIES:
 :LOCATION: https://m-x-research.github.io/
@@ -172,6 +7,19 @@ https://www.meetup.com/EmacsATX/events/hkckgsycclbgb/
 
 
 
+* EmacsConf Office Hour
+:PROPERTIES:
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-08-18 Wed 06:30>--<2021-08-18 Wed 07:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
+
+
 * M-x Research (contact them for password): TBA
 :PROPERTIES:
 :LOCATION: https://m-x-research.github.io/
@@ -179,6 +27,45 @@ https://www.meetup.com/EmacsATX/events/hkckgsycclbgb/
 <2021-08-20 Fri 19:30>--<2021-08-20 Fri 20:30>
 
 
+
+
+* EmacsConf Office Hour
+:PROPERTIES:
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-08-21 Sat 09:30>--<2021-08-21 Sat 10:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
+
+
+* EmacsConf Office Hour
+:PROPERTIES:
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-08-21 Sat 20:30>--<2021-08-21 Sat 21:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
+
+
+* EmacsConf Office Hour
+:PROPERTIES:
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-08-25 Wed 06:30>--<2021-08-25 Wed 07:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
 
 
 * Emacs Berlin (virtual, in English)
@@ -218,6 +105,19 @@ on [[http://meetup.com/Emacs-Berlin-Meetup][meetup.com/Emacs-Berlin-Meetup]]
 ([[https://www.meetup.com/Emacs-Berlin-Meetup/]])
 Non-public contact via email: organizers email
 (mailto:[[mailto:emacs-berlin-owner@emacs-berlin.org][emacs-berlin-owner@emacs-berlin.org]])
+
+
+* EmacsConf Office Hour
+:PROPERTIES:
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-08-28 Sat 09:30>--<2021-08-28 Sat 10:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
 
 
 * Emacs APAC (virtual, in English)
@@ -279,16 +179,42 @@ email to TODO with the details.
 
 
 
-* EmacsATX: TBD
+* EmacsConf Office Hour
 :PROPERTIES:
-:LOCATION: https://www.meetup.com/EmacsATX/events/hkckgsyccmbcb/
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-08-28 Sat 20:30>--<2021-08-28 Sat 21:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
+
+
+* EmacsConf Office Hour
+:PROPERTIES:
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-09-01 Wed 06:30>--<2021-09-01 Wed 07:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
+
+
+* EmacsATX: Initialization Social
+:PROPERTIES:
+:LOCATION: https://www.meetup.com/EmacsATX/events/279983164/
 :END:
 <2021-09-02 Thu 05:00>--<2021-09-02 Thu 07:00>
 
 EmacsATX Wednesday, September 1 at 6:30 PM About Emacs ATX is a meetup
 devoted to exploring the vast and ever expanding universe of the
 extensible, customizable, free/libre editor Emacs. We are...
-https://www.meetup.com/EmacsATX/events/hkckgsyccmbcb/
+https://www.meetup.com/EmacsATX/events/279983164/
 
 
 * M-x Research (contact them for password): TBA
@@ -300,6 +226,84 @@ https://www.meetup.com/EmacsATX/events/hkckgsyccmbcb/
 
 
 
+* EmacsConf Office Hour
+:PROPERTIES:
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-09-04 Sat 09:30>--<2021-09-04 Sat 10:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
+
+
+* EmacsConf Office Hour
+:PROPERTIES:
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-09-04 Sat 20:30>--<2021-09-04 Sat 21:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
+
+
+* EmacsConf Office Hour
+:PROPERTIES:
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-09-08 Wed 06:30>--<2021-09-08 Wed 07:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
+
+
+* EmacsConf Office Hour
+:PROPERTIES:
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-09-11 Sat 09:30>--<2021-09-11 Sat 10:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
+
+
+* EmacsConf Office Hour
+:PROPERTIES:
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-09-11 Sat 20:30>--<2021-09-11 Sat 21:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
+
+
+* EmacsConf Office Hour
+:PROPERTIES:
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-09-15 Wed 06:30>--<2021-09-15 Wed 07:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
+
+
 * M-x Research (contact them for password): TBA
 :PROPERTIES:
 :LOCATION: https://m-x-research.github.io/
@@ -307,6 +311,58 @@ https://www.meetup.com/EmacsATX/events/hkckgsyccmbcb/
 <2021-09-17 Fri 19:30>--<2021-09-17 Fri 20:30>
 
 
+
+
+* EmacsConf Office Hour
+:PROPERTIES:
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-09-18 Sat 09:30>--<2021-09-18 Sat 10:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
+
+
+* EmacsConf Office Hour
+:PROPERTIES:
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-09-18 Sat 20:30>--<2021-09-18 Sat 21:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
+
+
+* EmacsConf Office Hour
+:PROPERTIES:
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-09-22 Wed 06:30>--<2021-09-22 Wed 07:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
+
+
+* EmacsConf Office Hour
+:PROPERTIES:
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-09-25 Sat 09:30>--<2021-09-25 Sat 10:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
 
 
 * Emacs APAC (virtual, in English)
@@ -366,6 +422,32 @@ email to TODO with the details.
   Definitely! If the timing is suitable for you, please join.
 
 
+
+
+* EmacsConf Office Hour
+:PROPERTIES:
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-09-25 Sat 20:30>--<2021-09-25 Sat 21:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
+
+
+* EmacsConf Office Hour
+:PROPERTIES:
+:LOCATION: https://emacsconf.org/2021/office-hours/
+:END:
+<2021-09-29 Wed 06:30>--<2021-09-29 Wed 07:30>
+
+We're aware that it can be intimidating to submit a proposal to
+aconference, so we thought we'd try to help! This year, we're openingup
+the doors of our virtual offices for you to come talk to us aboutyour
+proposals with hopes of helping you with any hurdles you may befacing
+with preparing your proposal.
 
 
 * Emacs Berlin (virtual, in English)
@@ -791,6 +873,18 @@ Non-public contact via email: organizers email
 (mailto:[[mailto:emacs-berlin-owner@emacs-berlin.org][emacs-berlin-owner@emacs-berlin.org]])
 
 
+* EmacsATX: TBD
+:PROPERTIES:
+:LOCATION: https://www.meetup.com/EmacsATX/events/hkckgsydccbhb/
+:END:
+<2022-01-06 Thu 06:00>--<2022-01-06 Thu 08:00>
+
+EmacsATX Wednesday, January 5 at 6:30 PM About Emacs ATX is a meetup
+devoted to exploring the vast and ever expanding universe of the
+extensible, customizable, free/libre editor Emacs. We are...
+https://www.meetup.com/EmacsATX/events/hkckgsydccbhb/
+
+
 * M-x Research (contact them for password): TBA
 :PROPERTIES:
 :LOCATION: https://m-x-research.github.io/
@@ -905,6 +999,18 @@ on [[http://meetup.com/Emacs-Berlin-Meetup][meetup.com/Emacs-Berlin-Meetup]]
 ([[https://www.meetup.com/Emacs-Berlin-Meetup/]])
 Non-public contact via email: organizers email
 (mailto:[[mailto:emacs-berlin-owner@emacs-berlin.org][emacs-berlin-owner@emacs-berlin.org]])
+
+
+* EmacsATX: TBD
+:PROPERTIES:
+:LOCATION: https://www.meetup.com/EmacsATX/events/hkckgsydcdbdb/
+:END:
+<2022-02-03 Thu 06:00>--<2022-02-03 Thu 08:00>
+
+EmacsATX Wednesday, February 2 at 6:30 PM About Emacs ATX is a meetup
+devoted to exploring the vast and ever expanding universe of the
+extensible, customizable, free/libre editor Emacs. We are...
+https://www.meetup.com/EmacsATX/events/hkckgsydcdbdb/
 
 
 * M-x Research (contact them for password): TBA
@@ -1385,6 +1491,122 @@ email to TODO with the details.
 :LOCATION: https://m-x-research.github.io/
 :END:
 <2022-06-17 Fri 19:30>--<2022-06-17 Fri 20:30>
+
+
+
+
+* Emacs APAC (virtual, in English)
+:PROPERTIES:
+:LOCATION: https://emacs-apac.gitlab.io/
+:END:
+<2022-06-25 Sat 14:00>--<2022-06-25 Sat 16:00>
+
+We are Emacs enthusiasts who live in the Asia-Pacific (APAC) time-zone.
+We meet every fourth Saturday of the month.
+
+** Where
+   :PROPERTIES:
+   :CUSTOM_ID: where
+   :END:
+
+The event is scheduled virtually using Jitsi Meet at 1400 Indian
+Standard Time (IST). The meeting URL is posted on Freenode IRC
+channels =#emacs=, =#ilugc= and =#emacsconf=, 30 minutes prior to the
+meeting, and also on the [[https://www.freelists.org/list/ilugc][ILUGC
+mailing list]] on the day of the meetup. If you are not subscribed, you
+can also check
+the [[https://www.freelists.org/archive/ilugc/][archive]].
+
+Checkout the upcoming
+meetings [[https://emacs-apac.gitlab.io/#upcoming][here]].
+
+** Talks
+   :PROPERTIES:
+   :CUSTOM_ID: talks
+   :END:
+
+We usually have free flowing discussions around new Emacs packages /
+features discovered, issues faced, experiences, usage tips, resources
+for further learning etc. These are related to GNU Emacs and its
+variants. Sometimes people also share their screens and give demos of
+their Emacs setup and use.
+
+If you would like to give a talk (20 minutes maximum), please send an
+email to TODO with the details.
+
+** Frequently Asked Questions
+   :PROPERTIES:
+   :CUSTOM_ID: frequently-asked-questions
+   :END:
+
+- *I'm new to Emacs, can / should I join?*
+  Yes! You are always welcome. We have participants from different walks
+  of life with varied experiences in Emacs. You can ask your questions
+  and the attendees will be able to help, at least point you in the
+  right direction.
+
+- *Which language is used for communication?*
+  English.
+
+- *I'm not from APAC, can I join?*
+  Definitely! If the timing is suitable for you, please join.
+
+
+
+
+* Emacs Berlin (virtual, in English)
+:PROPERTIES:
+:LOCATION: https://emacs-berlin.org/
+:END:
+<2022-06-29 Wed 22:00>--<2022-06-30 Thu 00:00>
+
+[[https://emacs-berlin.org/]] 
+
+New to Emacs? Longtime elisp expert? Just want to know what this is all
+about? Come join us!
+
+Location
+
+Room open from 18:30 CET, if there are talks they'll start at 19:00 CET.
+The video link will be posted on the day of the meetup to the mailing
+list. Check the archive
+([[https://mailb.org/pipermail/emacs-berlin/2021/thread.html]]) if you
+are not subscribed.
+
+About Emacs Berlin
+We are Emacs enthusiasts in Berlin, meeting every last Wednesday of the
+month.
+The best way to stay posted is through our mailing list. Sign up
+([[https://mailb.org/mailman/listinfo/emacs-berlin]]) and meet your
+fellow Emacsers, or have a look at the mailing list archives
+([[https://mailb.org/pipermail/emacs-berlin/]]) (gmane).
+Feel free to send an email introducing yourself after subscribing!
+You can also chat with us on irc: #emacs-berlin (connection instructions
+([[https://mailb.org/pipermail/emacs-berlin/2020/000583.html]]))
+Or on Twitter: @emacsberlin ([[https://twitter.com/emacsberlin]])
+And there's a YouTube Channel
+([[https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw]])  
+And
+on [[http://meetup.com/Emacs-Berlin-Meetup][meetup.com/Emacs-Berlin-Meetup]]
+([[https://www.meetup.com/Emacs-Berlin-Meetup/]])
+Non-public contact via email: organizers email
+(mailto:[[mailto:emacs-berlin-owner@emacs-berlin.org][emacs-berlin-owner@emacs-berlin.org]])
+
+
+* M-x Research (contact them for password): TBA
+:PROPERTIES:
+:LOCATION: https://m-x-research.github.io/
+:END:
+<2022-07-01 Fri 19:30>--<2022-07-01 Fri 20:30>
+
+
+
+
+* M-x Research (contact them for password): TBA
+:PROPERTIES:
+:LOCATION: https://m-x-research.github.io/
+:END:
+<2022-07-15 Fri 19:30>--<2022-07-15 Fri 20:30>
 
 
 

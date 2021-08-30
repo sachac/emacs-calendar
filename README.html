@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-07-02 Fri 23:47 -->
+<!-- 2021-08-30 Mon 00:37 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Emacs calendar</title>
 <meta name="author" content="Sacha Chua" />
 <meta name="generator" content="Org Mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -41,21 +42,21 @@
   pre.src {
     position: relative;
     overflow: auto;
-    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
   pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -191,66 +192,123 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
 
        <link rel="stylesheet" type="text/css" href="https://sachachua.com/assets/css/style.css"></link>
        <link rel="stylesheet" type="text/css" href="https://sachachua.com/assets/css/org-export.css"></link>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
        <script src="https://sachachua.com/assets/js/misc.js"></script>
-<script type="text/javascript">
-// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
-<!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-    /*]]>*///-->
-// @license-end
-</script>
+
+        <style>
+        /* From: https://endlessparentheses.com/public/css/endless.css */
+        /* See also: https://meta.superuser.com/questions/4788/css-for-the-new-kbd-style */
+        kbd
+        {
+          -moz-border-radius: 6px;
+          -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+          -webkit-border-radius: 6px;
+          -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+          background-color: #f7f7f7;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+          color: #333;
+          display: inline-block;
+          font-family: 'Droid Sans Mono', monospace;
+          font-size: 80%;
+          font-weight: normal;
+          line-height: inherit;
+          margin: 0 .1em;
+          padding: .08em .4em;
+          text-shadow: 0 1px 0 #fff;
+          word-spacing: -4px;
+        
+          box-shadow: 2px 2px 2px #222; /* MA: An extra I've added. */
+        }
+        </style>
+        <link rel="stylesheet" type="text/css" href="https://alhassy.github.io/org-special-block-extras/tooltipster/dist/css/tooltipster.bundle.min.css"/>
+        
+        <link rel="stylesheet" type="text/css" href="https://alhassy.github.io/org-special-block-extras/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-punk.min.css" />
+        
+        <script type="text/javascript">
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape('%3Cscript src="https://code.jquery.com/jquery-1.10.0.min.js"%3E%3C/script%3E'));
+            }
+        </script>
+        
+         <script type="text/javascript"            src="https://alhassy.github.io/org-special-block-extras/tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+        
+          <script>
+                 $(document).ready(function() {
+                     $('.tooltip').tooltipster({
+                         theme: 'tooltipster-punk',
+                         contentAsHTML: true,
+                         animation: 'grow',
+                         delay: [100,500],
+                         // trigger: 'click'
+                         trigger: 'custom',
+                         triggerOpen: {
+                             mouseenter: true
+                         },
+                         triggerClose: {
+                             originClick: true,
+                             scroll: true
+                         }
+         });
+                 });
+             </script>
+        
+        <style>
+           abbr {color: red;}
+        
+           .tooltip { border-bottom: 1px dotted #000;
+                      color:red;
+                      text-decoration: none;}
+        </style>
 </head>
 <body>
 <div id="preamble" class="status">
 <a name="top" id="top"></a>
 </div>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">Emacs calendar</h1>
 
-<div id="outline-container-orgc1a04a9" class="outline-2">
-<h2 id="orgc1a04a9">Upcoming events</h2>
-<div class="outline-text-2" id="text-orgc1a04a9">
+<div id="outline-container-org9700b10" class="outline-2">
+<h2 id="org9700b10">Upcoming events</h2>
+<div class="outline-text-2" id="text-org9700b10">
 <p>
 
 </p>
 
 <ul class="org-ul">
-<li>EmacsConf 2021 public meeting <a href="https://lists.gnu.org/archive/html/emacsconf-discuss/2021-06/msg00001.html">https://lists.gnu.org/archive/html/emacsconf-discuss/2021-06/msg00001.html</a> Sat Jul 3 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore</li>
-<li>EmacsATX: Literate Config, Elfeed, SMS <a href="https://www.meetup.com/EmacsATX/events/278683891/">https://www.meetup.com/EmacsATX/events/278683891/</a> Wed Jul 7 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT &#x2013; Thu Jul 8 0130 Berlin / 0500 Kolkata / 0730 Singapore</li>
-<li>M-x Research (contact them for password): TBC <a href="https://m-x-research.github.io/">https://m-x-research.github.io/</a> Fri Jul 16 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore</li>
-<li>Emacs APAC (virtual, in English) <a href="https://emacs-apac.gitlab.io/">https://emacs-apac.gitlab.io/</a> Sat Jul 24 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 1030 Berlin / 1400 Kolkata / 1630 Singapore</li>
-<li>Emacs Berlin (virtual, in English) <a href="https://emacs-berlin.org/">https://emacs-berlin.org/</a> Wed Jul 28 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata &#x2013; Thu Jul 29 0030 Singapore</li>
-<li>EmacsATX: TBD <a href="https://www.meetup.com/EmacsATX/events/hkckgsycclbgb/">https://www.meetup.com/EmacsATX/events/hkckgsycclbgb/</a> Wed Aug 4 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT &#x2013; Thu Aug 5 0130 Berlin / 0500 Kolkata / 0730 Singapore</li>
-<li>M-x Research (contact them for password): TBA <a href="https://m-x-research.github.io/">https://m-x-research.github.io/</a> Fri Aug 6 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore</li>
+<li>EmacsConf Office Hour <a href="https://emacsconf.org/2021/office-hours/">https://emacsconf.org/2021/office-hours/</a> Tue Aug 31 1800 Vancouver / 2000 Chicago / 2100 Toronto &#x2013; Wed Sep 1 0100 GMT / 0300 Berlin / 0630 Kolkata / 0900 Singapore</li>
+<li>EmacsATX: Initialization Social <a href="https://www.meetup.com/EmacsATX/events/279983164/">https://www.meetup.com/EmacsATX/events/279983164/</a> Wed Sep 1 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT &#x2013; Thu Sep 2 0130 Berlin / 0500 Kolkata / 0730 Singapore</li>
+<li>M-x Research (contact them for password): TBA <a href="https://m-x-research.github.io/">https://m-x-research.github.io/</a> Fri Sep 3 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore</li>
+<li>EmacsConf Office Hour <a href="https://emacsconf.org/2021/office-hours/">https://emacsconf.org/2021/office-hours/</a> Fri Sep 3 2100 Vancouver / 2300 Chicago &#x2013; Sat Sep 4 0000 Toronto / 0400 GMT / 0600 Berlin / 0930 Kolkata / 1200 Singapore</li>
+<li>EmacsConf Office Hour <a href="https://emacsconf.org/2021/office-hours/">https://emacsconf.org/2021/office-hours/</a> Sat Sep 4 0800 Vancouver / 1000 Chicago / 1100 Toronto / 1500 GMT / 1700 Berlin / 2030 Kolkata / 2300 Singapore</li>
+<li>EmacsConf Office Hour <a href="https://emacsconf.org/2021/office-hours/">https://emacsconf.org/2021/office-hours/</a> Tue Sep 7 1800 Vancouver / 2000 Chicago / 2100 Toronto &#x2013; Wed Sep 8 0100 GMT / 0300 Berlin / 0630 Kolkata / 0900 Singapore</li>
+<li>EmacsConf Office Hour <a href="https://emacsconf.org/2021/office-hours/">https://emacsconf.org/2021/office-hours/</a> Fri Sep 10 2100 Vancouver / 2300 Chicago &#x2013; Sat Sep 11 0000 Toronto / 0400 GMT / 0600 Berlin / 0930 Kolkata / 1200 Singapore</li>
+<li>EmacsConf Office Hour <a href="https://emacsconf.org/2021/office-hours/">https://emacsconf.org/2021/office-hours/</a> Sat Sep 11 0800 Vancouver / 1000 Chicago / 1100 Toronto / 1500 GMT / 1700 Berlin / 2030 Kolkata / 2300 Singapore</li>
+<li>EmacsConf Office Hour <a href="https://emacsconf.org/2021/office-hours/">https://emacsconf.org/2021/office-hours/</a> Tue Sep 14 1800 Vancouver / 2000 Chicago / 2100 Toronto &#x2013; Wed Sep 15 0100 GMT / 0300 Berlin / 0630 Kolkata / 0900 Singapore</li>
+<li>M-x Research (contact them for password): TBA <a href="https://m-x-research.github.io/">https://m-x-research.github.io/</a> Fri Sep 17 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore</li>
+<li>EmacsConf Office Hour <a href="https://emacsconf.org/2021/office-hours/">https://emacsconf.org/2021/office-hours/</a> Fri Sep 17 2100 Vancouver / 2300 Chicago &#x2013; Sat Sep 18 0000 Toronto / 0400 GMT / 0600 Berlin / 0930 Kolkata / 1200 Singapore</li>
+<li>EmacsConf Office Hour <a href="https://emacsconf.org/2021/office-hours/">https://emacsconf.org/2021/office-hours/</a> Sat Sep 18 0800 Vancouver / 1000 Chicago / 1100 Toronto / 1500 GMT / 1700 Berlin / 2030 Kolkata / 2300 Singapore</li>
+<li>EmacsConf Office Hour <a href="https://emacsconf.org/2021/office-hours/">https://emacsconf.org/2021/office-hours/</a> Tue Sep 21 1800 Vancouver / 2000 Chicago / 2100 Toronto &#x2013; Wed Sep 22 0100 GMT / 0300 Berlin / 0630 Kolkata / 0900 Singapore</li>
+<li>EmacsConf Office Hour <a href="https://emacsconf.org/2021/office-hours/">https://emacsconf.org/2021/office-hours/</a> Fri Sep 24 2100 Vancouver / 2300 Chicago &#x2013; Sat Sep 25 0000 Toronto / 0400 GMT / 0600 Berlin / 0930 Kolkata / 1200 Singapore</li>
+<li>Emacs APAC (virtual, in English) <a href="https://emacs-apac.gitlab.io/">https://emacs-apac.gitlab.io/</a> Sat Sep 25 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 1030 Berlin / 1400 Kolkata / 1630 Singapore</li>
+<li>EmacsConf Office Hour <a href="https://emacsconf.org/2021/office-hours/">https://emacsconf.org/2021/office-hours/</a> Sat Sep 25 0800 Vancouver / 1000 Chicago / 1100 Toronto / 1500 GMT / 1700 Berlin / 2030 Kolkata / 2300 Singapore</li>
+<li>EmacsConf Office Hour <a href="https://emacsconf.org/2021/office-hours/">https://emacsconf.org/2021/office-hours/</a> Tue Sep 28 1800 Vancouver / 2000 Chicago / 2100 Toronto &#x2013; Wed Sep 29 0100 GMT / 0300 Berlin / 0630 Kolkata / 0900 Singapore</li>
+<li>Emacs Berlin (virtual, in English) <a href="https://emacs-berlin.org/">https://emacs-berlin.org/</a> Wed Sep 29 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata &#x2013; Thu Sep 30 0030 Singapore</li>
+<li>M-x Research (contact them for password): TBA <a href="https://m-x-research.github.io/">https://m-x-research.github.io/</a> Fri Oct 1 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore</li>
+<li>EmacsATX: TBD <a href="https://www.meetup.com/EmacsATX/events/hkckgsyccnbjb/">https://www.meetup.com/EmacsATX/events/hkckgsyccnbjb/</a> Wed Oct 6 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT &#x2013; Thu Oct 7 0130 Berlin / 0500 Kolkata / 0730 Singapore</li>
 </ul>
 </div>
 </div>
 
 
-<div id="outline-container-org53d53b9" class="outline-2">
-<h2 id="org53d53b9">Introduction</h2>
-<div class="outline-text-2" id="text-org53d53b9">
+<div id="outline-container-orgcbeca9c" class="outline-2">
+<h2 id="orgcbeca9c">Introduction</h2>
+<div class="outline-text-2" id="text-orgcbeca9c">
 <p>
 This calendar is maintained by <a href="mailto:sacha@sachachua.com">sacha@sachachua.com</a>. You can find it at <a href="https://emacslife.com/calendar/">https://emacslife.com/calendar/</a>
 </p>
@@ -306,13 +364,13 @@ Enjoy!
 </div>
 </div>
 
-<div id="outline-container-org5b50b38" class="outline-2">
-<h2 id="org5b50b38">Code I use to run it</h2>
-<div class="outline-text-2" id="text-org5b50b38">
+<div id="outline-container-orgf442f3d" class="outline-2">
+<h2 id="orgf442f3d">Code I use to run it</h2>
+<div class="outline-text-2" id="text-orgf442f3d">
 </div>
-<div id="outline-container-org124d6bb" class="outline-3">
-<h3 id="org124d6bb">Timezones</h3>
-<div class="outline-text-3" id="text-org124d6bb">
+<div id="outline-container-org203a104" class="outline-3">
+<h3 id="org203a104">Timezones</h3>
+<div class="outline-text-3" id="text-org203a104">
 <ul class="org-ul">
 <li>America/Vancouver</li>
 <li>America/Chicago</li>
@@ -325,16 +383,16 @@ Enjoy!
 </div>
 </div>
 
-<div id="outline-container-orgb00afb7" class="outline-3">
-<h3 id="orgb00afb7">Download and parse the iCal file with Python</h3>
-<div class="outline-text-3" id="text-orgb00afb7">
+<div id="outline-container-org99ef092" class="outline-3">
+<h3 id="org99ef092">Download and parse the iCal file with Python</h3>
+<div class="outline-text-3" id="text-org99ef092">
 <div class="org-src-container">
 <pre class="src src-sh">pip3 install icalevents recurring_ical_events pypandoc
 </pre>
 </div>
 
 <div class="org-src-container">
-<pre class="src src-python" id="org6325a87"><span class="org-keyword">from</span> urllib.request <span class="org-keyword">import</span> urlopen
+<pre class="src src-python" id="org5d33df9"><span class="org-keyword">from</span> urllib.request <span class="org-keyword">import</span> urlopen
 <span class="org-keyword">from</span> icalendar <span class="org-keyword">import</span> Calendar
 <span class="org-keyword">from</span> datetime <span class="org-keyword">import</span> date, datetime
 <span class="org-keyword">from</span> dateutil.relativedelta <span class="org-keyword">import</span> *
@@ -351,10 +409,9 @@ Enjoy!
                  <span class="org-string">'EmacsSF'</span>: <span class="org-string">'Emacs-SF'</span>,
                  <span class="org-string">'EmacsATX'</span>: <span class="org-string">'EmacsATX'</span>,
                  <span class="org-string">'Boulder'</span>: <span class="org-string">'Boulder-Emacs-Meetup'</span>,
-                 <span class="org-string">'DC'</span>: <span class="org-string">'NOVA-EMACS'</span>,
                  <span class="org-string">'Pelotas, Brazil'</span>: <span class="org-string">'Pelotas-Emacs-Meetup'</span>,
                  <span class="org-string">'Sao Paulo'</span>: <span class="org-string">'Grupo-de-usuarios-de-Emacs-de-Sao-Paulo'</span>,
-                 <span class="org-string">'Frankfurt'</span>: <span class="org-string">'emacs-ffm'</span>,
+                 <span class="org-string">'Emacs FFM'</span>: <span class="org-string">'emacs-ffm'</span>,
                  <span class="org-string">'London Emacs Hacking'</span>: <span class="org-string">'London-Emacs-Hacking'</span>,
                  <span class="org-string">'London Emacs Lisp'</span>: <span class="org-string">'London-Emacs-Lisp-Meetup'</span>,
                  <span class="org-string">'Stockholm'</span>: <span class="org-string">'Stockholm-Emacs-Meetup'</span>,
@@ -486,21 +543,21 @@ highlight_end = datetime.utcnow() + relativedelta(weeks=+6)
 </div>
 </div>
 
-<div id="outline-container-org5a74eb5" class="outline-3">
-<h3 id="org5a74eb5">Sync</h3>
-<div class="outline-text-3" id="text-org5a74eb5">
+<div id="outline-container-orgdab570e" class="outline-3">
+<h3 id="orgdab570e">Sync</h3>
+<div class="outline-text-3" id="text-orgdab570e">
 <div class="org-src-container">
-<pre class="src src-sh" id="org367687c">rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
+<pre class="src src-sh" id="org06d0007">rsync -avze ssh ./ web:/var/www/emacslife.com/calendar/ --exclude=.git
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgd16f068" class="outline-3">
-<h3 id="orgd16f068">Convert timezones</h3>
-<div class="outline-text-3" id="text-orgd16f068">
+<div id="outline-container-orgbca2f4e" class="outline-3">
+<h3 id="orgbca2f4e">Convert timezones</h3>
+<div class="outline-text-3" id="text-orgbca2f4e">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org97c43cd">(<span class="org-keyword">defun</span> <span class="org-function-name">my/summarize-times</span> (time timezones)
+<pre class="src src-emacs-lisp" id="org14cb082">(<span class="org-keyword">defun</span> <span class="org-function-name">my/summarize-times</span> (time timezones)
   (<span class="org-keyword">let</span> (prev-day)
     (mapconcat
      (<span class="org-keyword">lambda</span> (tz)
@@ -546,11 +603,11 @@ my/org-summarize-event-in-timezones
 </div>
 </div>
 
-<div id="outline-container-org8aaf1ce" class="outline-3">
-<h3 id="org8aaf1ce">Summarize upcoming ones</h3>
-<div class="outline-text-3" id="text-org8aaf1ce">
+<div id="outline-container-org2638ce6" class="outline-3">
+<h3 id="org2638ce6">Summarize upcoming ones</h3>
+<div class="outline-text-3" id="text-org2638ce6">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="orgda1e5d8">(<span class="org-keyword">defun</span> <span class="org-function-name">my/summarize-upcoming-events</span> (limit timezones)
+<pre class="src src-emacs-lisp" id="org757abd9">(<span class="org-keyword">defun</span> <span class="org-function-name">my/summarize-upcoming-events</span> (limit timezones)
   (<span class="org-keyword">interactive</span> (list (org-read-date nil t) my/timezones))
   (<span class="org-keyword">let</span> (result)
     (<span class="org-keyword">with-current-buffer</span> (find-file-noselect <span class="org-string">"~/code/emacs-calendar/emacs-calendar-toronto.org"</span>)
@@ -585,11 +642,11 @@ my/summarize-upcoming-events
 </div>
 
 
-<div id="outline-container-org42ae96d" class="outline-3">
-<h3 id="org42ae96d">Announcing Emacs events</h3>
-<div class="outline-text-3" id="text-org42ae96d">
+<div id="outline-container-org091a829" class="outline-3">
+<h3 id="org091a829">Announcing Emacs events</h3>
+<div class="outline-text-3" id="text-org091a829">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org6adab7a">(<span class="org-keyword">defun</span> <span class="org-function-name">my/announce-on-irc</span> (channels message host port)
+<pre class="src src-emacs-lisp" id="orgf34f574">(<span class="org-keyword">defun</span> <span class="org-function-name">my/announce-on-irc</span> (channels message host port)
   (<span class="org-keyword">with-temp-buffer</span>
     (insert <span class="org-string">"PASS "</span> erc-password <span class="org-string">"\n"</span>
             <span class="org-string">"USER "</span> erc-nick <span class="org-string">"\n"</span>
@@ -613,6 +670,11 @@ my/summarize-upcoming-events
 (<span class="org-keyword">defun</span> <span class="org-function-name">my/schedule-announcement</span> (time message)
   (<span class="org-keyword">interactive</span> (list (org-read-date t t) (read-string <span class="org-string">"Message: "</span>)))
   (run-at-time time nil #'my/announce-on-irc-and-twitter time '(<span class="org-string">"#emacs"</span> <span class="org-string">"#emacsconf"</span>) message erc-server erc-port))
+
+(<span class="org-keyword">defun</span> <span class="org-function-name">my/org-table-as-alist</span> (table)
+  <span class="org-doc">"Convert TABLE to an alist. Remember to set :colnames no."</span>
+  (<span class="org-keyword">let</span> ((headers (seq-map 'intern (car table))))
+    (<span class="org-keyword">cl-loop</span> for x in (cdr table) collect (-zip headers x))))
 
 (<span class="org-keyword">defun</span> <span class="org-function-name">my/schedule-announcements-for-upcoming-emacs-meetups</span> ()
   (<span class="org-keyword">interactive</span>)
@@ -641,9 +703,9 @@ my/summarize-upcoming-events
 </div>
 </div>
 
-<div id="outline-container-org5f0a37b" class="outline-3">
-<h3 id="org5f0a37b">Update EmacsWiki</h3>
-<div class="outline-text-3" id="text-org5f0a37b">
+<div id="outline-container-org070312d" class="outline-3">
+<h3 id="org070312d">Update EmacsWiki</h3>
+<div class="outline-text-3" id="text-org070312d">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">(<span class="org-keyword">use-package</span> <span class="org-constant">oddmuse</span>
 <span class="org-builtin">:load-path</span> <span class="org-string">"~/vendor/oddmuse-el"</span>
