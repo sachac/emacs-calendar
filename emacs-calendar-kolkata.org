@@ -87,19 +87,6 @@ with preparing your proposal.
 :PROPERTIES:
 :LOCATION: https://emacsconf.org/2021/office-hours/
 :END:
-<2021-09-11 Sat 20:30>--<2021-09-11 Sat 21:30>
-
-We're aware that it can be intimidating to submit a proposal to a
-conference, so we thought we'd try to help! This year, we're opening up
-the doors of our virtual offices for you to come talk to us about your
-proposals with hopes of helping you with any hurdles you may be facing
-with preparing your proposal.
-
-
-* EmacsConf Office Hour
-:PROPERTIES:
-:LOCATION: https://emacsconf.org/2021/office-hours/
-:END:
 <2021-09-15 Wed 06:30>--<2021-09-15 Wed 07:30>
 
 We're aware that it can be intimidating to submit a proposal to
