@@ -1,439 +1,68 @@
-* EmacsConf Office Hour
+* Emacs Paris (virtual, in French)
 :PROPERTIES:
-:LOCATION: https://emacsconf.org/2021/office-hours/
+:LOCATION: https://www.emacs-doctor.com/emacs-paris-user-group/
 :END:
-<2021-09-01 Wed 09:00>--<2021-09-01 Wed 10:00>
+<2021-11-05 Fri 00:30>--<2021-11-05 Fri 02:00>
 
-We're aware that it can be intimidating to submit a proposal to
-aconference, so we thought we'd try to help! This year, we're openingup
-the doors of our virtual offices for you to come talk to us aboutyour
-proposals with hopes of helping you with any hurdles you may befacing
-with preparing your proposal.
+[[https://www.emacs-doctor.com/emacs-paris-user-group/]] 
 
 
-* Atelier Emacs (in French): Atelier Emacs Paris
-:PROPERTIES:
-:LOCATION: https://mobilizon.fr/events/27fde021-f66f-49be-8297-482ebcc2f9b6
-:END:
-<2021-09-02 Thu 23:30>--<2021-09-03 Fri 01:30>
+Nous sommes quelques utilisateurs
+de [[https://www.gnu.org/software/emacs/][GNU Emacs]] à nous réunir
+à *Paris* et à *Montpellier* pour apprendre les uns des autres : c'est
+ouvert aux non-emacsiens, aux débutants, aux utilisateurs avancés et aux
+vimistes !
 
-Les rencontres ont lieu sur cette instance de BBB.Tous les détails sur
-M-x doctor RETNous gardons parfois des notes des soirées passées sur ce
-dépôt.
-
-
-* M-x Research (contact them for password): TBA
-:PROPERTIES:
-:LOCATION: https://m-x-research.github.io/
-:END:
-<2021-09-03 Fri 22:00>--<2021-09-03 Fri 23:00>
-
-
-
-
-* EmacsConf Office Hour
-:PROPERTIES:
-:LOCATION: https://emacsconf.org/2021/office-hours/
-:END:
-<2021-09-04 Sat 12:00>--<2021-09-04 Sat 13:00>
-
-We're aware that it can be intimidating to submit a proposal to
-aconference, so we thought we'd try to help! This year, we're openingup
-the doors of our virtual offices for you to come talk to us aboutyour
-proposals with hopes of helping you with any hurdles you may befacing
-with preparing your proposal.
-
-
-* EmacsConf Office Hour
-:PROPERTIES:
-:LOCATION: https://emacsconf.org/2021/office-hours/
-:END:
-<2021-09-04 Sat 23:00>--<2021-09-05 Sun 00:00>
-
-We're aware that it can be intimidating to submit a proposal to a
-conference, so we thought we'd try to help! This year, we're opening up
-the doors of our virtual offices for you to come talk to us about your
-proposals with hopes of helping you with any hurdles you may be facing
-with preparing your proposal.
-
-
-* EmacsConf Office Hour
-:PROPERTIES:
-:LOCATION: https://emacsconf.org/2021/office-hours/
-:END:
-<2021-09-08 Wed 09:00>--<2021-09-08 Wed 10:00>
-
-We're aware that it can be intimidating to submit a proposal to
-aconference, so we thought we'd try to help! This year, we're openingup
-the doors of our virtual offices for you to come talk to us aboutyour
-proposals with hopes of helping you with any hurdles you may befacing
-with preparing your proposal.
-
-
-* EmacsConf Office Hour
-:PROPERTIES:
-:LOCATION: https://emacsconf.org/2021/office-hours/
-:END:
-<2021-09-11 Sat 12:00>--<2021-09-11 Sat 13:00>
-
-We're aware that it can be intimidating to submit a proposal to
-aconference, so we thought we'd try to help! This year, we're openingup
-the doors of our virtual offices for you to come talk to us aboutyour
-proposals with hopes of helping you with any hurdles you may befacing
-with preparing your proposal.
-
-
-* EmacsConf Office Hour
-:PROPERTIES:
-:LOCATION: https://emacsconf.org/2021/office-hours/
-:END:
-<2021-09-15 Wed 09:00>--<2021-09-15 Wed 10:00>
-
-We're aware that it can be intimidating to submit a proposal to
-aconference, so we thought we'd try to help! This year, we're openingup
-the doors of our virtual offices for you to come talk to us aboutyour
-proposals with hopes of helping you with any hurdles you may befacing
-with preparing your proposal.
-
-
-* EmacsSF: Emacs Lisp: Org-mode Hacks
-:PROPERTIES:
-:LOCATION: https://www.meetup.com/Emacs-SF/events/280469304/
-:END:
-<2021-09-17 Fri 01:00>--<2021-09-17 Fri 03:00>
-
-Emacs SF Thursday, September 16 at 10:00 AM Everyone loves org-mode, and
-loves talking about its features, but what about the low level stuff?
-Let's get together and talk about org-mode at the E...
-https://www.meetup.com/Emacs-SF/events/280469304/
-
-
-* M-x Research (contact them for password): TBA
-:PROPERTIES:
-:LOCATION: https://m-x-research.github.io/
-:END:
-<2021-09-17 Fri 22:00>--<2021-09-17 Fri 23:00>
-
-
-
-
-* EmacsConf Office Hour
-:PROPERTIES:
-:LOCATION: https://emacsconf.org/2021/office-hours/
-:END:
-<2021-09-18 Sat 12:00>--<2021-09-18 Sat 13:00>
-
-We're aware that it can be intimidating to submit a proposal to
-aconference, so we thought we'd try to help! This year, we're openingup
-the doors of our virtual offices for you to come talk to us aboutyour
-proposals with hopes of helping you with any hurdles you may befacing
-with preparing your proposal.
-
-
-* EmacsConf Office Hour
-:PROPERTIES:
-:LOCATION: https://emacsconf.org/2021/office-hours/
-:END:
-<2021-09-18 Sat 23:00>--<2021-09-19 Sun 00:00>
-
-We're aware that it can be intimidating to submit a proposal to a
-conference, so we thought we'd try to help! This year, we're opening up
-the doors of our virtual offices for you to come talk to us about your
-proposals with hopes of helping you with any hurdles you may be facing
-with preparing your proposal.
-
-
-* EmacsConf Office Hour
-:PROPERTIES:
-:LOCATION: https://emacsconf.org/2021/office-hours/
-:END:
-<2021-09-22 Wed 09:00>--<2021-09-22 Wed 10:00>
-
-We're aware that it can be intimidating to submit a proposal to
-aconference, so we thought we'd try to help! This year, we're openingup
-the doors of our virtual offices for you to come talk to us aboutyour
-proposals with hopes of helping you with any hurdles you may befacing
-with preparing your proposal.
-
-
-* EmacsConf Office Hour
-:PROPERTIES:
-:LOCATION: https://emacsconf.org/2021/office-hours/
-:END:
-<2021-09-25 Sat 12:00>--<2021-09-25 Sat 13:00>
-
-We're aware that it can be intimidating to submit a proposal to
-aconference, so we thought we'd try to help! This year, we're openingup
-the doors of our virtual offices for you to come talk to us aboutyour
-proposals with hopes of helping you with any hurdles you may befacing
-with preparing your proposal.
-
-
-* Emacs APAC (virtual, in English)
-:PROPERTIES:
-:LOCATION: https://emacs-apac.gitlab.io/
-:END:
-<2021-09-25 Sat 16:30>--<2021-09-25 Sat 18:30>
-
-We are Emacs enthusiasts who live in the Asia-Pacific (APAC) time-zone.
-We meet every fourth Saturday of the month.
-
-** Where
+** Liste de discussion et forum
    :PROPERTIES:
-   :CUSTOM_ID: where
+   :CUSTOM_ID: liste-de-discussion-et-forum
    :END:
 
-The event is scheduled virtually using Jitsi Meet at 1400 Indian
-Standard Time (IST). The meeting URL is posted on Freenode IRC
-channels =#emacs=, =#ilugc= and =#emacsconf=, 30 minutes prior to the
-meeting, and also on the [[https://www.freelists.org/list/ilugc][ILUGC
-mailing list]] on the day of the meetup. If you are not subscribed, you
-can also check
-the [[https://www.freelists.org/archive/ilugc/][archive]].
+Vous pouvez vous inscrire
+sur [[https://emacs-doctor.com/lists/listinfo/ateliers-paris][la liste
+de discussion]].
 
-Checkout the upcoming
-meetings [[https://emacs-apac.gitlab.io/#upcoming][here]].
+Nous avons aussi un [[https://emacs-doctor.com/forum/][forum]],
+n'hésitez pas à échanger.
 
-** Talks
+** Comment je m'inscris à un atelier ?
    :PROPERTIES:
-   :CUSTOM_ID: talks
+   :CUSTOM_ID: comment-je-minscris-à-un-atelier
    :END:
 
-We usually have free flowing discussions around new Emacs packages /
-features discovered, issues faced, experiences, usage tips, resources
-for further learning etc. These are related to GNU Emacs and its
-variants. Sometimes people also share their screens and give demos of
-their Emacs setup and use.
+*** Pour Paris
+    :PROPERTIES:
+    :CUSTOM_ID: pour-paris
+    :END:
 
-If you would like to give a talk (20 minutes maximum), please send an
-email to TODO with the details.
+Nous faisons des rencontres en ligne. Il y a parfois des rencontres
+physiques chez [[http://inno3.fr/][inno3.fr]] au 137 Boulevard de
+Magenta 75010 Paris
+([[http://www.openstreetmap.org/#map=16/48.8818/2.3514][plan]]) de 19h à
+22h.
 
-** Frequently Asked Questions
+Si vous venez pour la première fois à un atelier IRL, envoyez un mot
+à =bzg@bzg.fr=. Pour la visio, vous pouvez simplement débarquer.
+
+*** Pour Montpellier
+    :PROPERTIES:
+    :CUSTOM_ID: pour-montpellier
+    :END:
+
+Envoyez un petit mot à =emacsem-owner@movoscope.org= et vous serez
+inscrit.
+
+** Rencontres passées
    :PROPERTIES:
-   :CUSTOM_ID: frequently-asked-questions
+   :CUSTOM_ID: rencontres-passées
    :END:
 
-- *I'm new to Emacs, can / should I join?*
-  Yes! You are always welcome. We have participants from different walks
-  of life with varied experiences in Emacs. You can ask your questions
-  and the attendees will be able to help, at least point you in the
-  right direction.
-
-- *Which language is used for communication?*
-  English.
-
-- *I'm not from APAC, can I join?*
-  Definitely! If the timing is suitable for you, please join.
+Nous gardons parfois des notes des soirées passées
+sur [[https://gitlab.com/bzg2/emacsparis/blob/master/README.org][ce
+dépôt]].
 
 
-
-
-* EmacsConf Office Hour
-:PROPERTIES:
-:LOCATION: https://emacsconf.org/2021/office-hours/
-:END:
-<2021-09-25 Sat 23:00>--<2021-09-26 Sun 00:00>
-
-We're aware that it can be intimidating to submit a proposal to a
-conference, so we thought we'd try to help! This year, we're opening up
-the doors of our virtual offices for you to come talk to us about your
-proposals with hopes of helping you with any hurdles you may be facing
-with preparing your proposal.
-
-
-* EmacsConf Office Hour
-:PROPERTIES:
-:LOCATION: https://emacsconf.org/2021/office-hours/
-:END:
-<2021-09-29 Wed 09:00>--<2021-09-29 Wed 10:00>
-
-We're aware that it can be intimidating to submit a proposal to
-aconference, so we thought we'd try to help! This year, we're openingup
-the doors of our virtual offices for you to come talk to us aboutyour
-proposals with hopes of helping you with any hurdles you may befacing
-with preparing your proposal.
-
-
-* Emacs Berlin (virtual, in English)
-:PROPERTIES:
-:LOCATION: https://emacs-berlin.org/
-:END:
-<2021-09-30 Thu 00:30>--<2021-09-30 Thu 02:30>
-
-[[https://emacs-berlin.org/]] 
-
-New to Emacs? Longtime elisp expert? Just want to know what this is all
-about? Come join us!
-
-Location
-
-Room open from 18:30 CET, if there are talks they'll start at 19:00 CET.
-The video link will be posted on the day of the meetup to the mailing
-list. Check the archive
-([[https://mailb.org/pipermail/emacs-berlin/2021/thread.html]]) if you
-are not subscribed.
-
-About Emacs Berlin
-We are Emacs enthusiasts in Berlin, meeting every last Wednesday of the
-month.
-The best way to stay posted is through our mailing list. Sign up
-([[https://mailb.org/mailman/listinfo/emacs-berlin]]) and meet your
-fellow Emacsers, or have a look at the mailing list archives
-([[https://mailb.org/pipermail/emacs-berlin/]]) (gmane).
-Feel free to send an email introducing yourself after subscribing!
-You can also chat with us on irc: #emacs-berlin (connection instructions
-([[https://mailb.org/pipermail/emacs-berlin/2020/000583.html]]))
-Or on Twitter: @emacsberlin ([[https://twitter.com/emacsberlin]])
-And there's a YouTube Channel
-([[https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw]])  
-And
-on [[http://meetup.com/Emacs-Berlin-Meetup][meetup.com/Emacs-Berlin-Meetup]]
-([[https://www.meetup.com/Emacs-Berlin-Meetup/]])
-Non-public contact via email: organizers email
-(mailto:[[mailto:emacs-berlin-owner@emacs-berlin.org][emacs-berlin-owner@emacs-berlin.org]])
-
-
-* M-x Research (contact them for password): TBA
-:PROPERTIES:
-:LOCATION: https://m-x-research.github.io/
-:END:
-<2021-10-01 Fri 22:00>--<2021-10-01 Fri 23:00>
-
-
-
-
-* EmacsATX: TBD
-:PROPERTIES:
-:LOCATION: https://www.meetup.com/EmacsATX/events/hkckgsyccnbjb/
-:END:
-<2021-10-07 Thu 07:30>--<2021-10-07 Thu 09:30>
-
-EmacsATX Wednesday, October 6 at 6:30 PM About Emacs ATX is a meetup
-devoted to exploring the vast and ever expanding universe of the
-extensible, customizable, free/libre editor Emacs. We are...
-https://www.meetup.com/EmacsATX/events/hkckgsyccnbjb/
-
-
-* M-x Research (contact them for password): TBA
-:PROPERTIES:
-:LOCATION: https://m-x-research.github.io/
-:END:
-<2021-10-15 Fri 22:00>--<2021-10-15 Fri 23:00>
-
-
-
-
-* Emacs APAC (virtual, in English)
-:PROPERTIES:
-:LOCATION: https://emacs-apac.gitlab.io/
-:END:
-<2021-10-23 Sat 16:30>--<2021-10-23 Sat 18:30>
-
-We are Emacs enthusiasts who live in the Asia-Pacific (APAC) time-zone.
-We meet every fourth Saturday of the month.
-
-** Where
-   :PROPERTIES:
-   :CUSTOM_ID: where
-   :END:
-
-The event is scheduled virtually using Jitsi Meet at 1400 Indian
-Standard Time (IST). The meeting URL is posted on Freenode IRC
-channels =#emacs=, =#ilugc= and =#emacsconf=, 30 minutes prior to the
-meeting, and also on the [[https://www.freelists.org/list/ilugc][ILUGC
-mailing list]] on the day of the meetup. If you are not subscribed, you
-can also check
-the [[https://www.freelists.org/archive/ilugc/][archive]].
-
-Checkout the upcoming
-meetings [[https://emacs-apac.gitlab.io/#upcoming][here]].
-
-** Talks
-   :PROPERTIES:
-   :CUSTOM_ID: talks
-   :END:
-
-We usually have free flowing discussions around new Emacs packages /
-features discovered, issues faced, experiences, usage tips, resources
-for further learning etc. These are related to GNU Emacs and its
-variants. Sometimes people also share their screens and give demos of
-their Emacs setup and use.
-
-If you would like to give a talk (20 minutes maximum), please send an
-email to TODO with the details.
-
-** Frequently Asked Questions
-   :PROPERTIES:
-   :CUSTOM_ID: frequently-asked-questions
-   :END:
-
-- *I'm new to Emacs, can / should I join?*
-  Yes! You are always welcome. We have participants from different walks
-  of life with varied experiences in Emacs. You can ask your questions
-  and the attendees will be able to help, at least point you in the
-  right direction.
-
-- *Which language is used for communication?*
-  English.
-
-- *I'm not from APAC, can I join?*
-  Definitely! If the timing is suitable for you, please join.
-
-
-
-
-* Emacs Berlin (virtual, in English)
-:PROPERTIES:
-:LOCATION: https://emacs-berlin.org/
-:END:
-<2021-10-28 Thu 00:30>--<2021-10-28 Thu 02:30>
-
-[[https://emacs-berlin.org/]] 
-
-New to Emacs? Longtime elisp expert? Just want to know what this is all
-about? Come join us!
-
-Location
-
-Room open from 18:30 CET, if there are talks they'll start at 19:00 CET.
-The video link will be posted on the day of the meetup to the mailing
-list. Check the archive
-([[https://mailb.org/pipermail/emacs-berlin/2021/thread.html]]) if you
-are not subscribed.
-
-About Emacs Berlin
-We are Emacs enthusiasts in Berlin, meeting every last Wednesday of the
-month.
-The best way to stay posted is through our mailing list. Sign up
-([[https://mailb.org/mailman/listinfo/emacs-berlin]]) and meet your
-fellow Emacsers, or have a look at the mailing list archives
-([[https://mailb.org/pipermail/emacs-berlin/]]) (gmane).
-Feel free to send an email introducing yourself after subscribing!
-You can also chat with us on irc: #emacs-berlin (connection instructions
-([[https://mailb.org/pipermail/emacs-berlin/2020/000583.html]]))
-Or on Twitter: @emacsberlin ([[https://twitter.com/emacsberlin]])
-And there's a YouTube Channel
-([[https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw]])  
-And
-on [[http://meetup.com/Emacs-Berlin-Meetup][meetup.com/Emacs-Berlin-Meetup]]
-([[https://www.meetup.com/Emacs-Berlin-Meetup/]])
-Non-public contact via email: organizers email
-(mailto:[[mailto:emacs-berlin-owner@emacs-berlin.org][emacs-berlin-owner@emacs-berlin.org]])
-
-
-* EmacsATX: TBD
-:PROPERTIES:
-:LOCATION: https://www.meetup.com/EmacsATX/events/hkckgsyccpbfb/
-:END:
-<2021-11-04 Thu 07:30>--<2021-11-04 Thu 09:30>
-
-EmacsATX Wednesday, November 3 at 6:30 PM About Emacs ATX is a meetup
-devoted to exploring the vast and ever expanding universe of the
-extensible, customizable, free/libre editor Emacs. We are...
-https://www.meetup.com/EmacsATX/events/hkckgsyccpbfb/
-
-
-* M-x Research (contact them for password): TBA
+* M-x Research (contact them for password): Cancelled: M-x Research
 :PROPERTIES:
 :LOCATION: https://m-x-research.github.io/
 :END:
@@ -551,14 +180,14 @@ email to TODO with the details.
 
 * EmacsATX: TBD
 :PROPERTIES:
-:LOCATION: https://www.meetup.com/EmacsATX/events/hkckgsyccqbcb/
+:LOCATION: https://www.meetup.com/EmacsATX/events/281742622/
 :END:
 <2021-12-02 Thu 08:30>--<2021-12-02 Thu 10:30>
 
 EmacsATX Wednesday, December 1 at 6:30 PM About Emacs ATX is a meetup
 devoted to exploring the vast and ever expanding universe of the
 extensible, customizable, free/libre editor Emacs. We are...
-https://www.meetup.com/EmacsATX/events/hkckgsyccqbcb/
+https://www.meetup.com/EmacsATX/events/281742622/
 
 
 * M-x Research (contact them for password): TBA
@@ -568,6 +197,82 @@ https://www.meetup.com/EmacsATX/events/hkckgsyccqbcb/
 <2021-12-03 Fri 23:00>--<2021-12-04 Sat 00:00>
 
 
+
+
+* EmacsNYC: Discussion: Is VSCode Better?
+:PROPERTIES:
+:LOCATION: https://www.meetup.com/New-York-Emacs-Meetup/events/281810145/
+:END:
+<2021-12-07 Tue 08:00>--<2021-12-07 Tue 10:00>
+
+New York Emacs Meetup Monday, December 6 at 7:00 PM Emacs and Vi are old
+news! The new game in town VSCode. It's taking everyone by storm! Stand
+down Sublime Text! Did anyone even use Atom? Good bye, Py...
+https://www.meetup.com/New-York-Emacs-Meetup/events/281810145/
+
+
+* Emacs Paris (virtual, in French)
+:PROPERTIES:
+:LOCATION: https://www.emacs-doctor.com/emacs-paris-user-group/
+:END:
+<2021-12-08 Wed 00:30>--<2021-12-08 Wed 02:00>
+
+[[https://www.emacs-doctor.com/emacs-paris-user-group/]] 
+
+
+Nous sommes quelques utilisateurs
+de [[https://www.gnu.org/software/emacs/][GNU Emacs]] à nous réunir
+à *Paris* et à *Montpellier* pour apprendre les uns des autres : c'est
+ouvert aux non-emacsiens, aux débutants, aux utilisateurs avancés et aux
+vimistes !
+
+** Liste de discussion et forum
+   :PROPERTIES:
+   :CUSTOM_ID: liste-de-discussion-et-forum
+   :END:
+
+Vous pouvez vous inscrire
+sur [[https://emacs-doctor.com/lists/listinfo/ateliers-paris][la liste
+de discussion]].
+
+Nous avons aussi un [[https://emacs-doctor.com/forum/][forum]],
+n'hésitez pas à échanger.
+
+** Comment je m'inscris à un atelier ?
+   :PROPERTIES:
+   :CUSTOM_ID: comment-je-minscris-à-un-atelier
+   :END:
+
+*** Pour Paris
+    :PROPERTIES:
+    :CUSTOM_ID: pour-paris
+    :END:
+
+Nous faisons des rencontres en ligne. Il y a parfois des rencontres
+physiques chez [[http://inno3.fr/][inno3.fr]] au 137 Boulevard de
+Magenta 75010 Paris
+([[http://www.openstreetmap.org/#map=16/48.8818/2.3514][plan]]) de 19h à
+22h.
+
+Si vous venez pour la première fois à un atelier IRL, envoyez un mot
+à =bzg@bzg.fr=. Pour la visio, vous pouvez simplement débarquer.
+
+*** Pour Montpellier
+    :PROPERTIES:
+    :CUSTOM_ID: pour-montpellier
+    :END:
+
+Envoyez un petit mot à =emacsem-owner@movoscope.org= et vous serez
+inscrit.
+
+** Rencontres passées
+   :PROPERTIES:
+   :CUSTOM_ID: rencontres-passées
+   :END:
+
+Nous gardons parfois des notes des soirées passées
+sur [[https://gitlab.com/bzg2/emacsparis/blob/master/README.org][ce
+dépôt]].
 
 
 * M-x Research (contact them for password): TBA
@@ -689,6 +394,70 @@ extensible, customizable, free/libre editor Emacs. We are...
 https://www.meetup.com/EmacsATX/events/hkckgsydccbhb/
 
 
+* Emacs Paris (virtual, in French)
+:PROPERTIES:
+:LOCATION: https://www.emacs-doctor.com/emacs-paris-user-group/
+:END:
+<2022-01-07 Fri 00:30>--<2022-01-07 Fri 02:00>
+
+[[https://www.emacs-doctor.com/emacs-paris-user-group/]] 
+
+
+Nous sommes quelques utilisateurs
+de [[https://www.gnu.org/software/emacs/][GNU Emacs]] à nous réunir
+à *Paris* et à *Montpellier* pour apprendre les uns des autres : c'est
+ouvert aux non-emacsiens, aux débutants, aux utilisateurs avancés et aux
+vimistes !
+
+** Liste de discussion et forum
+   :PROPERTIES:
+   :CUSTOM_ID: liste-de-discussion-et-forum
+   :END:
+
+Vous pouvez vous inscrire
+sur [[https://emacs-doctor.com/lists/listinfo/ateliers-paris][la liste
+de discussion]].
+
+Nous avons aussi un [[https://emacs-doctor.com/forum/][forum]],
+n'hésitez pas à échanger.
+
+** Comment je m'inscris à un atelier ?
+   :PROPERTIES:
+   :CUSTOM_ID: comment-je-minscris-à-un-atelier
+   :END:
+
+*** Pour Paris
+    :PROPERTIES:
+    :CUSTOM_ID: pour-paris
+    :END:
+
+Nous faisons des rencontres en ligne. Il y a parfois des rencontres
+physiques chez [[http://inno3.fr/][inno3.fr]] au 137 Boulevard de
+Magenta 75010 Paris
+([[http://www.openstreetmap.org/#map=16/48.8818/2.3514][plan]]) de 19h à
+22h.
+
+Si vous venez pour la première fois à un atelier IRL, envoyez un mot
+à =bzg@bzg.fr=. Pour la visio, vous pouvez simplement débarquer.
+
+*** Pour Montpellier
+    :PROPERTIES:
+    :CUSTOM_ID: pour-montpellier
+    :END:
+
+Envoyez un petit mot à =emacsem-owner@movoscope.org= et vous serez
+inscrit.
+
+** Rencontres passées
+   :PROPERTIES:
+   :CUSTOM_ID: rencontres-passées
+   :END:
+
+Nous gardons parfois des notes des soirées passées
+sur [[https://gitlab.com/bzg2/emacsparis/blob/master/README.org][ce
+dépôt]].
+
+
 * M-x Research (contact them for password): TBA
 :PROPERTIES:
 :LOCATION: https://m-x-research.github.io/
@@ -803,6 +572,70 @@ on [[http://meetup.com/Emacs-Berlin-Meetup][meetup.com/Emacs-Berlin-Meetup]]
 ([[https://www.meetup.com/Emacs-Berlin-Meetup/]])
 Non-public contact via email: organizers email
 (mailto:[[mailto:emacs-berlin-owner@emacs-berlin.org][emacs-berlin-owner@emacs-berlin.org]])
+
+
+* Emacs Paris (virtual, in French)
+:PROPERTIES:
+:LOCATION: https://www.emacs-doctor.com/emacs-paris-user-group/
+:END:
+<2022-02-02 Wed 00:30>--<2022-02-02 Wed 02:00>
+
+[[https://www.emacs-doctor.com/emacs-paris-user-group/]] 
+
+
+Nous sommes quelques utilisateurs
+de [[https://www.gnu.org/software/emacs/][GNU Emacs]] à nous réunir
+à *Paris* et à *Montpellier* pour apprendre les uns des autres : c'est
+ouvert aux non-emacsiens, aux débutants, aux utilisateurs avancés et aux
+vimistes !
+
+** Liste de discussion et forum
+   :PROPERTIES:
+   :CUSTOM_ID: liste-de-discussion-et-forum
+   :END:
+
+Vous pouvez vous inscrire
+sur [[https://emacs-doctor.com/lists/listinfo/ateliers-paris][la liste
+de discussion]].
+
+Nous avons aussi un [[https://emacs-doctor.com/forum/][forum]],
+n'hésitez pas à échanger.
+
+** Comment je m'inscris à un atelier ?
+   :PROPERTIES:
+   :CUSTOM_ID: comment-je-minscris-à-un-atelier
+   :END:
+
+*** Pour Paris
+    :PROPERTIES:
+    :CUSTOM_ID: pour-paris
+    :END:
+
+Nous faisons des rencontres en ligne. Il y a parfois des rencontres
+physiques chez [[http://inno3.fr/][inno3.fr]] au 137 Boulevard de
+Magenta 75010 Paris
+([[http://www.openstreetmap.org/#map=16/48.8818/2.3514][plan]]) de 19h à
+22h.
+
+Si vous venez pour la première fois à un atelier IRL, envoyez un mot
+à =bzg@bzg.fr=. Pour la visio, vous pouvez simplement débarquer.
+
+*** Pour Montpellier
+    :PROPERTIES:
+    :CUSTOM_ID: pour-montpellier
+    :END:
+
+Envoyez un petit mot à =emacsem-owner@movoscope.org= et vous serez
+inscrit.
+
+** Rencontres passées
+   :PROPERTIES:
+   :CUSTOM_ID: rencontres-passées
+   :END:
+
+Nous gardons parfois des notes des soirées passées
+sur [[https://gitlab.com/bzg2/emacsparis/blob/master/README.org][ce
+dépôt]].
 
 
 * EmacsATX: TBD
@@ -945,6 +778,70 @@ extensible, customizable, free/libre editor Emacs. We are...
 https://www.meetup.com/EmacsATX/events/hkckgsydcfbdb/
 
 
+* Emacs Paris (virtual, in French)
+:PROPERTIES:
+:LOCATION: https://www.emacs-doctor.com/emacs-paris-user-group/
+:END:
+<2022-03-04 Fri 00:30>--<2022-03-04 Fri 02:00>
+
+[[https://www.emacs-doctor.com/emacs-paris-user-group/]] 
+
+
+Nous sommes quelques utilisateurs
+de [[https://www.gnu.org/software/emacs/][GNU Emacs]] à nous réunir
+à *Paris* et à *Montpellier* pour apprendre les uns des autres : c'est
+ouvert aux non-emacsiens, aux débutants, aux utilisateurs avancés et aux
+vimistes !
+
+** Liste de discussion et forum
+   :PROPERTIES:
+   :CUSTOM_ID: liste-de-discussion-et-forum
+   :END:
+
+Vous pouvez vous inscrire
+sur [[https://emacs-doctor.com/lists/listinfo/ateliers-paris][la liste
+de discussion]].
+
+Nous avons aussi un [[https://emacs-doctor.com/forum/][forum]],
+n'hésitez pas à échanger.
+
+** Comment je m'inscris à un atelier ?
+   :PROPERTIES:
+   :CUSTOM_ID: comment-je-minscris-à-un-atelier
+   :END:
+
+*** Pour Paris
+    :PROPERTIES:
+    :CUSTOM_ID: pour-paris
+    :END:
+
+Nous faisons des rencontres en ligne. Il y a parfois des rencontres
+physiques chez [[http://inno3.fr/][inno3.fr]] au 137 Boulevard de
+Magenta 75010 Paris
+([[http://www.openstreetmap.org/#map=16/48.8818/2.3514][plan]]) de 19h à
+22h.
+
+Si vous venez pour la première fois à un atelier IRL, envoyez un mot
+à =bzg@bzg.fr=. Pour la visio, vous pouvez simplement débarquer.
+
+*** Pour Montpellier
+    :PROPERTIES:
+    :CUSTOM_ID: pour-montpellier
+    :END:
+
+Envoyez un petit mot à =emacsem-owner@movoscope.org= et vous serez
+inscrit.
+
+** Rencontres passées
+   :PROPERTIES:
+   :CUSTOM_ID: rencontres-passées
+   :END:
+
+Nous gardons parfois des notes des soirées passées
+sur [[https://gitlab.com/bzg2/emacsparis/blob/master/README.org][ce
+dépôt]].
+
+
 * M-x Research (contact them for password): TBA
 :PROPERTIES:
 :LOCATION: https://m-x-research.github.io/
@@ -1070,6 +967,82 @@ Non-public contact via email: organizers email
 
 
 
+* Emacs Paris (virtual, in French)
+:PROPERTIES:
+:LOCATION: https://www.emacs-doctor.com/emacs-paris-user-group/
+:END:
+<2022-04-05 Tue 23:30>--<2022-04-06 Wed 01:00>
+
+[[https://www.emacs-doctor.com/emacs-paris-user-group/]] 
+
+
+Nous sommes quelques utilisateurs
+de [[https://www.gnu.org/software/emacs/][GNU Emacs]] à nous réunir
+à *Paris* et à *Montpellier* pour apprendre les uns des autres : c'est
+ouvert aux non-emacsiens, aux débutants, aux utilisateurs avancés et aux
+vimistes !
+
+** Liste de discussion et forum
+   :PROPERTIES:
+   :CUSTOM_ID: liste-de-discussion-et-forum
+   :END:
+
+Vous pouvez vous inscrire
+sur [[https://emacs-doctor.com/lists/listinfo/ateliers-paris][la liste
+de discussion]].
+
+Nous avons aussi un [[https://emacs-doctor.com/forum/][forum]],
+n'hésitez pas à échanger.
+
+** Comment je m'inscris à un atelier ?
+   :PROPERTIES:
+   :CUSTOM_ID: comment-je-minscris-à-un-atelier
+   :END:
+
+*** Pour Paris
+    :PROPERTIES:
+    :CUSTOM_ID: pour-paris
+    :END:
+
+Nous faisons des rencontres en ligne. Il y a parfois des rencontres
+physiques chez [[http://inno3.fr/][inno3.fr]] au 137 Boulevard de
+Magenta 75010 Paris
+([[http://www.openstreetmap.org/#map=16/48.8818/2.3514][plan]]) de 19h à
+22h.
+
+Si vous venez pour la première fois à un atelier IRL, envoyez un mot
+à =bzg@bzg.fr=. Pour la visio, vous pouvez simplement débarquer.
+
+*** Pour Montpellier
+    :PROPERTIES:
+    :CUSTOM_ID: pour-montpellier
+    :END:
+
+Envoyez un petit mot à =emacsem-owner@movoscope.org= et vous serez
+inscrit.
+
+** Rencontres passées
+   :PROPERTIES:
+   :CUSTOM_ID: rencontres-passées
+   :END:
+
+Nous gardons parfois des notes des soirées passées
+sur [[https://gitlab.com/bzg2/emacsparis/blob/master/README.org][ce
+dépôt]].
+
+
+* EmacsATX: TBD
+:PROPERTIES:
+:LOCATION: https://www.meetup.com/EmacsATX/events/hkckgsydcgbjb/
+:END:
+<2022-04-07 Thu 07:30>--<2022-04-07 Thu 09:30>
+
+EmacsATX Wednesday, April 6 at 6:30 PM About Emacs ATX is a meetup
+devoted to exploring the vast and ever expanding universe of the
+extensible, customizable, free/libre editor Emacs. We are...
+https://www.meetup.com/EmacsATX/events/hkckgsydcgbjb/
+
+
 * M-x Research (contact them for password): TBA
 :PROPERTIES:
 :LOCATION: https://m-x-research.github.io/
@@ -1175,6 +1148,82 @@ on [[http://meetup.com/Emacs-Berlin-Meetup][meetup.com/Emacs-Berlin-Meetup]]
 ([[https://www.meetup.com/Emacs-Berlin-Meetup/]])
 Non-public contact via email: organizers email
 (mailto:[[mailto:emacs-berlin-owner@emacs-berlin.org][emacs-berlin-owner@emacs-berlin.org]])
+
+
+* EmacsATX: TBD
+:PROPERTIES:
+:LOCATION: https://www.meetup.com/EmacsATX/events/hkckgsydchbgb/
+:END:
+<2022-05-05 Thu 07:30>--<2022-05-05 Thu 09:30>
+
+EmacsATX Wednesday, May 4 at 6:30 PM About Emacs ATX is a meetup devoted
+to exploring the vast and ever expanding universe of the extensible,
+customizable, free/libre editor Emacs. We are...
+https://www.meetup.com/EmacsATX/events/hkckgsydchbgb/
+
+
+* Emacs Paris (virtual, in French)
+:PROPERTIES:
+:LOCATION: https://www.emacs-doctor.com/emacs-paris-user-group/
+:END:
+<2022-05-05 Thu 23:30>--<2022-05-06 Fri 01:00>
+
+[[https://www.emacs-doctor.com/emacs-paris-user-group/]] 
+
+
+Nous sommes quelques utilisateurs
+de [[https://www.gnu.org/software/emacs/][GNU Emacs]] à nous réunir
+à *Paris* et à *Montpellier* pour apprendre les uns des autres : c'est
+ouvert aux non-emacsiens, aux débutants, aux utilisateurs avancés et aux
+vimistes !
+
+** Liste de discussion et forum
+   :PROPERTIES:
+   :CUSTOM_ID: liste-de-discussion-et-forum
+   :END:
+
+Vous pouvez vous inscrire
+sur [[https://emacs-doctor.com/lists/listinfo/ateliers-paris][la liste
+de discussion]].
+
+Nous avons aussi un [[https://emacs-doctor.com/forum/][forum]],
+n'hésitez pas à échanger.
+
+** Comment je m'inscris à un atelier ?
+   :PROPERTIES:
+   :CUSTOM_ID: comment-je-minscris-à-un-atelier
+   :END:
+
+*** Pour Paris
+    :PROPERTIES:
+    :CUSTOM_ID: pour-paris
+    :END:
+
+Nous faisons des rencontres en ligne. Il y a parfois des rencontres
+physiques chez [[http://inno3.fr/][inno3.fr]] au 137 Boulevard de
+Magenta 75010 Paris
+([[http://www.openstreetmap.org/#map=16/48.8818/2.3514][plan]]) de 19h à
+22h.
+
+Si vous venez pour la première fois à un atelier IRL, envoyez un mot
+à =bzg@bzg.fr=. Pour la visio, vous pouvez simplement débarquer.
+
+*** Pour Montpellier
+    :PROPERTIES:
+    :CUSTOM_ID: pour-montpellier
+    :END:
+
+Envoyez un petit mot à =emacsem-owner@movoscope.org= et vous serez
+inscrit.
+
+** Rencontres passées
+   :PROPERTIES:
+   :CUSTOM_ID: rencontres-passées
+   :END:
+
+Nous gardons parfois des notes des soirées passées
+sur [[https://gitlab.com/bzg2/emacsparis/blob/master/README.org][ce
+dépôt]].
 
 
 * M-x Research (contact them for password): TBA
@@ -1302,6 +1351,70 @@ email to TODO with the details.
 
 
 
+* Emacs Paris (virtual, in French)
+:PROPERTIES:
+:LOCATION: https://www.emacs-doctor.com/emacs-paris-user-group/
+:END:
+<2022-06-07 Tue 23:30>--<2022-06-08 Wed 01:00>
+
+[[https://www.emacs-doctor.com/emacs-paris-user-group/]] 
+
+
+Nous sommes quelques utilisateurs
+de [[https://www.gnu.org/software/emacs/][GNU Emacs]] à nous réunir
+à *Paris* et à *Montpellier* pour apprendre les uns des autres : c'est
+ouvert aux non-emacsiens, aux débutants, aux utilisateurs avancés et aux
+vimistes !
+
+** Liste de discussion et forum
+   :PROPERTIES:
+   :CUSTOM_ID: liste-de-discussion-et-forum
+   :END:
+
+Vous pouvez vous inscrire
+sur [[https://emacs-doctor.com/lists/listinfo/ateliers-paris][la liste
+de discussion]].
+
+Nous avons aussi un [[https://emacs-doctor.com/forum/][forum]],
+n'hésitez pas à échanger.
+
+** Comment je m'inscris à un atelier ?
+   :PROPERTIES:
+   :CUSTOM_ID: comment-je-minscris-à-un-atelier
+   :END:
+
+*** Pour Paris
+    :PROPERTIES:
+    :CUSTOM_ID: pour-paris
+    :END:
+
+Nous faisons des rencontres en ligne. Il y a parfois des rencontres
+physiques chez [[http://inno3.fr/][inno3.fr]] au 137 Boulevard de
+Magenta 75010 Paris
+([[http://www.openstreetmap.org/#map=16/48.8818/2.3514][plan]]) de 19h à
+22h.
+
+Si vous venez pour la première fois à un atelier IRL, envoyez un mot
+à =bzg@bzg.fr=. Pour la visio, vous pouvez simplement débarquer.
+
+*** Pour Montpellier
+    :PROPERTIES:
+    :CUSTOM_ID: pour-montpellier
+    :END:
+
+Envoyez un petit mot à =emacsem-owner@movoscope.org= et vous serez
+inscrit.
+
+** Rencontres passées
+   :PROPERTIES:
+   :CUSTOM_ID: rencontres-passées
+   :END:
+
+Nous gardons parfois des notes des soirées passées
+sur [[https://gitlab.com/bzg2/emacsparis/blob/master/README.org][ce
+dépôt]].
+
+
 * M-x Research (contact them for password): TBA
 :PROPERTIES:
 :LOCATION: https://m-x-research.github.io/
@@ -1418,6 +1531,70 @@ Non-public contact via email: organizers email
 
 
 
+* Emacs Paris (virtual, in French)
+:PROPERTIES:
+:LOCATION: https://www.emacs-doctor.com/emacs-paris-user-group/
+:END:
+<2022-07-07 Thu 23:30>--<2022-07-08 Fri 01:00>
+
+[[https://www.emacs-doctor.com/emacs-paris-user-group/]] 
+
+
+Nous sommes quelques utilisateurs
+de [[https://www.gnu.org/software/emacs/][GNU Emacs]] à nous réunir
+à *Paris* et à *Montpellier* pour apprendre les uns des autres : c'est
+ouvert aux non-emacsiens, aux débutants, aux utilisateurs avancés et aux
+vimistes !
+
+** Liste de discussion et forum
+   :PROPERTIES:
+   :CUSTOM_ID: liste-de-discussion-et-forum
+   :END:
+
+Vous pouvez vous inscrire
+sur [[https://emacs-doctor.com/lists/listinfo/ateliers-paris][la liste
+de discussion]].
+
+Nous avons aussi un [[https://emacs-doctor.com/forum/][forum]],
+n'hésitez pas à échanger.
+
+** Comment je m'inscris à un atelier ?
+   :PROPERTIES:
+   :CUSTOM_ID: comment-je-minscris-à-un-atelier
+   :END:
+
+*** Pour Paris
+    :PROPERTIES:
+    :CUSTOM_ID: pour-paris
+    :END:
+
+Nous faisons des rencontres en ligne. Il y a parfois des rencontres
+physiques chez [[http://inno3.fr/][inno3.fr]] au 137 Boulevard de
+Magenta 75010 Paris
+([[http://www.openstreetmap.org/#map=16/48.8818/2.3514][plan]]) de 19h à
+22h.
+
+Si vous venez pour la première fois à un atelier IRL, envoyez un mot
+à =bzg@bzg.fr=. Pour la visio, vous pouvez simplement débarquer.
+
+*** Pour Montpellier
+    :PROPERTIES:
+    :CUSTOM_ID: pour-montpellier
+    :END:
+
+Envoyez un petit mot à =emacsem-owner@movoscope.org= et vous serez
+inscrit.
+
+** Rencontres passées
+   :PROPERTIES:
+   :CUSTOM_ID: rencontres-passées
+   :END:
+
+Nous gardons parfois des notes des soirées passées
+sur [[https://gitlab.com/bzg2/emacsparis/blob/master/README.org][ce
+dépôt]].
+
+
 * M-x Research (contact them for password): TBA
 :PROPERTIES:
 :LOCATION: https://m-x-research.github.io/
@@ -1523,6 +1700,70 @@ on [[http://meetup.com/Emacs-Berlin-Meetup][meetup.com/Emacs-Berlin-Meetup]]
 ([[https://www.meetup.com/Emacs-Berlin-Meetup/]])
 Non-public contact via email: organizers email
 (mailto:[[mailto:emacs-berlin-owner@emacs-berlin.org][emacs-berlin-owner@emacs-berlin.org]])
+
+
+* Emacs Paris (virtual, in French)
+:PROPERTIES:
+:LOCATION: https://www.emacs-doctor.com/emacs-paris-user-group/
+:END:
+<2022-08-02 Tue 23:30>--<2022-08-03 Wed 01:00>
+
+[[https://www.emacs-doctor.com/emacs-paris-user-group/]] 
+
+
+Nous sommes quelques utilisateurs
+de [[https://www.gnu.org/software/emacs/][GNU Emacs]] à nous réunir
+à *Paris* et à *Montpellier* pour apprendre les uns des autres : c'est
+ouvert aux non-emacsiens, aux débutants, aux utilisateurs avancés et aux
+vimistes !
+
+** Liste de discussion et forum
+   :PROPERTIES:
+   :CUSTOM_ID: liste-de-discussion-et-forum
+   :END:
+
+Vous pouvez vous inscrire
+sur [[https://emacs-doctor.com/lists/listinfo/ateliers-paris][la liste
+de discussion]].
+
+Nous avons aussi un [[https://emacs-doctor.com/forum/][forum]],
+n'hésitez pas à échanger.
+
+** Comment je m'inscris à un atelier ?
+   :PROPERTIES:
+   :CUSTOM_ID: comment-je-minscris-à-un-atelier
+   :END:
+
+*** Pour Paris
+    :PROPERTIES:
+    :CUSTOM_ID: pour-paris
+    :END:
+
+Nous faisons des rencontres en ligne. Il y a parfois des rencontres
+physiques chez [[http://inno3.fr/][inno3.fr]] au 137 Boulevard de
+Magenta 75010 Paris
+([[http://www.openstreetmap.org/#map=16/48.8818/2.3514][plan]]) de 19h à
+22h.
+
+Si vous venez pour la première fois à un atelier IRL, envoyez un mot
+à =bzg@bzg.fr=. Pour la visio, vous pouvez simplement débarquer.
+
+*** Pour Montpellier
+    :PROPERTIES:
+    :CUSTOM_ID: pour-montpellier
+    :END:
+
+Envoyez un petit mot à =emacsem-owner@movoscope.org= et vous serez
+inscrit.
+
+** Rencontres passées
+   :PROPERTIES:
+   :CUSTOM_ID: rencontres-passées
+   :END:
+
+Nous gardons parfois des notes des soirées passées
+sur [[https://gitlab.com/bzg2/emacsparis/blob/master/README.org][ce
+dépôt]].
 
 
 * M-x Research (contact them for password): TBA
@@ -1641,6 +1882,70 @@ Non-public contact via email: organizers email
 (mailto:[[mailto:emacs-berlin-owner@emacs-berlin.org][emacs-berlin-owner@emacs-berlin.org]])
 
 
+* Emacs Paris (virtual, in French)
+:PROPERTIES:
+:LOCATION: https://www.emacs-doctor.com/emacs-paris-user-group/
+:END:
+<2022-09-01 Thu 23:30>--<2022-09-02 Fri 01:00>
+
+[[https://www.emacs-doctor.com/emacs-paris-user-group/]] 
+
+
+Nous sommes quelques utilisateurs
+de [[https://www.gnu.org/software/emacs/][GNU Emacs]] à nous réunir
+à *Paris* et à *Montpellier* pour apprendre les uns des autres : c'est
+ouvert aux non-emacsiens, aux débutants, aux utilisateurs avancés et aux
+vimistes !
+
+** Liste de discussion et forum
+   :PROPERTIES:
+   :CUSTOM_ID: liste-de-discussion-et-forum
+   :END:
+
+Vous pouvez vous inscrire
+sur [[https://emacs-doctor.com/lists/listinfo/ateliers-paris][la liste
+de discussion]].
+
+Nous avons aussi un [[https://emacs-doctor.com/forum/][forum]],
+n'hésitez pas à échanger.
+
+** Comment je m'inscris à un atelier ?
+   :PROPERTIES:
+   :CUSTOM_ID: comment-je-minscris-à-un-atelier
+   :END:
+
+*** Pour Paris
+    :PROPERTIES:
+    :CUSTOM_ID: pour-paris
+    :END:
+
+Nous faisons des rencontres en ligne. Il y a parfois des rencontres
+physiques chez [[http://inno3.fr/][inno3.fr]] au 137 Boulevard de
+Magenta 75010 Paris
+([[http://www.openstreetmap.org/#map=16/48.8818/2.3514][plan]]) de 19h à
+22h.
+
+Si vous venez pour la première fois à un atelier IRL, envoyez un mot
+à =bzg@bzg.fr=. Pour la visio, vous pouvez simplement débarquer.
+
+*** Pour Montpellier
+    :PROPERTIES:
+    :CUSTOM_ID: pour-montpellier
+    :END:
+
+Envoyez un petit mot à =emacsem-owner@movoscope.org= et vous serez
+inscrit.
+
+** Rencontres passées
+   :PROPERTIES:
+   :CUSTOM_ID: rencontres-passées
+   :END:
+
+Nous gardons parfois des notes des soirées passées
+sur [[https://gitlab.com/bzg2/emacsparis/blob/master/README.org][ce
+dépôt]].
+
+
 * M-x Research (contact them for password): TBA
 :PROPERTIES:
 :LOCATION: https://m-x-research.github.io/
@@ -1655,6 +1960,245 @@ Non-public contact via email: organizers email
 :LOCATION: https://m-x-research.github.io/
 :END:
 <2022-09-16 Fri 22:00>--<2022-09-16 Fri 23:00>
+
+
+
+
+* Emacs APAC (virtual, in English)
+:PROPERTIES:
+:LOCATION: https://emacs-apac.gitlab.io/
+:END:
+<2022-09-24 Sat 16:30>--<2022-09-24 Sat 18:30>
+
+We are Emacs enthusiasts who live in the Asia-Pacific (APAC) time-zone.
+We meet every fourth Saturday of the month.
+
+** Where
+   :PROPERTIES:
+   :CUSTOM_ID: where
+   :END:
+
+The event is scheduled virtually using Jitsi Meet at 1400 Indian
+Standard Time (IST). The meeting URL is posted on Freenode IRC
+channels =#emacs=, =#ilugc= and =#emacsconf=, 30 minutes prior to the
+meeting, and also on the [[https://www.freelists.org/list/ilugc][ILUGC
+mailing list]] on the day of the meetup. If you are not subscribed, you
+can also check
+the [[https://www.freelists.org/archive/ilugc/][archive]].
+
+Checkout the upcoming
+meetings [[https://emacs-apac.gitlab.io/#upcoming][here]].
+
+** Talks
+   :PROPERTIES:
+   :CUSTOM_ID: talks
+   :END:
+
+We usually have free flowing discussions around new Emacs packages /
+features discovered, issues faced, experiences, usage tips, resources
+for further learning etc. These are related to GNU Emacs and its
+variants. Sometimes people also share their screens and give demos of
+their Emacs setup and use.
+
+If you would like to give a talk (20 minutes maximum), please send an
+email to TODO with the details.
+
+** Frequently Asked Questions
+   :PROPERTIES:
+   :CUSTOM_ID: frequently-asked-questions
+   :END:
+
+- *I'm new to Emacs, can / should I join?*
+  Yes! You are always welcome. We have participants from different walks
+  of life with varied experiences in Emacs. You can ask your questions
+  and the attendees will be able to help, at least point you in the
+  right direction.
+
+- *Which language is used for communication?*
+  English.
+
+- *I'm not from APAC, can I join?*
+  Definitely! If the timing is suitable for you, please join.
+
+
+
+
+* Emacs Berlin (virtual, in English)
+:PROPERTIES:
+:LOCATION: https://emacs-berlin.org/
+:END:
+<2022-09-29 Thu 00:30>--<2022-09-29 Thu 02:30>
+
+[[https://emacs-berlin.org/]] 
+
+New to Emacs? Longtime elisp expert? Just want to know what this is all
+about? Come join us!
+
+Location
+
+Room open from 18:30 CET, if there are talks they'll start at 19:00 CET.
+The video link will be posted on the day of the meetup to the mailing
+list. Check the archive
+([[https://mailb.org/pipermail/emacs-berlin/2021/thread.html]]) if you
+are not subscribed.
+
+About Emacs Berlin
+We are Emacs enthusiasts in Berlin, meeting every last Wednesday of the
+month.
+The best way to stay posted is through our mailing list. Sign up
+([[https://mailb.org/mailman/listinfo/emacs-berlin]]) and meet your
+fellow Emacsers, or have a look at the mailing list archives
+([[https://mailb.org/pipermail/emacs-berlin/]]) (gmane).
+Feel free to send an email introducing yourself after subscribing!
+You can also chat with us on irc: #emacs-berlin (connection instructions
+([[https://mailb.org/pipermail/emacs-berlin/2020/000583.html]]))
+Or on Twitter: @emacsberlin ([[https://twitter.com/emacsberlin]])
+And there's a YouTube Channel
+([[https://www.youtube.com/channel/UC1O8700SW-wuC4fvDEoGzOw]])  
+And
+on [[http://meetup.com/Emacs-Berlin-Meetup][meetup.com/Emacs-Berlin-Meetup]]
+([[https://www.meetup.com/Emacs-Berlin-Meetup/]])
+Non-public contact via email: organizers email
+(mailto:[[mailto:emacs-berlin-owner@emacs-berlin.org][emacs-berlin-owner@emacs-berlin.org]])
+
+
+* Emacs Paris (virtual, in French)
+:PROPERTIES:
+:LOCATION: https://www.emacs-doctor.com/emacs-paris-user-group/
+:END:
+<2022-10-04 Tue 23:30>--<2022-10-05 Wed 01:00>
+
+[[https://www.emacs-doctor.com/emacs-paris-user-group/]] 
+
+
+Nous sommes quelques utilisateurs
+de [[https://www.gnu.org/software/emacs/][GNU Emacs]] à nous réunir
+à *Paris* et à *Montpellier* pour apprendre les uns des autres : c'est
+ouvert aux non-emacsiens, aux débutants, aux utilisateurs avancés et aux
+vimistes !
+
+** Liste de discussion et forum
+   :PROPERTIES:
+   :CUSTOM_ID: liste-de-discussion-et-forum
+   :END:
+
+Vous pouvez vous inscrire
+sur [[https://emacs-doctor.com/lists/listinfo/ateliers-paris][la liste
+de discussion]].
+
+Nous avons aussi un [[https://emacs-doctor.com/forum/][forum]],
+n'hésitez pas à échanger.
+
+** Comment je m'inscris à un atelier ?
+   :PROPERTIES:
+   :CUSTOM_ID: comment-je-minscris-à-un-atelier
+   :END:
+
+*** Pour Paris
+    :PROPERTIES:
+    :CUSTOM_ID: pour-paris
+    :END:
+
+Nous faisons des rencontres en ligne. Il y a parfois des rencontres
+physiques chez [[http://inno3.fr/][inno3.fr]] au 137 Boulevard de
+Magenta 75010 Paris
+([[http://www.openstreetmap.org/#map=16/48.8818/2.3514][plan]]) de 19h à
+22h.
+
+Si vous venez pour la première fois à un atelier IRL, envoyez un mot
+à =bzg@bzg.fr=. Pour la visio, vous pouvez simplement débarquer.
+
+*** Pour Montpellier
+    :PROPERTIES:
+    :CUSTOM_ID: pour-montpellier
+    :END:
+
+Envoyez un petit mot à =emacsem-owner@movoscope.org= et vous serez
+inscrit.
+
+** Rencontres passées
+   :PROPERTIES:
+   :CUSTOM_ID: rencontres-passées
+   :END:
+
+Nous gardons parfois des notes des soirées passées
+sur [[https://gitlab.com/bzg2/emacsparis/blob/master/README.org][ce
+dépôt]].
+
+
+* M-x Research (contact them for password): TBA
+:PROPERTIES:
+:LOCATION: https://m-x-research.github.io/
+:END:
+<2022-10-07 Fri 22:00>--<2022-10-07 Fri 23:00>
+
+
+
+
+* M-x Research (contact them for password): TBA
+:PROPERTIES:
+:LOCATION: https://m-x-research.github.io/
+:END:
+<2022-10-21 Fri 22:00>--<2022-10-21 Fri 23:00>
+
+
+
+
+* Emacs APAC (virtual, in English)
+:PROPERTIES:
+:LOCATION: https://emacs-apac.gitlab.io/
+:END:
+<2022-10-22 Sat 16:30>--<2022-10-22 Sat 18:30>
+
+We are Emacs enthusiasts who live in the Asia-Pacific (APAC) time-zone.
+We meet every fourth Saturday of the month.
+
+** Where
+   :PROPERTIES:
+   :CUSTOM_ID: where
+   :END:
+
+The event is scheduled virtually using Jitsi Meet at 1400 Indian
+Standard Time (IST). The meeting URL is posted on Freenode IRC
+channels =#emacs=, =#ilugc= and =#emacsconf=, 30 minutes prior to the
+meeting, and also on the [[https://www.freelists.org/list/ilugc][ILUGC
+mailing list]] on the day of the meetup. If you are not subscribed, you
+can also check
+the [[https://www.freelists.org/archive/ilugc/][archive]].
+
+Checkout the upcoming
+meetings [[https://emacs-apac.gitlab.io/#upcoming][here]].
+
+** Talks
+   :PROPERTIES:
+   :CUSTOM_ID: talks
+   :END:
+
+We usually have free flowing discussions around new Emacs packages /
+features discovered, issues faced, experiences, usage tips, resources
+for further learning etc. These are related to GNU Emacs and its
+variants. Sometimes people also share their screens and give demos of
+their Emacs setup and use.
+
+If you would like to give a talk (20 minutes maximum), please send an
+email to TODO with the details.
+
+** Frequently Asked Questions
+   :PROPERTIES:
+   :CUSTOM_ID: frequently-asked-questions
+   :END:
+
+- *I'm new to Emacs, can / should I join?*
+  Yes! You are always welcome. We have participants from different walks
+  of life with varied experiences in Emacs. You can ask your questions
+  and the attendees will be able to help, at least point you in the
+  right direction.
+
+- *Which language is used for communication?*
+  English.
+
+- *I'm not from APAC, can I join?*
+  Definitely! If the timing is suitable for you, please join.
 
 
 

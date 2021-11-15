@@ -70,21 +70,112 @@ TZOFFSETTO:+0100
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-SUMMARY:EmacsConf Office Hour
-DTSTART;TZID=Europe/Paris:20210918T170000
-DTEND;TZID=Europe/Paris:20210918T180000
-DTSTAMP:20210916T121822Z
-UID:6l50kgjqmcjncsb4kghcu97jqu_R20210918T150000@google.com
+SUMMARY:Emacs Paris (virtual\, in French)
+DTSTART;TZID=Europe/Paris:20211104T173000
+DTEND;TZID=Europe/Paris:20211104T190000
+DTSTAMP:20211115T230935Z
+UID:567ncc1oovknsrqcljnn8lcd0f@google.com
 SEQUENCE:0
-RRULE:FREQ=WEEKLY;UNTIL=20210925T215959Z;BYDAY=SA;WKST=MO
-CREATED:20210814T155200Z
-DESCRIPTION:We're aware that it can be intimidating to submit a proposal t
- o a conference\, so we thought we'd try to help!  This year\, we're openin
- g up the doors of our virtual offices for you to come talk to us about you
- r proposals with hopes of helping you with any hurdles you may be facing w
- ith preparing your proposal.
-LAST-MODIFIED:20210904T143727Z
-LOCATION:https://emacsconf.org/2021/office-hours/
+RRULE:FREQ=MONTHLY;INTERVAL=2;BYDAY=1TH
+CREATED:20211104T190454Z
+DESCRIPTION:<span><a href="https://www.emacs-doctor.com/emacs-paris-user-g
+ roup/">https://www.emacs-doctor.com/emacs-paris-user-group/</a>&nbsp\;<br>
+ <br><p>Nous sommes quelques utilisateurs de&nbsp\;<a href="https://www.gnu
+ .org/software/emacs/">GNU Emacs</a>&nbsp\;à nous réunir à&nbsp\;<b>Pari
+ s</b>&nbsp\;et à&nbsp\;<b>Montpellier</b>&nbsp\;pour apprendre les uns de
+ s autres&nbsp\;: c’est ouvert aux non-emacsiens\, aux débutants\, aux u
+ tilisateurs avancés et aux vimistes&nbsp\;!</p><h2>Liste de discussion et
+  forum</h2><p>Vous pouvez vous inscrire sur&nbsp\;<a href="https://emacs-d
+ octor.com/lists/listinfo/ateliers-paris">la liste de discussion</a>.</p><p
+ >Nous avons aussi un&nbsp\;<a href="https://emacs-doctor.com/forum/">forum
+ </a>\, n’hésitez pas à échanger.</p><h2>Comment je m’inscris à un 
+ atelier ?</h2><h3>Pour Paris</h3><p>Nous faisons des rencontres en ligne. 
+ Il y a parfois des rencontres physiques chez&nbsp\;<a href="http://inno3.f
+ r/">inno3.fr</a>&nbsp\;au 137 Boulevard de Magenta 75010 Paris (<a href="h
+ ttp://www.openstreetmap.org/#map=16/48.8818/2.3514">plan</a>) de 19h à 22
+ h.</p><p>Si vous venez pour la première fois à un atelier IRL\, envoyez 
+ un mot à&nbsp\;<code><a href="mailto:bzg@bzg.fr">bzg@bzg.fr</a></code>. P
+ our la visio\, vous pouvez simplement débarquer.</p><h3>Pour Montpellier<
+ /h3><p>Envoyez un petit mot à&nbsp\;<code><a href="mailto:emacsem-owner@m
+ ovoscope.org">emacsem-owner@movoscope.org</a></code>&nbsp\;et vous serez i
+ nscrit.</p><h2>Rencontres passées</h2><p>Nous gardons parfois des notes d
+ es soirées passées sur&nbsp\;<a href="https://gitlab.com/bzg2/emacsparis
+ /blob/master/README.org">ce dépôt</a>.</p></span>
+LAST-MODIFIED:20211104T190454Z
+LOCATION:https://www.emacs-doctor.com/emacs-paris-user-group/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Emacs Paris (virtual\, in French)
+DTSTART;TZID=Europe/Paris:20211005T173000
+DTEND;TZID=Europe/Paris:20211005T190000
+DTSTAMP:20211115T230935Z
+UID:6gpbqih1kh2nm2f6b21u4iq2ov@google.com
+SEQUENCE:0
+RRULE:FREQ=MONTHLY;INTERVAL=2;BYDAY=1TU
+CREATED:20211005T120450Z
+DESCRIPTION:<span><a href="https://www.emacs-doctor.com/emacs-paris-user-g
+ roup/">https://www.emacs-doctor.com/emacs-paris-user-group/</a>&nbsp\;<br>
+ <br><p>Nous sommes quelques utilisateurs de&nbsp\;<a href="https://www.gnu
+ .org/software/emacs/">GNU Emacs</a>&nbsp\;à nous réunir à&nbsp\;<b>Pari
+ s</b>&nbsp\;et à&nbsp\;<b>Montpellier</b>&nbsp\;pour apprendre les uns de
+ s autres&nbsp\;: c’est ouvert aux non-emacsiens\, aux débutants\, aux u
+ tilisateurs avancés et aux vimistes&nbsp\;!</p><h2>Liste de discussion et
+  forum</h2><p>Vous pouvez vous inscrire sur&nbsp\;<a href="https://emacs-d
+ octor.com/lists/listinfo/ateliers-paris">la liste de discussion</a>.</p><p
+ >Nous avons aussi un&nbsp\;<a href="https://emacs-doctor.com/forum/">forum
+ </a>\, n’hésitez pas à échanger.</p><h2>Comment je m’inscris à un 
+ atelier ?</h2><h3>Pour Paris</h3><p>Nous faisons des rencontres en ligne. 
+ Il y a parfois des rencontres physiques chez&nbsp\;<a href="http://inno3.f
+ r/">inno3.fr</a>&nbsp\;au 137 Boulevard de Magenta 75010 Paris (<a href="h
+ ttp://www.openstreetmap.org/#map=16/48.8818/2.3514">plan</a>) de 19h à 22
+ h.</p><p>Si vous venez pour la première fois à un atelier IRL\, envoyez 
+ un mot à&nbsp\;<code><a href="mailto:bzg@bzg.fr">bzg@bzg.fr</a></code>. P
+ our la visio\, vous pouvez simplement débarquer.</p><h3>Pour Montpellier<
+ /h3><p>Envoyez un petit mot à&nbsp\;<code><a href="mailto:emacsem-owner@m
+ ovoscope.org">emacsem-owner@movoscope.org</a></code>&nbsp\;et vous serez i
+ nscrit.</p><h2>Rencontres passées</h2><p>Nous gardons parfois des notes d
+ es soirées passées sur&nbsp\;<a href="https://gitlab.com/bzg2/emacsparis
+ /blob/master/README.org">ce dépôt</a>.</p></span>
+LAST-MODIFIED:20211005T121640Z
+LOCATION:https://www.emacs-doctor.com/emacs-paris-user-group/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Emacs Paris (virtual)
+DTSTART:20210601T153000Z
+DTEND:20210601T170000Z
+DTSTAMP:20211115T230935Z
+UID:3g2a8u16651g7a9knf28tnjhhg@google.com
+SEQUENCE:0
+CREATED:20201205T215221Z
+DESCRIPTION:<span><br><span><a href="https://www.emacs-doctor.com/emacs-pa
+ ris-user-group/">https://www.emacs-doctor.com/emacs-paris-user-group/</a>&
+ nbsp\;<br><br><p>Nous sommes quelques utilisateurs de&nbsp\;<a href="https
+ ://www.gnu.org/software/emacs/">GNU Emacs</a>&nbsp\;à nous réunir à&nbs
+ p\;<b>Paris</b>&nbsp\;et à&nbsp\;<b>Montpellier</b>&nbsp\;pour apprendre 
+ les uns des autres&nbsp\;: c’est ouvert aux non-emacsiens\, aux débutan
+ ts\, aux utilisateurs avancés et aux vimistes&nbsp\;!</p><h2>Liste de dis
+ cussion et forum</h2><p>Vous pouvez vous inscrire sur&nbsp\;<a href="https
+ ://emacs-doctor.com/lists/listinfo/ateliers-paris">la liste de discussion<
+ /a>.</p><p>Nous avons aussi un&nbsp\;<a href="https://emacs-doctor.com/for
+ um/">forum</a>\, n’hésitez pas à échanger.</p><h2>Comment je m’insc
+ ris à un atelier ?</h2><h3>Pour Paris</h3><p>Nous faisons des rencontres 
+ en ligne. Il y a parfois des rencontres physiques chez&nbsp\;<a href="http
+ ://inno3.fr/">inno3.fr</a>&nbsp\;au 137 Boulevard de Magenta 75010 Paris (
+ <a href="http://www.openstreetmap.org/#map=16/48.8818/2.3514">plan</a>) de
+  19h à 22h.</p><p>Si vous venez pour la première fois à un atelier IRL\
+ , envoyez un mot à&nbsp\;<code><a href="mailto:bzg@bzg.fr">bzg@bzg.fr</a>
+ </code>. Pour la visio\, vous pouvez simplement débarquer.</p><h3>Pour Mo
+ ntpellier</h3><p>Envoyez un petit mot à&nbsp\;<code><a href="mailto:emacs
+ em-owner@movoscope.org">emacsem-owner@movoscope.org</a></code>&nbsp\;et vo
+ us serez inscrit.</p><h2>Rencontres passées</h2><p>Nous gardons parfois d
+ es notes des soirées passées sur&nbsp\;<a href="https://gitlab.com/bzg2/
+ emacsparis/blob/master/README.org">ce dépôt</a>.</p></span></span>
+LAST-MODIFIED:20211005T121004Z
+LOCATION:https://www.emacs-doctor.com/emacs-paris-user-group/
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -92,7 +183,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsConf Office Hour
 DTSTART;TZID=Europe/Paris:20210904T170000
 DTEND;TZID=Europe/Paris:20210904T180000
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:6l50kgjqmcjncsb4kghcu97jqu@google.com
 RECURRENCE-ID;TZID=Europe/Paris:20210904T170000
 SEQUENCE:0
@@ -102,7 +193,7 @@ DESCRIPTION:We're aware that it can be intimidating to submit a proposal t
  g up the doors of our virtual offices for you to come talk to us about you
  r proposals with hopes of helping you with any hurdles you may be facing w
  ith preparing your proposal.
-LAST-MODIFIED:20210904T143727Z
+LAST-MODIFIED:20210918T145117Z
 LOCATION:https://emacsconf.org/2021/office-hours/
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -111,7 +202,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsConf Office Hour
 DTSTART;TZID=Europe/Paris:20210821T170000
 DTEND;TZID=Europe/Paris:20210821T180000
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:6l50kgjqmcjncsb4kghcu97jqu@google.com
 SEQUENCE:0
 RRULE:FREQ=WEEKLY;UNTIL=20210917T215959Z;BYDAY=SA;WKST=MO
@@ -122,7 +213,7 @@ DESCRIPTION:We're aware that it can be intimidating to submit a proposal t
  g up the doors of our virtual offices for you to come talk to us about you
  r proposals with hopes of helping you with any hurdles you may be facing w
  ith preparing your proposal.
-LAST-MODIFIED:20210904T143727Z
+LAST-MODIFIED:20210918T145117Z
 LOCATION:https://emacsconf.org/2021/office-hours/
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -131,17 +222,17 @@ BEGIN:VEVENT
 SUMMARY:EmacsConf Office Hour
 DTSTART;TZID=Europe/Paris:20210821T060000
 DTEND;TZID=Europe/Paris:20210821T070000
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:34ihmr673bv28t4k8jsqi7ks8t@google.com
 SEQUENCE:2
-RRULE:FREQ=WEEKLY;UNTIL=20210925T215959Z;BYDAY=SA;WKST=MO
+RRULE:FREQ=WEEKLY;UNTIL=20210917T215959Z;BYDAY=SA;WKST=MO
 CREATED:20210814T161633Z
 DESCRIPTION:<span><span>We're aware that it can be intimidating to submit 
  a proposal to aconference\, so we thought we'd try to help!  This year\, w
  e're openingup the doors of our virtual offices for you to come talk to us
   aboutyour proposals with hopes of helping you with any hurdles you may be
  facing with preparing your proposal.<br></span></span>
-LAST-MODIFIED:20210823T060216Z
+LAST-MODIFIED:20210918T145109Z
 LOCATION:https://emacsconf.org/2021/office-hours/
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -150,7 +241,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsConf Office Hour
 DTSTART;TZID=Europe/Paris:20210818T030000
 DTEND;TZID=Europe/Paris:20210818T040000
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:7ona4e9h876bdn0rvqp2tod475@google.com
 SEQUENCE:1
 RRULE:FREQ=WEEKLY;UNTIL=20210929T215959Z;BYDAY=WE;WKST=MO
@@ -169,7 +260,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs Berlin (virtual\, in English)
 DTSTART;TZID=Europe/Berlin:20210630T183000
 DTEND;TZID=Europe/Berlin:20210630T203000
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:8s69sfamiljos7b74201rggp9q@google.com
 SEQUENCE:3
 RRULE:FREQ=MONTHLY;BYDAY=-1WE
@@ -211,7 +302,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsConf 2021 public meeting
 DTSTART:20210703T140000Z
 DTEND:20210703T160000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:5a5tqb5rrard2qjr3qjhhjeeme@google.com
 SEQUENCE:1
 CREATED:20210614T042236Z
@@ -254,7 +345,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (virtual\, contact them for passcode)
 DTSTART;TZID=Europe/London:20210318T150000
 DTEND;TZID=Europe/London:20210318T160000
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:1tsf0eqv3vdgke64akra4n6elj@google.com
 SEQUENCE:0
 RRULE:FREQ=MONTHLY;UNTIL=20210519T225959Z;BYDAY=3TH
@@ -289,7 +380,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs Org mode features you may not know
 DTSTART:20210410T150000Z
 DTEND:20210410T154000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:37ans5j8e85fgvf05aa5lusbkj@google.com
 SEQUENCE:0
 CREATED:20210405T234130Z
@@ -328,7 +419,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs Berlin (virtual\, in English)
 DTSTART:20201230T173000Z
 DTEND:20201230T193000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:6ci2it6qvlsmqu26qmd05on7o6@google.com
 SEQUENCE:0
 CREATED:20201202T183231Z
@@ -366,7 +457,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs APAC virtual meetup
 DTSTART:20201226T083000Z
 DTEND:20201226T103000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:2fu8nnf8eas6nh5k1fdsf6rspr@google.com
 SEQUENCE:0
 CREATED:20201224T042625Z
@@ -397,7 +488,7 @@ SUMMARY:EmacsSF (virtual): Emacs Lisp and menu packages: dmenu\, hydra\, p
  osframe\, transient\, etc.
 DTSTART:20210305T180000Z
 DTEND:20210305T200000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:4d36q2v30pm71iglevcl9vk18h@google.com
 SEQUENCE:0
 CREATED:20210305T033635Z
@@ -420,7 +511,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs APAC (virtual\, in English)
 DTSTART;TZID=Asia/Kolkata:20210123T140000
 DTEND;TZID=Asia/Kolkata:20210123T160000
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:6spjce1k6cq3abb36gsjib9kc5ij4b9pcdhj4b9p6gomap32cos64dhl68@google.com
 SEQUENCE:2
 RRULE:FREQ=MONTHLY;BYDAY=4SA
@@ -459,7 +550,7 @@ SUMMARY:EmacsSF: Discussion of emacs in general and completion frameworks
  in particular
 DTSTART:20210212T180000Z
 DTEND:20210212T200000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:3nbjlu8ujcu8fgi7l5ahf5aind@google.com
 SEQUENCE:0
 CREATED:20210208T050207Z
@@ -479,7 +570,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsNYC: Mail Month
 DTSTART:20210302T000000Z
 DTEND:20210302T020000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:3d6it79mltfdcp2608be3hnc4n@google.com
 SEQUENCE:0
 CREATED:20210208T050041Z
@@ -504,53 +595,9 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Emacs Paris (virtual)
-DTSTART:20210601T153000Z
-DTEND:20210601T170000Z
-DTSTAMP:20210916T121822Z
-UID:3g2a8u16651g7a9knf28tnjhhg@google.com
-SEQUENCE:0
-CREATED:20201205T215221Z
-DESCRIPTION:<a href="https://www.emacs-doctor.com/emacs-paris-user-group/"
-  target="_blank">https://www.emacs-doctor.com/emacs-paris-user-group/</a>
-  <br><br><p>Nous sommes quelques utilisateurs de <a href="https://www.gn
- u.org/software/emacs/" target="_blank">GNU Emacs</a> à nous réunir à 
- <strong>Paris</strong> et à <strong>Montpellier</strong> pour apprendr
- e les uns des autres : c’est ouvert aux non-emacsiens\, aux débutants\
- , aux utilisateurs avancés et aux vimistes !</p><h2>Liste de discussion 
- et forum</h2><p>Vous pouvez vous inscrire sur <a href="https://emacs-doct
- or.com/lists/listinfo/ateliers-paris" target="_blank">la liste de discussi
- on</a>.</p><p>Nous avons aussi un <a href="https://emacs-doctor.com/forum
- /" target="_blank">forum</a>\, n’hésitez pas à échanger.</p><h2>Proch
- aines rencontres</h2><ul><li>Paris : mardi 8 décembre 2020 de 17h30 à 19
- h en visio</li><li>Paris : jeudi 7 janvier 2021 de 17h30 à 19h en visio</
- li><li>Paris : mardi 2 février 2021 de 17h30 à 19h en visio</li><li>Pari
- s : jeudi 4 mars 2021 de 17h30 à 19h en visio</li><li>Paris : mardi 6 avr
- il 2021 de 17h30 à 19h en visio</li><li>Paris : jeudi 6 mai 2021 de 17h30
-  à 19h en visio</li><li>Paris : mardi 1 juin 2021 de 17h30 à 19h en visi
- o</li><li>Montpellier : à définir</li></ul><br><u></u><h2>Comment je m
- ’inscris à un atelier ?</h2><h3>Pour Paris</h3><p>Nous faisons des renc
- ontres en ligne. Il y a parfois des rencontres physiques chez <a href="ht
- tp://inno3.fr/" target="_blank">inno3.fr</a> au 137 Boulevard de Magenta 
- 75010 Paris (<a href="http://www.openstreetmap.org/#map=16/48.8818/2.3514"
-  target="_blank">plan</a>) de 19h à 22h.</p><p>Si vous venez pour la prem
- ière fois à un atelier IRL\, envoyez un mot à <code><a href="mailto:bz
- g@bzg.fr" target="_blank">bzg@bzg.fr</a></code>. Pour la visio\, vous pouv
- ez simplement débarquer.</p><h3>Pour Montpellier</h3><p>Envoyez un petit 
- mot à <code><a href="mailto:emacsem-owner@movoscope.org" target="_blank"
- >emacsem-owner@movoscope.org</a></code> et vous serez inscrit.</p><h2>Ren
- contres passées</h2><p>Nous gardons parfois des notes des soirées passé
- es sur <a href="https://gitlab.com/bzg2/emacsparis/blob/master/README.org
- " target="_blank">ce dépôt</a>.</p><u></u><u></u><br><u></u>
-LAST-MODIFIED:20210208T045817Z
-LOCATION:https://www.emacs-doctor.com/emacs-paris-user-group/
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Emacs Paris (virtual)
 DTSTART:20210506T153000Z
 DTEND:20210506T170000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:3pi8vlr86n5binh71kplks26hr@google.com
 SEQUENCE:0
 CREATED:20201205T215202Z
@@ -594,7 +641,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs Paris (virtual)
 DTSTART:20210304T163000Z
 DTEND:20210304T180000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:2fsda262g86i3ahc2cdfjf6nv4@google.com
 SEQUENCE:0
 CREATED:20201205T215015Z
@@ -638,7 +685,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs Paris (virtual)
 DTSTART:20210406T153000Z
 DTEND:20210406T170000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:0sr3elhttmu6ne4s3e8ei0p3u2@google.com
 SEQUENCE:0
 CREATED:20201205T215144Z
@@ -683,7 +730,7 @@ SUMMARY:FOSDEM21: A Lisp REPL as my main shell - The shell is dead\, long
  live the REPL!
 DTSTART:20210207T162000Z
 DTEND:20210207T165000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:62lmpetkmqoi809c758987lhls@google.com
 SEQUENCE:0
 CREATED:20210204T031727Z
@@ -711,7 +758,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsATX: Eshell and Emacs Social
 DTSTART:20210204T003000Z
 DTEND:20210204T023000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:256q86rn8dqsilpang8qgogt8t@google.com
 SEQUENCE:0
 CREATED:20210203T213643Z
@@ -733,7 +780,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsFFM: Creating our own major mode (virtual)
 DTSTART:20210217T190000Z
 DTEND:20210217T210000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:38cqq88h0bine14nu0f29khjng@google.com
 SEQUENCE:0
 CREATED:20210129T141614Z
@@ -754,7 +801,7 @@ SUMMARY:EmacsSF: discussion of emacs\, org-mode\, org-roam and similar pac
  kages
 DTSTART:20210128T023000Z
 DTEND:20210128T043000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:7lofjcidv0q0auv59kqnmp9va5@google.com
 SEQUENCE:0
 CREATED:20210125T055204Z
@@ -776,7 +823,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsNYC: Lightning Talks
 DTSTART:20210202T000000Z
 DTEND:20210202T020000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:7q1k9g0f97gl4dce3he0o8prrk@google.com
 SEQUENCE:0
 CREATED:20210125T053526Z
@@ -807,7 +854,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsSG: Emacs and Never Code Alone (tentative?)
 DTSTART:20210127T110000Z
 DTEND:20210127T140000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:7jgjmo33k372usethv76c139pd@google.com
 SEQUENCE:0
 CREATED:20201205T213653Z
@@ -827,7 +874,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs Paris (virtual)
 DTSTART:20210202T163000Z
 DTEND:20210202T180000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:0toe1npqb53ab5bmoos5bqi9et@google.com
 SEQUENCE:0
 CREATED:20201205T214929Z
@@ -871,7 +918,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsFFM: Creating our own major mode (virtual)
 DTSTART:20210120T190000Z
 DTEND:20210120T210000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:6eafmcuut04jcfsii9elrgr1jc@google.com
 SEQUENCE:0
 CREATED:20201219T153708Z
@@ -898,7 +945,7 @@ SUMMARY:Livestream: Keeping organized with Emacs and Orgmode\, by Henrique
   Castro
 DTSTART:20210114T153000Z
 DTEND:20210114T163000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:4vofj3i6bcltrhint3gh1tdckc@google.com
 SEQUENCE:0
 CREATED:20201221T062728Z
@@ -914,7 +961,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs Paris (virtual)
 DTSTART:20210107T163000Z
 DTEND:20210107T180000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:2olvnahj3ut322mpej3lp2jkg2@google.com
 SEQUENCE:0
 CREATED:20201205T214723Z
@@ -958,7 +1005,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsNYC: How Do We Improve Emacs? (virtual)
 DTSTART:20210105T000000Z
 DTEND:20210105T020000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:6kq6ap1lc5j36bb670r6ab9kcgs64b9p75h6cb9pc9gm2e9h61gm8pj270@google.com
 SEQUENCE:0
 CREATED:20210102T153409Z
@@ -992,7 +1039,7 @@ BEGIN:VEVENT
 SUMMARY:Emacs Paris (virtual)
 DTSTART:20201208T163000Z
 DTEND:20201208T180000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:6m5e1nio8jukuuu69eneaaqqi6@google.com
 SEQUENCE:0
 CREATED:20201205T214546Z
@@ -1027,7 +1074,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsFFM: Creating our own major mode (virtual)
 DTSTART:20201216T190000Z
 DTEND:20201216T210000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:4bq2kb9qdmrldl5263di86g80q@google.com
 SEQUENCE:0
 CREATED:20201205T213349Z
@@ -1053,7 +1100,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsNYC: Literate Programming with Org Mode (virtual)
 DTSTART:20201208T000000Z
 DTEND:20201208T020000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:632379356090cvkmnnfhi9injf@google.com
 SEQUENCE:0
 CREATED:20201201T173817Z
@@ -1085,7 +1132,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsConf: The Horizon
 DTSTART:20201212T150000Z
 DTEND:20201212T163000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:6qlup44nvrqi4tlb4voq51oheo@google.com
 SEQUENCE:0
 CREATED:20201205T203454Z
@@ -1099,7 +1146,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsATX: re-builder\, leaf\, feather
 DTSTART:20201203T003000Z
 DTEND:20201203T023000Z
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230935Z
 UID:4plfjrnugmaorl4pjghrtgnk74@google.com
 SEQUENCE:0
 CREATED:20201201T173622Z
@@ -1120,82 +1167,46 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:EmacsSF: Emacs Lisp: Org-mode Hacks
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20210916T100000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20210916T120000
-DTSTAMP:20210916T121822Z
-UID:event_280469304@meetup.com
+SUMMARY:EmacsNYC: Discussion: Is VSCode Better?
+DTSTART;TZID=America/New_York;VALUE=DATE-TIME:20211206T190000
+DTEND;TZID=America/New_York;VALUE=DATE-TIME:20211206T210000
+DTSTAMP:20211115T230942Z
+UID:event_281810145@meetup.com
 CLASS:PUBLIC
-CREATED:20210831T184224Z
-DESCRIPTION:Emacs SF\nThursday\, September 16 at 10:00 AM\n\nEveryone love
- s org-mode\, and loves talking about its features\, but what about the low
-  level stuff? Let's get together and talk about org-mode at the E...\n\nht
- tps://www.meetup.com/Emacs-SF/events/280469304/
-GEO:37.79;-122.4
-LAST-MODIFIED:20210831T184224Z
-LOCATION:https://www.meetup.com/Emacs-SF/events/280469304/
+CREATED:20211102T011049Z
+DESCRIPTION:New York Emacs Meetup\nMonday\, December 6 at 7:00 PM\n\nEmacs
+  and Vi are old news! The new game in town VSCode. It's taking everyone by
+  storm! Stand down Sublime Text! Did anyone even use Atom? Good bye\, Py..
+ .\n\nhttps://www.meetup.com/New-York-Emacs-Meetup/events/281810145/
+GEO:40.75;-73.98
+LAST-MODIFIED:20211102T011320Z
+LOCATION:https://www.meetup.com/New-York-Emacs-Meetup/events/281810145/
 STATUS:CONFIRMED
-URL:https://www.meetup.com/Emacs-SF/events/280469304/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:EmacsATX: TBD
-DTSTART;TZID=America/Chicago;VALUE=DATE-TIME:20211006T183000
-DTEND;TZID=America/Chicago;VALUE=DATE-TIME:20211006T203000
-DTSTAMP:20210916T121822Z
-UID:event_hkckgsyccnbjb@meetup.com
-CLASS:PUBLIC
-CREATED:20210322T023223Z
-DESCRIPTION:EmacsATX\nWednesday\, October 6 at 6:30 PM\n\nAbout Emacs ATX 
- is a meetup devoted to exploring the vast and ever expanding universe of t
- he extensible\, customizable\, free/libre editor Emacs. We are...\n\nhttps
- ://www.meetup.com/EmacsATX/events/hkckgsyccnbjb/
-GEO:30.29;-97.73
-LAST-MODIFIED:20210322T023223Z
-LOCATION:https://www.meetup.com/EmacsATX/events/hkckgsyccnbjb/
-STATUS:CONFIRMED
-URL:https://www.meetup.com/EmacsATX/events/hkckgsyccnbjb/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:EmacsATX: TBD
-DTSTART;TZID=America/Chicago;VALUE=DATE-TIME:20211103T183000
-DTEND;TZID=America/Chicago;VALUE=DATE-TIME:20211103T203000
-DTSTAMP:20210916T121822Z
-UID:event_hkckgsyccpbfb@meetup.com
-CLASS:PUBLIC
-CREATED:20210322T023223Z
-DESCRIPTION:EmacsATX\nWednesday\, November 3 at 6:30 PM\n\nAbout Emacs ATX
-  is a meetup devoted to exploring the vast and ever expanding universe of 
- the extensible\, customizable\, free/libre editor Emacs. We are...\n\nhttp
- s://www.meetup.com/EmacsATX/events/hkckgsyccpbfb/
-GEO:30.29;-97.73
-LAST-MODIFIED:20210322T023223Z
-LOCATION:https://www.meetup.com/EmacsATX/events/hkckgsyccpbfb/
-STATUS:CONFIRMED
-URL:https://www.meetup.com/EmacsATX/events/hkckgsyccpbfb/
+URL:https://www.meetup.com/New-York-Emacs-Meetup/events/281810145/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:EmacsATX: TBD
 DTSTART;TZID=America/Chicago;VALUE=DATE-TIME:20211201T183000
 DTEND;TZID=America/Chicago;VALUE=DATE-TIME:20211201T203000
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230951Z
 UID:event_hkckgsyccqbcb@meetup.com
 CLASS:PUBLIC
 CREATED:20210322T023223Z
 DESCRIPTION:EmacsATX\nWednesday\, December 1 at 6:30 PM\n\nAbout Emacs ATX
   is a meetup devoted to exploring the vast and ever expanding universe of 
  the extensible\, customizable\, free/libre editor Emacs. We are...\n\nhttp
- s://www.meetup.com/EmacsATX/events/hkckgsyccqbcb/
+ s://www.meetup.com/EmacsATX/events/281742622/
 GEO:30.29;-97.73
 LAST-MODIFIED:20210322T023223Z
-LOCATION:https://www.meetup.com/EmacsATX/events/hkckgsyccqbcb/
+LOCATION:https://www.meetup.com/EmacsATX/events/281742622/
 STATUS:CONFIRMED
-URL:https://www.meetup.com/EmacsATX/events/hkckgsyccqbcb/
+URL:https://www.meetup.com/EmacsATX/events/281742622/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:EmacsATX: TBD
 DTSTART;TZID=America/Chicago;VALUE=DATE-TIME:20220105T183000
 DTEND;TZID=America/Chicago;VALUE=DATE-TIME:20220105T203000
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230951Z
 UID:event_hkckgsydccbhb@meetup.com
 CLASS:PUBLIC
 CREATED:20210322T023223Z
@@ -1213,7 +1224,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsATX: TBD
 DTSTART;TZID=America/Chicago;VALUE=DATE-TIME:20220202T183000
 DTEND;TZID=America/Chicago;VALUE=DATE-TIME:20220202T203000
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230951Z
 UID:event_hkckgsydcdbdb@meetup.com
 CLASS:PUBLIC
 CREATED:20210322T023223Z
@@ -1231,7 +1242,7 @@ BEGIN:VEVENT
 SUMMARY:EmacsATX: TBD
 DTSTART;TZID=America/Chicago;VALUE=DATE-TIME:20220302T183000
 DTEND;TZID=America/Chicago;VALUE=DATE-TIME:20220302T203000
-DTSTAMP:20210916T121822Z
+DTSTAMP:20211115T230951Z
 UID:event_hkckgsydcfbdb@meetup.com
 CLASS:PUBLIC
 CREATED:20210322T023223Z
@@ -1246,56 +1257,52 @@ STATUS:CONFIRMED
 URL:https://www.meetup.com/EmacsATX/events/hkckgsydcfbdb/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Atelier Emacs (in French): Atelier Emacs Paris
-DTSTART;VALUE=DATE-TIME:20210902T153000Z
-DTEND;VALUE=DATE-TIME:20210902T173000Z
-DTSTAMP:20210916T121758Z
-UID:27fde021-f66f-49be-8297-482ebcc2f9b6
-CATEGORIES:emacs,org-mode,atelier
-DESCRIPTION:Les rencontres ont lieu sur cette instance de BBB.Tous les dé
- tails sur M-x doctor RETNous gardons parfois des notes des soirées passé
- es sur ce dépôt.
-LOCATION:https://mobilizon.fr/events/27fde021-f66f-49be-8297-482ebcc2f9b6
-URL:https://mobilizon.fr/events/27fde021-f66f-49be-8297-482ebcc2f9b6
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:M-x Research (contact them for password): TBA
-DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20210903T150000
-DTEND;TZID=Europe/London;VALUE=DATE-TIME:20210903T160000
-DTSTAMP:20210916T121824Z
-UID:j9hvbn9e795gd9o3pdsspqqgg5@google.com
-SEQUENCE:2
-CREATED:20201112T104055Z
-DESCRIPTION:
-LAST-MODIFIED:20210316T091514Z
-LOCATION:https://m-x-research.github.io/
+SUMMARY:EmacsATX: TBD
+DTSTART;TZID=America/Chicago;VALUE=DATE-TIME:20220406T183000
+DTEND;TZID=America/Chicago;VALUE=DATE-TIME:20220406T203000
+DTSTAMP:20211115T230951Z
+UID:event_hkckgsydcgbjb@meetup.com
+CLASS:PUBLIC
+CREATED:20210322T023223Z
+DESCRIPTION:EmacsATX\nWednesday\, April 6 at 6:30 PM\n\nAbout Emacs ATX is
+  a meetup devoted to exploring the vast and ever expanding universe of the
+  extensible\, customizable\, free/libre editor Emacs. We are...\n\nhttps:/
+ /www.meetup.com/EmacsATX/events/hkckgsydcgbjb/
+GEO:30.29;-97.73
+LAST-MODIFIED:20210322T023223Z
+LOCATION:https://www.meetup.com/EmacsATX/events/hkckgsydcgbjb/
 STATUS:CONFIRMED
-TRANSP:TRANSPARENT
+URL:https://www.meetup.com/EmacsATX/events/hkckgsydcgbjb/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:M-x Research (contact them for password): TBA
-DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20211001T150000
-DTEND;TZID=Europe/London;VALUE=DATE-TIME:20211001T160000
-DTSTAMP:20210916T121824Z
-UID:j9hvbn9e795gd9o3pdsspqqgg5@google.com
-SEQUENCE:2
-CREATED:20201112T104055Z
-DESCRIPTION:
-LAST-MODIFIED:20210316T091514Z
-LOCATION:https://m-x-research.github.io/
+SUMMARY:EmacsATX: TBD
+DTSTART;TZID=America/Chicago;VALUE=DATE-TIME:20220504T183000
+DTEND;TZID=America/Chicago;VALUE=DATE-TIME:20220504T203000
+DTSTAMP:20211115T230951Z
+UID:event_hkckgsydchbgb@meetup.com
+CLASS:PUBLIC
+CREATED:20210322T023223Z
+DESCRIPTION:EmacsATX\nWednesday\, May 4 at 6:30 PM\n\nAbout Emacs ATX is a
+  meetup devoted to exploring the vast and ever expanding universe of the e
+ xtensible\, customizable\, free/libre editor Emacs. We are...\n\nhttps://w
+ ww.meetup.com/EmacsATX/events/hkckgsydchbgb/
+GEO:30.29;-97.73
+LAST-MODIFIED:20210322T023223Z
+LOCATION:https://www.meetup.com/EmacsATX/events/hkckgsydchbgb/
 STATUS:CONFIRMED
-TRANSP:TRANSPARENT
+URL:https://www.meetup.com/EmacsATX/events/hkckgsydchbgb/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:M-x Research (contact them for password): TBA
+SUMMARY:M-x Research (contact them for password): Cancelled: M-x Research
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20211105T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20211105T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:j9hvbn9e795gd9o3pdsspqqgg5@google.com
+RECURRENCE-ID;TZID=Europe/London:20211105T150000
 SEQUENCE:2
 CREATED:20201112T104055Z
 DESCRIPTION:
-LAST-MODIFIED:20210316T091514Z
+LAST-MODIFIED:20211104T140744Z
 LOCATION:https://m-x-research.github.io/
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -1304,7 +1311,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20211203T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20211203T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:j9hvbn9e795gd9o3pdsspqqgg5@google.com
 SEQUENCE:2
 CREATED:20201112T104055Z
@@ -1318,7 +1325,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20220107T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20220107T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:j9hvbn9e795gd9o3pdsspqqgg5@google.com
 SEQUENCE:2
 CREATED:20201112T104055Z
@@ -1332,7 +1339,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20220204T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20220204T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:j9hvbn9e795gd9o3pdsspqqgg5@google.com
 SEQUENCE:2
 CREATED:20201112T104055Z
@@ -1346,7 +1353,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20220304T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20220304T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:j9hvbn9e795gd9o3pdsspqqgg5@google.com
 SEQUENCE:2
 CREATED:20201112T104055Z
@@ -1360,7 +1367,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20220401T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20220401T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:j9hvbn9e795gd9o3pdsspqqgg5@google.com
 SEQUENCE:2
 CREATED:20201112T104055Z
@@ -1374,7 +1381,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20220506T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20220506T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:j9hvbn9e795gd9o3pdsspqqgg5@google.com
 SEQUENCE:2
 CREATED:20201112T104055Z
@@ -1388,7 +1395,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20220603T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20220603T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:j9hvbn9e795gd9o3pdsspqqgg5@google.com
 SEQUENCE:2
 CREATED:20201112T104055Z
@@ -1402,7 +1409,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20220701T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20220701T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:j9hvbn9e795gd9o3pdsspqqgg5@google.com
 SEQUENCE:2
 CREATED:20201112T104055Z
@@ -1416,7 +1423,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20220805T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20220805T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:j9hvbn9e795gd9o3pdsspqqgg5@google.com
 SEQUENCE:2
 CREATED:20201112T104055Z
@@ -1430,7 +1437,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20220902T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20220902T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:j9hvbn9e795gd9o3pdsspqqgg5@google.com
 SEQUENCE:2
 CREATED:20201112T104055Z
@@ -1442,37 +1449,37 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
-DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20210917T150000
-DTEND;TZID=Europe/London;VALUE=DATE-TIME:20210917T160000
-DTSTAMP:20210916T121824Z
-UID:dk5kh9fp1m7aos2bci7bdtheob@google.com
-SEQUENCE:1
-CREATED:20201112T104200Z
+DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20221007T150000
+DTEND;TZID=Europe/London;VALUE=DATE-TIME:20221007T160000
+DTSTAMP:20211115T231005Z
+UID:j9hvbn9e795gd9o3pdsspqqgg5@google.com
+SEQUENCE:2
+CREATED:20201112T104055Z
 DESCRIPTION:
-LAST-MODIFIED:20210316T091448Z
+LAST-MODIFIED:20210316T091514Z
 LOCATION:https://m-x-research.github.io/
 STATUS:CONFIRMED
-TRANSP:OPAQUE
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
-DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20211015T150000
-DTEND;TZID=Europe/London;VALUE=DATE-TIME:20211015T160000
-DTSTAMP:20210916T121824Z
-UID:dk5kh9fp1m7aos2bci7bdtheob@google.com
-SEQUENCE:1
-CREATED:20201112T104200Z
+DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20221104T150000
+DTEND;TZID=Europe/London;VALUE=DATE-TIME:20221104T160000
+DTSTAMP:20211115T231005Z
+UID:j9hvbn9e795gd9o3pdsspqqgg5@google.com
+SEQUENCE:2
+CREATED:20201112T104055Z
 DESCRIPTION:
-LAST-MODIFIED:20210316T091448Z
+LAST-MODIFIED:20210316T091514Z
 LOCATION:https://m-x-research.github.io/
 STATUS:CONFIRMED
-TRANSP:OPAQUE
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20211119T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20211119T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:dk5kh9fp1m7aos2bci7bdtheob@google.com
 SEQUENCE:1
 CREATED:20201112T104200Z
@@ -1486,7 +1493,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20211217T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20211217T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:dk5kh9fp1m7aos2bci7bdtheob@google.com
 SEQUENCE:1
 CREATED:20201112T104200Z
@@ -1500,7 +1507,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20220121T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20220121T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:dk5kh9fp1m7aos2bci7bdtheob@google.com
 SEQUENCE:1
 CREATED:20201112T104200Z
@@ -1514,7 +1521,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20220218T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20220218T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:dk5kh9fp1m7aos2bci7bdtheob@google.com
 SEQUENCE:1
 CREATED:20201112T104200Z
@@ -1528,7 +1535,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20220318T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20220318T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:dk5kh9fp1m7aos2bci7bdtheob@google.com
 SEQUENCE:1
 CREATED:20201112T104200Z
@@ -1542,7 +1549,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20220415T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20220415T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:dk5kh9fp1m7aos2bci7bdtheob@google.com
 SEQUENCE:1
 CREATED:20201112T104200Z
@@ -1556,7 +1563,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20220520T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20220520T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:dk5kh9fp1m7aos2bci7bdtheob@google.com
 SEQUENCE:1
 CREATED:20201112T104200Z
@@ -1570,7 +1577,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20220617T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20220617T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:dk5kh9fp1m7aos2bci7bdtheob@google.com
 SEQUENCE:1
 CREATED:20201112T104200Z
@@ -1584,7 +1591,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20220715T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20220715T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:dk5kh9fp1m7aos2bci7bdtheob@google.com
 SEQUENCE:1
 CREATED:20201112T104200Z
@@ -1598,7 +1605,7 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20220819T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20220819T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
 UID:dk5kh9fp1m7aos2bci7bdtheob@google.com
 SEQUENCE:1
 CREATED:20201112T104200Z
@@ -1612,7 +1619,35 @@ BEGIN:VEVENT
 SUMMARY:M-x Research (contact them for password): TBA
 DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20220916T150000
 DTEND;TZID=Europe/London;VALUE=DATE-TIME:20220916T160000
-DTSTAMP:20210916T121824Z
+DTSTAMP:20211115T231005Z
+UID:dk5kh9fp1m7aos2bci7bdtheob@google.com
+SEQUENCE:1
+CREATED:20201112T104200Z
+DESCRIPTION:
+LAST-MODIFIED:20210316T091448Z
+LOCATION:https://m-x-research.github.io/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:M-x Research (contact them for password): TBA
+DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20221021T150000
+DTEND;TZID=Europe/London;VALUE=DATE-TIME:20221021T160000
+DTSTAMP:20211115T231005Z
+UID:dk5kh9fp1m7aos2bci7bdtheob@google.com
+SEQUENCE:1
+CREATED:20201112T104200Z
+DESCRIPTION:
+LAST-MODIFIED:20210316T091448Z
+LOCATION:https://m-x-research.github.io/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:M-x Research (contact them for password): TBA
+DTSTART;TZID=Europe/London;VALUE=DATE-TIME:20221118T150000
+DTEND;TZID=Europe/London;VALUE=DATE-TIME:20221118T160000
+DTSTAMP:20211115T231005Z
 UID:dk5kh9fp1m7aos2bci7bdtheob@google.com
 SEQUENCE:1
 CREATED:20201112T104200Z
