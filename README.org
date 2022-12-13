@@ -41,14 +41,14 @@
 :results:
 
 - Hispa Emacs (virtual) https://hispa-emacs.org/ Wed Dec 14 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/GMT - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Thu Dec 15 0000 Asia/Singapore
-- EmacsSF (in person): Ho ho ho it's coffee.el https://www.meetup.com/emacs-sf/events/290226928/ Sat Dec 17 1100 America/Los_Angeles
+- EmacsSF (in person): Ho ho ho it's coffee.el https://www.meetup.com/emacs-sf/events/290226928/ Sat Dec 17 1400 America/Toronto
 - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Tue Dec 20 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/GMT - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Wed Dec 21 0000 Asia/Singapore
 - Emacs APAC (virtual) https://emacs-apac.gitlab.io/ Sat Dec 24 0030 America/Vancouver - 0230 America/Chicago - 0330 America/Toronto - 0830 Etc/GMT - 0930 Europe/Berlin - 1400 Asia/Kolkata - 1630 Asia/Singapore
 - Emacs Berlin (hybrid, in English) https://emacs-berlin.org/ Wed Dec 28 0930 America/Vancouver - 1130 America/Chicago - 1230 America/Toronto - 1730 Etc/GMT - 1830 Europe/Berlin - 2300 Asia/Kolkata -- Thu Dec 29 0130 Asia/Singapore
 - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Tue Jan 3 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/GMT - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Wed Jan 4 0000 Asia/Singapore
 - EmacsATX: Emacs Social https://www.meetup.com/emacsatx/events/290200609/ Wed Jan 4 1630 America/Vancouver - 1830 America/Chicago - 1930 America/Toronto -- Thu Jan 5 0030 Etc/GMT - 0130 Europe/Berlin - 0600 Asia/Kolkata - 0830 Asia/Singapore
-- Emacs Paris (virtual, in French) https://www.emacs-doctor.com/emacs-paris-user-group/ Thu Jan 5 0830 America/Vancouver - 1030 America/Chicago - 1130 America/Toronto - 1630 Etc/GMT - 1730 Europe/Berlin - 2200 Asia/Kolkata -- Fri Jan 6 0030 Asia/Singapore
-- Atelier Emacs Montpellier (in person) https://lebib.org/date/atelier-emacs Fri Jan 13 1800 Europe/Paris
+- Emacs Paris (virtual, in French) https://www.emacs-doctor.com/emacs-paris-user-group/ Thu Jan 5 0930 America/Vancouver - 1130 America/Chicago - 1230 America/Toronto - 1730 Etc/GMT - 1830 Europe/Berlin - 2300 Asia/Kolkata -- Fri Jan 6 0130 Asia/Singapore
+- Atelier Emacs Montpellier (in person) https://lebib.org/date/atelier-emacs Fri Jan 13 1200 America/Toronto
 - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Tue Jan 17 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/GMT - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Wed Jan 18 0000 Asia/Singapore
 :end:
 
@@ -155,6 +155,7 @@ other_icals = [ #{'name': 'Atelier Emacs (in French)',
                 'source': 'https://calendar.google.com/calendar/ical/o0tiadljp5dq7lkb51mnvnrh04%40group.calendar.google.com/public/basic.ics',
                 'summary_re': r'^M-x Research - '}]
 # https://www.meetup.com/Emacs-SF/events/ical/',
+all_timezones = []
 
 def summarized_event(e, timezones):
   if 'in person' in e['SUMMARY']:
@@ -194,13 +195,21 @@ for event in cal.walk():
         event['location'] = match.group(1)
       else:
         print(event.get('description'))
-                    
+  if event.name == 'VTIMEZONE' and event['TZID'] not in all_timezones:
+    all_timezones.append(event['TZID'])
+    
 def merge_cal(main_cal, name, url, start_date, end_date, info=None):
   try:
     meetup_cal = icalendar.Calendar.from_ical(urlopen(url).read())
   except:
     print("Error with url: %s" % url)
     return
+  # Copy the timezone components
+  for tz in meetup_cal.walk():
+    if tz.name == 'VTIMEZONE' and tz['TZID'] not in all_timezones:
+      print(tz)     
+      all_timezones.append(tz['TZID'])
+      main_cal.add_component(tz)
   meetup_events = recurring_ical_events.of(meetup_cal).between(start_date, end_date)
   for event in meetup_events:
     if info and 'summary_re' in info:
@@ -223,13 +232,15 @@ merge_meetup_events(cal, start_date, end_date)
 for item in other_icals:
   merge_cal(cal, item['name'], item['source'], start_date, end_date, item)
 
-utc = pytz.timezone('UTC')
-for event in cal.walk():
-  if event.name == 'VEVENT' in event.name:
-    for attr in ['DTSTART', 'DTEND', 'DTSTAMP', 'RECURRENCE-ID']:
-      if attr in event:
-        event[attr].dt = event[attr].dt.astimezone(utc)
-        event[attr].params.clear()
+def convert_events_to_utc(cal):
+  # Convert everything to UTC?
+  utc = pytz.timezone('UTC')
+  for event in cal.walk():
+    if event.name == 'VEVENT' in event.name:
+      for attr in ['DTSTART', 'DTEND', 'DTSTAMP', 'RECURRENCE-ID']:
+        if attr in event:
+          event[attr].dt = event[attr].dt.astimezone(utc)
+          event[attr].params.clear()
 
     
 
@@ -290,15 +301,17 @@ for e in events:
 #+RESULTS: update
 :results:
 
+VTIMEZONE({'TZID': vText('b'America/Los_Angeles''), 'TZURL': 'http://tzurl.org/zoneinfo-outlook/America/Los_Angeles', 'X-LIC-LOCATION': vText('b'America/Los_Angeles'')}, DAYLIGHT({'TZOFFSETFROM': <icalendar.prop.vUTCOffset object at 0x7f70766face0>, 'TZOFFSETTO': <icalendar.prop.vUTCOffset object at 0x7f70766f8880>, 'TZNAME': vText('b'PDT''), 'DTSTART': <icalendar.prop.vDDDTypes object at 0x7f70766fbeb0>, 'RRULE': vRecur({'FREQ': ['YEARLY'], 'BYMONTH': [3], 'BYDAY': ['2SU']})}), STANDARD({'TZOFFSETFROM': <icalendar.prop.vUTCOffset object at 0x7f70766f9d80>, 'TZOFFSETTO': <icalendar.prop.vUTCOffset object at 0x7f70766fbdf0>, 'TZNAME': vText('b'PST''), 'DTSTART': <icalendar.prop.vDDDTypes object at 0x7f70766f9900>, 'RRULE': vRecur({'FREQ': ['YEARLY'], 'BYMONTH': [11], 'BYDAY': ['1SU']})}))
+VTIMEZONE({'TZID': vText('b'America/Chicago''), 'TZURL': 'http://tzurl.org/zoneinfo-outlook/America/Chicago', 'X-LIC-LOCATION': vText('b'America/Chicago'')}, DAYLIGHT({'TZOFFSETFROM': <icalendar.prop.vUTCOffset object at 0x7f70770c9a80>, 'TZOFFSETTO': <icalendar.prop.vUTCOffset object at 0x7f70770c9810>, 'TZNAME': vText('b'CDT''), 'DTSTART': <icalendar.prop.vDDDTypes object at 0x7f70770cbeb0>, 'RRULE': vRecur({'FREQ': ['YEARLY'], 'BYMONTH': [3], 'BYDAY': ['2SU']})}), STANDARD({'TZOFFSETFROM': <icalendar.prop.vUTCOffset object at 0x7f70770c8760>, 'TZOFFSETTO': <icalendar.prop.vUTCOffset object at 0x7f70770c8610>, 'TZNAME': vText('b'CST''), 'DTSTART': <icalendar.prop.vDDDTypes object at 0x7f70771c9c30>, 'RRULE': vRecur({'FREQ': ['YEARLY'], 'BYMONTH': [11], 'BYDAY': ['1SU']})}))
 - Hispa Emacs (virtual) https://hispa-emacs.org/ Wed Dec 14 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/GMT - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Thu Dec 15 0000 Asia/Singapore
-- EmacsSF (in person): Ho ho ho it's coffee.el https://www.meetup.com/emacs-sf/events/290226928/ Sat Dec 17 1400 America/Toronto
+- EmacsSF (in person): Ho ho ho it's coffee.el https://www.meetup.com/emacs-sf/events/290226928/ Sat Dec 17 1100 America/Los_Angeles
 - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Tue Dec 20 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/GMT - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Wed Dec 21 0000 Asia/Singapore
 - Emacs APAC (virtual) https://emacs-apac.gitlab.io/ Sat Dec 24 0030 America/Vancouver - 0230 America/Chicago - 0330 America/Toronto - 0830 Etc/GMT - 0930 Europe/Berlin - 1400 Asia/Kolkata - 1630 Asia/Singapore
 - Emacs Berlin (hybrid, in English) https://emacs-berlin.org/ Wed Dec 28 0930 America/Vancouver - 1130 America/Chicago - 1230 America/Toronto - 1730 Etc/GMT - 1830 Europe/Berlin - 2300 Asia/Kolkata -- Thu Dec 29 0130 Asia/Singapore
 - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Tue Jan 3 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/GMT - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Wed Jan 4 0000 Asia/Singapore
 - EmacsATX: Emacs Social https://www.meetup.com/emacsatx/events/290200609/ Wed Jan 4 1630 America/Vancouver - 1830 America/Chicago - 1930 America/Toronto -- Thu Jan 5 0030 Etc/GMT - 0130 Europe/Berlin - 0600 Asia/Kolkata - 0830 Asia/Singapore
-- Emacs Paris (virtual, in French) https://www.emacs-doctor.com/emacs-paris-user-group/ Thu Jan 5 0930 America/Vancouver - 1130 America/Chicago - 1230 America/Toronto - 1730 Etc/GMT - 1830 Europe/Berlin - 2300 Asia/Kolkata -- Fri Jan 6 0130 Asia/Singapore
-- Atelier Emacs Montpellier (in person) https://lebib.org/date/atelier-emacs Fri Jan 13 1200 America/Toronto
+- Emacs Paris (virtual, in French) https://www.emacs-doctor.com/emacs-paris-user-group/ Thu Jan 5 0830 America/Vancouver - 1030 America/Chicago - 1130 America/Toronto - 1630 Etc/GMT - 1730 Europe/Berlin - 2200 Asia/Kolkata -- Fri Jan 6 0030 Asia/Singapore
+- Atelier Emacs Montpellier (in person) https://lebib.org/date/atelier-emacs Fri Jan 13 1800 Europe/Paris
 - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Tue Jan 17 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/GMT - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Wed Jan 18 0000 Asia/Singapore
 :end:
 
