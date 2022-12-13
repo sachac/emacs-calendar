@@ -121,7 +121,7 @@ pip3 install icalevents recurring_ical_events pypandoc
 #+NAME: update
 #+begin_src python :session "cal" :results output drawer :var timezones=timezones :tangle "update.py" :eval never-export
 from urllib.request import urlopen
-from icalendar import Calendar
+import icalendar
 from datetime import date, datetime
 from dateutil.relativedelta import *
 import recurring_ical_events
@@ -176,16 +176,16 @@ def summarized_event(e, timezones):
   else:
     return "- %s %s" % (e['SUMMARY'], s)
                      
-
 link = "https://calendar.google.com/calendar/ical/c_rkq3fc6u8k1nem23qegqc90l6c%40group.calendar.google.com/public/basic.ics"
 f = urlopen(link)
-cal = Calendar.from_ical(f.read())
+cal = icalendar.Calendar.from_ical(f.read())
 start_date = date(date.today().year, date.today().month, 1)
 
 end_date = date(date.today().year + 1, date.today().month, 1)
 
 for event in cal.walk():
-  if event.name == 'VEVENT':
+  if event.name == 'VEVENT' and not '(ignore)' in event.name:
+    event['UID'] = str(event['DTSTART'].dt.timestamp()) + '-' + event['UID']
     if event.get('location') == '':
       match = re.search(r'href="([^"]+)"', event.get('description'))
       if not match:
@@ -194,22 +194,24 @@ for event in cal.walk():
         event['location'] = match.group(1)
       else:
         print(event.get('description'))
-                        
+                    
 def merge_cal(main_cal, name, url, start_date, end_date, info=None):
-   try:
-     meetup_cal = Calendar.from_ical(urlopen(url).read())
-   except:
-     print("Error with url: %s" % url)
-     return
-   meetup_events = recurring_ical_events.of(meetup_cal).between(start_date, end_date)
-   for event in meetup_events:
-     if info and 'summary_re' in info:
-       event['SUMMARY'] = re.sub(info['summary_re'], '', event['SUMMARY'])
-     if '(virtual)' in event['SUMMARY'] or '(hybrid)' in event['SUMMARY']:
-       name = re.sub(' \(in person\)', '')
-     event['SUMMARY'] = name + ': ' + event['SUMMARY']
-     event['LOCATION'] = ('URL' in event and event['URL']) or (info and ('url' in info) and info['url'])
-     main_cal.add_component(event)
+  try:
+    meetup_cal = icalendar.Calendar.from_ical(urlopen(url).read())
+  except:
+    print("Error with url: %s" % url)
+    return
+  meetup_events = recurring_ical_events.of(meetup_cal).between(start_date, end_date)
+  for event in meetup_events:
+    if info and 'summary_re' in info:
+      event['SUMMARY'] = re.sub(info['summary_re'], '', event['SUMMARY'])
+    if '(virtual)' in event['SUMMARY'] or '(hybrid)' in event['SUMMARY']:
+      name = re.sub(' \(in person\)', '')
+    event['SUMMARY'] = name + ': ' + event['SUMMARY']
+    event['UID'] = str(event['DTSTART'].dt.timestamp()) + '-' + event['UID']
+    event['LOCATION'] = ('URL' in event and event['URL']) or (info and ('url' in info) and
+ info['url'])
+    main_cal.add_component(event)
 
 def merge_meetup_events(cal, start_date, end_date):
   global other_meetups
@@ -221,10 +223,20 @@ merge_meetup_events(cal, start_date, end_date)
 for item in other_icals:
   merge_cal(cal, item['name'], item['source'], start_date, end_date, item)
 
+utc = pytz.timezone('UTC')
+for event in cal.walk():
+  if event.name == 'VEVENT' in event.name:
+    for attr in ['DTSTART', 'DTEND', 'DTSTAMP', 'RECURRENCE-ID']:
+      if attr in event:
+        event[attr].dt = event[attr].dt.astimezone(utc)
+        event[attr].params.clear()
+
+    
+
 f = open('emacs-calendar.ics', 'wb')
+
 f.write(cal.to_ical())
 f.close()
-
 events = recurring_ical_events.of(cal).between(start_date, end_date)
 events.sort(key=lambda x: x['DTSTART'].dt)
 files = {}
@@ -279,14 +291,14 @@ for e in events:
 :results:
 
 - Hispa Emacs (virtual) https://hispa-emacs.org/ Wed Dec 14 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/GMT - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Thu Dec 15 0000 Asia/Singapore
-- EmacsSF (in person): Ho ho ho it's coffee.el https://www.meetup.com/emacs-sf/events/290226928/ Sat Dec 17 1100 America/Los_Angeles
+- EmacsSF (in person): Ho ho ho it's coffee.el https://www.meetup.com/emacs-sf/events/290226928/ Sat Dec 17 1400 America/Toronto
 - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Tue Dec 20 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/GMT - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Wed Dec 21 0000 Asia/Singapore
 - Emacs APAC (virtual) https://emacs-apac.gitlab.io/ Sat Dec 24 0030 America/Vancouver - 0230 America/Chicago - 0330 America/Toronto - 0830 Etc/GMT - 0930 Europe/Berlin - 1400 Asia/Kolkata - 1630 Asia/Singapore
 - Emacs Berlin (hybrid, in English) https://emacs-berlin.org/ Wed Dec 28 0930 America/Vancouver - 1130 America/Chicago - 1230 America/Toronto - 1730 Etc/GMT - 1830 Europe/Berlin - 2300 Asia/Kolkata -- Thu Dec 29 0130 Asia/Singapore
 - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Tue Jan 3 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/GMT - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Wed Jan 4 0000 Asia/Singapore
 - EmacsATX: Emacs Social https://www.meetup.com/emacsatx/events/290200609/ Wed Jan 4 1630 America/Vancouver - 1830 America/Chicago - 1930 America/Toronto -- Thu Jan 5 0030 Etc/GMT - 0130 Europe/Berlin - 0600 Asia/Kolkata - 0830 Asia/Singapore
-- Emacs Paris (virtual, in French) https://www.emacs-doctor.com/emacs-paris-user-group/ Thu Jan 5 0830 America/Vancouver - 1030 America/Chicago - 1130 America/Toronto - 1630 Etc/GMT - 1730 Europe/Berlin - 2200 Asia/Kolkata -- Fri Jan 6 0030 Asia/Singapore
-- Atelier Emacs Montpellier (in person) https://lebib.org/date/atelier-emacs Fri Jan 13 1800 Europe/Paris
+- Emacs Paris (virtual, in French) https://www.emacs-doctor.com/emacs-paris-user-group/ Thu Jan 5 0930 America/Vancouver - 1130 America/Chicago - 1230 America/Toronto - 1730 Etc/GMT - 1830 Europe/Berlin - 2300 Asia/Kolkata -- Fri Jan 6 0130 Asia/Singapore
+- Atelier Emacs Montpellier (in person) https://lebib.org/date/atelier-emacs Fri Jan 13 1200 America/Toronto
 - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Tue Jan 17 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/GMT - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Wed Jan 18 0000 Asia/Singapore
 :end:
 
